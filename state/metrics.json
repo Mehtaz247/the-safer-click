@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T12:00:00+05:30",
-  "measurementStatus": "pre-launch",
+  "updatedAt": "2026-08-31T11:30:00+05:30",
+  "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 0,
+    "publishedArticles": 3,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -12,8 +12,8 @@
     "knownReturningReaders": null
   },
   "notes": [
+    "The public site and three article routes launched on GitHub Pages on 2026-08-31.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
 }
-
