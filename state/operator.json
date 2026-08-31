@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lastCycleAt": "2026-08-31T05:52:28.382Z",
+  "lastSuccessfulCycleAt": "2026-08-31T05:52:29.076Z",
+  "consecutiveFailures": 0,
+  "publishedThisMonth": 0,
+  "api": {
+    "model": "gpt-5.4-mini",
+    "monthlyBudgetUsd": 0,
+    "estimatedSpendUsd": 0,
+    "budgetMonth": "2026-08",
+    "maxDraftsPerCycle": 1,
+    "enabled": false,
+    "reason": "No API spending budget has been explicitly authorized. Codex heartbeat operation does not require this API path."
+  },
+  "safety": {
+    "requireRecoverableVersionBeforeSelfModification": true,
+    "requireCleanVerificationBeforePublish": true,
+    "allowAutomaticDeletion": false,
+    "allowCredentialWrites": false,
+    "allowPaidPromotion": false
+  }
+}

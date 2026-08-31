@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "passkeys-plain-english",
+  "title": "Passkeys, in Plain English: What Changes When You Turn One On",
+  "dek": "A passkey replaces a password with a sign-in tied to a device or password manager. It is usually safer against phishing—but recovery still deserves attention.",
+  "description": "A practical explanation of passkeys, why they resist phishing, where they are stored, and what to check before enabling one.",
+  "pillar": "safer-defaults",
+  "tags": ["passkeys", "passwords", "phishing", "account security"],
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "reviewDue": "2026-12-29",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "A passkey lets you sign in by unlocking a trusted device instead of typing a reusable password.",
+    "It is designed to work only with the real site or app, which makes ordinary fake-login phishing much less effective.",
+    "Create passkeys only on devices you control, and check how your provider handles syncing and recovery before removing older sign-in methods."
+  ],
+  "sections": [
+    {
+      "heading": "What a passkey actually replaces",
+      "paragraphs": [
+        "A password is a secret that you type and a website checks. Because you can type it anywhere, a convincing fake website can ask for it too. A passkey works differently: your device or password manager holds a private digital key, while the service holds the matching public information needed to verify a sign-in.",
+        "When the service asks you to sign in, you approve with the same kind of device unlock you already use—a PIN, fingerprint, face scan, or pattern. Your biometric data is used by the device to approve the action; it is not sent to the website as your passkey."
+      ]
+    },
+    {
+      "heading": "Why passkeys resist common phishing",
+      "paragraphs": [
+        "Passkeys are bound to the site or app for which they were created. A lookalike site cannot simply collect a passkey and replay it elsewhere. CISA identifies FIDO/WebAuthn as the widely available phishing-resistant authentication approach and recommends moving toward it where possible.",
+        "That does not make every account invulnerable. A person who can unlock a device with a saved passkey may be able to sign in, and account-recovery channels can still be attacked. Passkeys reduce a major class of risk; they do not remove the need for device security or careful recovery settings."
+      ]
+    },
+    {
+      "heading": "Where the passkey lives",
+      "paragraphs": [
+        "Depending on the setup, a passkey may be saved to a password manager and synced across your devices, kept on one device, or stored on a physical security key. The exact behavior depends on the operating system, browser, password manager, and service.",
+        "Google's guidance, for example, says passkeys can be saved and synced by a password manager. It also warns that you should create a passkey only on a personal device you control because anyone who can unlock that device may be able to use the passkey. Treat that warning as a general decision check, then read the instructions for the service you are enabling."
+      ]
+    },
+    {
+      "heading": "A sensible first passkey",
+      "paragraphs": [
+        "Start with an important account whose recovery options you understand—often your primary email, password manager, or major platform account. Use the provider's own settings page, not a link in an unexpected message.",
+        "Before you remove a password or older sign-in method, confirm that you can sign in on another trusted device and that your recovery phone, email, backup codes, or hardware key are current. Services vary, so the safest rollout is gradual rather than switching every account in one sitting."
+      ],
+      "steps": [
+        "Open the account through its official app or a known web address.",
+        "Read where the passkey will be stored or synced.",
+        "Confirm the device is personal, locked, and receiving security updates.",
+        "Create the passkey and test it on the devices you expect to use.",
+        "Review recovery methods before removing any older sign-in option."
+      ]
+    },
+    {
+      "heading": "When to wait",
+      "paragraphs": [
+        "Wait if the only available device is shared, if you do not understand how a synced passkey would move to a replacement phone, or if losing the device would leave you without a verified recovery route. Fix those conditions first.",
+        "If a service does not support passkeys, use a unique password from a reputable password manager and turn on the strongest multifactor option the service offers. Security improves in steps; it does not require waiting for a perfect setup."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "More than a Password",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/ncas/tips/st05-012",
+      "accessed": "2026-08-31",
+      "primary": true
+    },
+    {
+      "title": "How Do I Create a Good Password?",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password",
+      "accessed": "2026-08-31",
+      "primary": true
+    },
+    {
+      "title": "Sign-in to your applications & websites with passkeys",
+      "publisher": "Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/14124480?hl=en",
+      "accessed": "2026-08-31",
+      "primary": true
+    },
+    {
+      "title": "The State of Passkeys 2026: Global Consumer and Workforce Report",
+      "publisher": "FIDO Alliance",
+      "url": "https://fidoalliance.org/the-state-of-passkeys-2026-global-consumer-and-workforce-report/",
+      "accessed": "2026-08-31",
+      "primary": true
+    }
+  ],
+  "quality": {"score": 92, "reviewedBy": "bootstrap editorial review", "notes": "Explains benefits and recovery tradeoffs without universal platform claims."}
+}
+

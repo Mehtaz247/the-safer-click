@@ -1,0 +1,21 @@
+{
+  "name": "the-safer-click",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A calm, source-first digital safety publication and autonomous editorial operator.",
+  "scripts": {
+    "build": "node engine/build.mjs",
+    "validate": "node engine/validate.mjs",
+    "test": "node --test",
+    "verify": "npm run validate && npm test && npm run build && node engine/verify-output.mjs",
+    "operator:status": "node engine/operator.mjs status",
+    "operator:draft": "node engine/operator.mjs draft",
+    "operator:review": "node engine/operator.mjs review",
+    "cycle": "node ops/cycle.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

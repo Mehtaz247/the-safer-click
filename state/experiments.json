@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "active": [
+    {
+      "id": "launch-specificity-001",
+      "started": "2026-08-31",
+      "hypothesis": "Specific question-led titles and concise action summaries will earn more qualified search visits than broad cybersecurity explainers.",
+      "change": "Launch articles target one concrete reader decision and expose a three-line action summary above the fold.",
+      "primaryMetric": "Search clicks per indexed article after 28 days",
+      "guardrails": ["source freshness", "corrections", "average article quality score"],
+      "decisionDate": "2026-10-12",
+      "status": "active"
+    }
+  ],
+  "completed": []
+}
+

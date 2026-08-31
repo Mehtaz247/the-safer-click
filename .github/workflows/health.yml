@@ -1,0 +1,27 @@
+name: Publication health
+
+on:
+  schedule:
+    - cron: "17 4 * * 2,5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm install --ignore-scripts
+      - run: npm run verify
+      - name: Verify public routes
+        run: |
+          curl --fail --location --retry 3 --max-time 20 https://mehtaz247.github.io/the-safer-click/
+          curl --fail --location --retry 3 --max-time 20 https://mehtaz247.github.io/the-safer-click/feed.xml
+          curl --fail --location --retry 3 --max-time 20 https://mehtaz247.github.io/the-safer-click/sitemap.xml
+

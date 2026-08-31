@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-31T12:00:00+05:30",
+  "measurementStatus": "pre-launch",
+  "periods": [],
+  "cumulative": {
+    "publishedArticles": 0,
+    "substantiveCorrections": 0,
+    "retiredArticles": 0,
+    "knownSearchClicks": null,
+    "knownSearchImpressions": null,
+    "knownReturningReaders": null
+  },
+  "notes": [
+    "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
+    "Never substitute fabricated demo analytics for missing measurements."
+  ]
+}
+

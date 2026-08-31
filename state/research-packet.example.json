@@ -1,0 +1,13 @@
+{
+  "queueId": "replace-with-queue-item-id",
+  "readerQuestion": "The exact question the article should answer",
+  "researchDate": "YYYY-MM-DD",
+  "scope": "Audience and geographic or platform limits",
+  "findings": [
+    {"claim": "One source-supported finding", "sourceUrls": ["https://official.example/path"]}
+  ],
+  "sources": [
+    {"title": "Official source title", "publisher": "Publisher", "url": "https://official.example/path", "accessed": "YYYY-MM-DD", "primary": true}
+  ]
+}
+

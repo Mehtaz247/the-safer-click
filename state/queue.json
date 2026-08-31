@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-31T12:00:00+05:30",
+  "items": [
+    {"id":"qr-code-scam-check","pillar":"scam-defense","workingTitle":"Before You Scan: A QR Code Scam Checklist","readerQuestion":"How can I tell whether a QR code is safe?","priority":90,"status":"research","reason":"Specific action intent; useful across parking, restaurants, packages, and payment prompts."},
+    {"id":"recovery-codes","pillar":"account-safety","workingTitle":"Where to Keep Account Recovery Codes","readerQuestion":"Where should I store backup codes safely?","priority":86,"status":"research","reason":"Common setup friction with a durable, practical answer."},
+    {"id":"toll-text-scam","pillar":"scam-defense","workingTitle":"That Unpaid Toll Text: Three Checks Before You Pay","readerQuestion":"Is this unpaid toll text legitimate?","priority":84,"status":"research","reason":"High-loss impersonation pattern with clear official verification paths."},
+    {"id":"software-update-window","pillar":"safer-defaults","workingTitle":"How Long Can You Safely Delay a Software Update?","readerQuestion":"Do I need to install this update now?","priority":78,"status":"idea","reason":"Recurring decision; needs careful platform-specific sourcing."},
+    {"id":"password-manager-choice","pillar":"account-safety","workingTitle":"Choosing a Password Manager Without a 40-Feature Spreadsheet","readerQuestion":"What actually matters in a password manager?","priority":74,"status":"idea","reason":"High intent, but must avoid affiliate-style ranking and keep criteria source-backed."}
+  ]
+}
+

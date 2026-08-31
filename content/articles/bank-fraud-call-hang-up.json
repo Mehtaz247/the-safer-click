@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "slug": "bank-fraud-call-hang-up",
+  "title": "Your Bank Is Calling About Fraud. Hang Up Anyway.",
+  "dek": "A real-looking caller ID and private account details still do not prove who is on the line. Use a channel the caller cannot control.",
+  "description": "What to do when someone claiming to be your bank calls about fraud: hang up, verify through a trusted channel, and never move money to protect it.",
+  "pillar": "scam-defense",
+  "tags": ["bank scams", "impersonation", "phone safety"],
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "reviewDue": "2026-12-29",
+  "readingMinutes": 6,
+  "featured": true,
+  "takeaway": [
+    "Write down the claim, then end the call.",
+    "Contact the bank through its official app, a recent statement, or the number on the back of your card.",
+    "Never move money, share a verification code, or allow remote access because an unexpected caller tells you to."
+  ],
+  "sections": [
+    {
+      "heading": "The safe response is the same whether the call is real or fake",
+      "paragraphs": [
+        "An unexpected fraud call is designed to make you act before you verify. The caller may know your name, address, bank, or part of an account number. Those details can make the story feel credible, but they are not proof of identity.",
+        "You do not need to decide whether the voice is convincing. You only need to move the conversation to a channel you chose yourself. Ask what institution is calling and what the alleged problem is. Do not confirm account details. Then end the call."
+      ]
+    },
+    {
+      "heading": "Use a contact route the caller did not provide",
+      "paragraphs": [
+        "Open the bank's official app or type the bank's known web address yourself. You can also call the number printed on the back of your card or on a recent statement. Do not call a number from the incoming message, caller ID, or a search advertisement.",
+        "Tell the real fraud team exactly what the caller claimed. If there is a genuine alert, the bank can confirm it through this separate route. If there is not, the bank can note the impersonation attempt and help you check the account."
+      ],
+      "steps": [
+        "Write down the caller's claim without sharing or confirming private information.",
+        "Hang up, even if the caller objects or says the situation is urgent.",
+        "Open the official app or use a number printed on your card or statement.",
+        "Review recent transactions and security alerts with the real institution.",
+        "If you shared information or moved money, say so immediately; speed can matter."
+      ]
+    },
+    {
+      "heading": "Three requests that end the conversation",
+      "paragraphs": [
+        "A caller who asks you to move money to a supposedly safe account is not protecting your money. A caller who asks for a one-time verification code may be trying to complete a login or transfer as you. A caller who asks to control your phone or computer can see or manipulate what you do next.",
+        "End the call if any of those requests appear. Do not negotiate, test the caller, or stay on the line while opening your banking app."
+      ],
+      "callout": "A verification code is for proving your identity to the service that sent it. It is not a code to read aloud to an unexpected caller."
+    },
+    {
+      "heading": "If you already acted",
+      "paragraphs": [
+        "Contact the financial institution through a trusted channel now. Explain exactly what information you disclosed, whether you installed software, and whether money moved. Change affected credentials from a device you trust and follow the institution's recovery instructions.",
+        "In the United States, the Federal Trade Commission accepts reports at ReportFraud.ftc.gov, and the Consumer Financial Protection Bureau points victims to the FTC, the FBI's Internet Crime Complaint Center, state attorneys general, and local law enforcement. Outside the United States, use your national fraud-reporting service and local financial regulator. Reporting is separate from contacting the bank; do both when money or account access is at risk."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to handle unexpected calls that claim your money is at risk",
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2026/01/how-handle-unexpected-calls-claim-your-money-risk",
+      "accessed": "2026-08-31",
+      "primary": true
+    },
+    {
+      "title": "Got a call about fraud activity on your bank account? It could be a scammer",
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2024/06/got-call-about-fraud-activity-your-bank-account-it-could-be-scammer",
+      "accessed": "2026-08-31",
+      "primary": true
+    },
+    {
+      "title": "Who do I contact for help with a scam or fraud?",
+      "publisher": "Consumer Financial Protection Bureau",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/who-do-i-contact-for-help-with-a-scam-or-fraud-en-1777/",
+      "accessed": "2026-08-31",
+      "primary": true
+    }
+  ],
+  "quality": {"score": 94, "reviewedBy": "bootstrap editorial review", "notes": "Primary-source action guide; country-specific reporting is labeled."}
+}
+
