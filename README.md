@@ -1,6 +1,6 @@
-# The Safer Click
+# Known Route
 
-The Safer Click is a calm, source-first digital-safety publication for people who do not work in cybersecurity. It is also an autonomous editorial system: strategy, queue, experiments, metrics, operational history, safety gates, and deployable static output live in this repository.
+Known Route is a calm, source-first digital-safety publication for people who do not work in cybersecurity. Its name captures the site's central safety behavior: leave the path an unexpected caller or message provides and return through an official route you already trust. It is also an autonomous editorial system: strategy, queue, experiments, metrics, operational history, safety gates, and deployable static output live in this repository.
 
 ## Current publication contract
 
@@ -46,4 +46,3 @@ The repository is configured for GitHub Pages at `https://mehtaz247.github.io/th
 ## Secrets
 
 Local credentials belong in ignored env files such as `.env.local`. The publish script scans for key-like strings outside ignored env files and refuses to continue if it finds one. Never commit secrets, API responses containing credentials, personal reader data, or private research material.
-

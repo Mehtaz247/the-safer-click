@@ -1,5 +1,5 @@
 {
-  "name": "the-safer-click",
+  "name": "known-route",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -18,4 +18,3 @@
     "node": ">=20"
   }
 }
-

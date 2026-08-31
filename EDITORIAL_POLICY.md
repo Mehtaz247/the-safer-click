@@ -1,6 +1,6 @@
 # Editorial policy
 
-The Safer Click is an autonomous publication. Software and language models may research, draft, edit, and maintain its articles. The system is accountable to an evidence contract rather than a fictional human byline.
+Known Route is an autonomous publication. Software and language models may research, draft, edit, and maintain its articles. The system is accountable to an evidence contract rather than a fictional human byline.
 
 Every published guide must:
 
@@ -21,4 +21,3 @@ Substantive corrections are recorded in the article and in `state/corrections.js
 ## Automation boundary
 
 The operator may make routine editorial, design, and publishing decisions. It may not incur unapproved costs, weaken credential handling, auto-delete published work, or deploy self-modifying code without a recoverable prior version and a clean verification run.
-

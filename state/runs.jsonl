@@ -7,3 +7,6 @@
 {"at":"2026-08-31T05:52:29.077Z","type":"cycle","status":"verified","summary":"Favicon addition passed the complete publication gate."}
 {"at":"2026-08-31T05:52:54.000Z","type":"deploy","status":"failed","summary":"Initial Pages job verified the repository but stopped because Pages was not enabled on the new repository."}
 {"at":"2026-08-31T05:54:20.000Z","type":"deploy","status":"verified","summary":"Enabled GitHub Actions as the Pages source; deployment attempt 2 passed and live home, article, RSS, sitemap, CSS, favicon, canonical, mobile rendering, and navigation checks succeeded.","publicUrl":"https://mehtaz247.github.io/the-safer-click/","commit":"d95890cdb09581f6e0807c5eeade3fa6b9e52f6f"}
+{"at":"2026-08-31T06:24:14.902Z","type":"cycle","status":"started"}
+{"at":"2026-08-31T06:24:15.597Z","type":"cycle","status":"verified","summary":"Content, tests, build, and rendered output passed."}
+{"at":"2026-08-31T06:24:20.000Z","type":"brand-change","status":"verified","summary":"Renamed the publication from The Safer Click to Known Route while preserving the existing public URL and article links.","recoveryTag":"safety-backup/20260831T062328Z"}
