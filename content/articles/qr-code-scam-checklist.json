@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "qr-code-scam-checklist",
+  "title": "Before You Scan: A QR Code Scam Checklist",
+  "dek": "A QR code hides its destination until your camera reads it. Check the context, preview the address, and use a known route when money or an account is involved.",
+  "description": "A practical QR code safety checklist for parking meters, packages, texts, payments, and unexpected signs, plus what to do after a risky scan.",
+  "pillar": "scam-defense",
+  "tags": ["QR codes", "phishing", "payment scams", "phone safety"],
+  "published": "2026-09-01",
+  "updated": "2026-09-01",
+  "reviewDue": "2026-12-30",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "Treat an unexpected QR code like an unexpected link: its appearance does not prove who created it.",
+    "Preview the destination before opening it, and look for misspellings, substituted letters, or an unrelated domain.",
+    "For payments, account alerts, deliveries, or legal notices, leave the code and use the organization's official app, saved contact, or known website instead."
+  ],
+  "sections": [
+    {
+      "heading": "A QR code is a hidden link, not a trust signal",
+      "paragraphs": [
+        "A QR code can be useful, but the square pattern does not tell you who made it or where it leads. Your camera has to read the code before you can see the destination. That makes the moment between scanning and opening the address important.",
+        "Scammers use QR codes for the same reason they use ordinary links: to send people to lookalike sign-in pages, payment forms, or downloads. The Federal Trade Commission has reported fake codes placed over parking-meter codes and codes sent with urgent stories about deliveries, account problems, or suspicious activity."
+      ]
+    },
+    {
+      "heading": "Start with where the code came from",
+      "paragraphs": [
+        "Context is the first filter. A code on a sign inside a business you are already visiting is different from a code in an unexpected text, email, package, or notice. The FBI has warned about unsolicited packages containing codes that invite recipients to reveal who sent the package, return it, or provide information.",
+        "Physical placement also deserves a quick look. If a sticker seems layered over another code, has mismatched branding, or appears added to a parking meter or payment terminal, do not use it. Tell the organization responsible for the location so it can inspect the code."
+      ]
+    },
+    {
+      "heading": "Use the five-check pause",
+      "paragraphs": [
+        "Most phone cameras show a web address before opening it. Read that preview. A familiar brand name elsewhere on the screen does not make an unrelated or misspelled domain legitimate. If the preview is shortened, unclear, or hidden, you do not have enough information to trust it for a sensitive action.",
+        "Urgency is another warning. Recent FTC guidance describes fake traffic-violation texts that use official-looking seals, case numbers, deadlines, and QR codes to push people toward a payment or information request. A deadline in a message is a reason to verify independently, not a reason to skip verification."
+      ],
+      "steps": [
+        "Check the source: did you expect this code, and can you identify who placed or sent it?",
+        "Inspect the object: does a sticker cover another code, or does the printing look added or altered?",
+        "Preview the address: check the actual domain for misspellings, switched letters, or an unrelated name.",
+        "Read the request: stop if the page unexpectedly asks for a password, payment, identity details, an app download, or device permissions.",
+        "Choose a known route: open the official app, type a known address, or call a trusted number instead of continuing through the code."
+      ]
+    },
+    {
+      "heading": "When scanning is reasonable",
+      "paragraphs": [
+        "Scanning can be reasonable when the code is expected, its physical or digital source makes sense, the preview shows the organization’s real domain, and the next action matches the setting. A restaurant menu that opens the restaurant's known website is a lower-stakes use than a code that opens a login or payment page.",
+        "Even in a familiar setting, review the destination before entering information. If a parking, ticketing, banking, delivery, or government code asks for money or credentials, use the provider's official app or independently located website when possible. The Consumer Financial Protection Bureau recommends checking QR-code destinations and confirming payment requests through trusted contact details."
+      ],
+      "callout": "The scan itself is not the final decision. You can close the preview or page without entering information, approving permissions, downloading an app, or paying."
+    },
+    {
+      "heading": "If you already scanned it",
+      "paragraphs": [
+        "If you only opened a page and did not enter information, download anything, approve permissions, or make a payment, close it. Check your downloads and installed apps if the page prompted an installation, and keep your phone's operating system current.",
+        "If you entered a password, change it through the real service and change it anywhere else you reused it. Turn on multifactor authentication and review recent sessions. If you entered card or bank details or sent money, contact the financial institution or payment company immediately using a trusted route and explain what happened.",
+        "If you installed an app or granted unusual permissions, remove the app, review the permissions, update the device, and follow the device maker's security guidance. In the United States, suspected fraud can be reported to ReportFraud.ftc.gov, and online crime can be reported to the FBI's Internet Crime Complaint Center at IC3.gov. Elsewhere, use the national cybercrime or consumer-protection reporting service for your country."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Scammers hide harmful links in QR codes to steal your information",
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+      "accessed": "2026-09-01",
+      "primary": true
+    },
+    {
+      "title": "Unsolicited Packages Containing QR Codes Used to Initiate Fraud Schemes",
+      "publisher": "Federal Bureau of Investigation",
+      "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/unsolicited-packages-containing-qr-codes-used-to-initiate-fraud-schemes",
+      "accessed": "2026-09-01",
+      "primary": true
+    },
+    {
+      "title": "What are some common types of fraud and scams?",
+      "publisher": "Consumer Financial Protection Bureau",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-are-some-common-types-of-fraud-and-scams-en-2092/",
+      "accessed": "2026-09-01",
+      "primary": true
+    },
+    {
+      "title": "That text about a traffic violation is probably a scam",
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2026/04/text-about-traffic-violation-probably-scam",
+      "accessed": "2026-09-01",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 94,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Four current primary sources; separates scanning from later risky actions and labels U.S.-specific reporting routes."
+  }
+}
+

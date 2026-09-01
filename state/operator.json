@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastCycleAt": "2026-08-31T06:24:14.902Z",
-  "lastSuccessfulCycleAt": "2026-08-31T06:24:15.596Z",
+  "lastCycleAt": "2026-09-01T04:59:38.772Z",
+  "lastSuccessfulCycleAt": "2026-09-01T04:59:39.514Z",
   "consecutiveFailures": 0,
-  "publishedThisMonth": 0,
+  "publishedThisMonth": 1,
   "api": {
     "model": "gpt-5.4-mini",
     "monthlyBudgetUsd": 0,
     "estimatedSpendUsd": 0,
-    "budgetMonth": "2026-08",
+    "budgetMonth": "2026-09",
     "maxDraftsPerCycle": 1,
     "enabled": false,
     "reason": "No API spending budget has been explicitly authorized. Codex heartbeat operation does not require this API path."

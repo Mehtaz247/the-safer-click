@@ -11,3 +11,6 @@
 {"at":"2026-08-31T06:24:15.597Z","type":"cycle","status":"verified","summary":"Content, tests, build, and rendered output passed."}
 {"at":"2026-08-31T06:24:20.000Z","type":"brand-change","status":"verified","summary":"Renamed the publication from The Safer Click to Known Route while preserving the existing public URL and article links.","recoveryTag":"safety-backup/20260831T062328Z"}
 {"at":"2026-08-31T06:28:00.000Z","type":"deploy","status":"verified","summary":"Known Route identity verified on the public home page, RSS feed, article structured data, and 390px mobile render; no current public output retained the former name.","publicUrl":"https://mehtaz247.github.io/the-safer-click/","commit":"47e966c36e939348d368a6769debf4e7fa093f9b"}
+{"at":"2026-09-01T03:54:00.000Z","type":"research","status":"verified","queueId":"qr-code-scam-check","summary":"Reviewed current FTC, FBI, and CFPB guidance covering hidden destinations, altered physical codes, unsolicited packages, payment verification, and post-scan recovery; four primary sources supported publication."}
+{"at":"2026-09-01T04:59:38.772Z","type":"cycle","status":"started"}
+{"at":"2026-09-01T04:59:39.514Z","type":"cycle","status":"verified","summary":"Content, tests, build, and rendered output passed."}
