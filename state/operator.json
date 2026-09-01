@@ -10,8 +10,9 @@
     "estimatedSpendUsd": 0,
     "budgetMonth": "2026-09",
     "maxDraftsPerCycle": 1,
+    "maxReservedCostPerCycleUsd": 0.25,
     "enabled": false,
-    "reason": "No API spending budget has been explicitly authorized. Codex heartbeat operation does not require this API path."
+    "reason": "No API spending budget has been explicitly authorized. The remote scheduler performs deterministic verification without making model calls while this gate is closed."
   },
   "safety": {
     "requireRecoverableVersionBeforeSelfModification": true,

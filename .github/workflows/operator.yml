@@ -1,0 +1,75 @@
+name: Autonomous operator
+
+on:
+  schedule:
+    - cron: "37 4 * * 2,5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  operate:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Run bounded remote operator
+        id: operator
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run remote:operate
+      - name: Detect verified changes
+        if: always()
+        id: changes
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Commit verified changes
+        id: commit
+        if: always() && steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Known Route Operator"
+          git config user.email "actions@users.noreply.github.com"
+          ops/publish.sh
+      - name: Build publication artifact
+        if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
+        run: npm run build
+      - uses: actions/configure-pages@v5
+        if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
+        with:
+          path: docs
+      - name: Deploy to GitHub Pages
+        if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify public publication
+        if: steps.deployment.outcome == 'success'
+        run: |
+          curl --fail --location --retry 5 --retry-delay 5 --max-time 30 https://mehtaz247.github.io/the-safer-click/
+          curl --fail --location --retry 5 --retry-delay 5 --max-time 30 https://mehtaz247.github.io/the-safer-click/feed.xml
+          curl --fail --location --retry 5 --retry-delay 5 --max-time 30 https://mehtaz247.github.io/the-safer-click/sitemap.xml
+      - name: Preserve operator failure status
+        if: always() && steps.operator.outcome == 'failure'
+        run: exit 1

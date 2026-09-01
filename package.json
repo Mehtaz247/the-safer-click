@@ -12,6 +12,7 @@
     "operator:status": "node engine/operator.mjs status",
     "operator:draft": "node engine/operator.mjs draft",
     "operator:review": "node engine/operator.mjs review",
+    "remote:operate": "node ops/remote-operator.mjs",
     "cycle": "node ops/cycle.mjs"
   },
   "engines": {

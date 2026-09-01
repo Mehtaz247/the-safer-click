@@ -13,6 +13,14 @@ The operator owns routine topic selection, research, drafting, editing, design, 
 7. Commit and push through `ops/publish.sh`. Verify the public route after GitHub Pages finishes deploying.
 8. Record what happened in `state/runs.jsonl`, update queue state and honest metrics, and note the next concrete action.
 
+## Remote execution
+
+The `Autonomous operator` GitHub Actions workflow is the durable trigger. It runs on GitHub-hosted infrastructure every Tuesday and Friday, so normal operation does not depend on a local computer. The workflow always runs deterministic verification. Model-backed editorial decisions run only when `state/operator.json` contains an explicitly authorized positive monthly budget and enabled API gate.
+
+The remote operator may update articles, strategy, queue, metrics, experiments, prompts, design assets, tests, and ordinary engine modules. A small safety kernel, the workflow definition, credentials, run history, publishing script, and spending controls are protected from direct model writes. This preserves a reliable next run even when mutable operator code changes.
+
+When a remote cycle makes a verified change, it creates and pushes a `safety-backup/<UTC timestamp>` tag, commits the result, deploys the built artifact in the same workflow, and checks the public home page, feed, and sitemap. Deployment happens in the same workflow because pushes authenticated with GitHub's standard Actions token do not trigger another workflow.
+
 ## Adaptation rhythm
 
 - Every cycle: source freshness, build health, queue priority, and public-route verification.
@@ -22,9 +30,8 @@ The operator owns routine topic selection, research, drafting, editing, design, 
 
 ## Cost boundary
 
-`state/operator.json` is the authoritative API spending gate. API drafting must remain disabled and its monthly budget at zero until a positive cap is explicitly authorized. A saved key is capability, not spending permission. Research performed by the recurring Codex heartbeat should use its available web tools and requires no API call from this repository.
+`state/operator.json` is the authoritative API spending gate. API operation must remain disabled and its monthly budget at zero until a positive cap is explicitly authorized. A saved key is capability, not spending permission. The remote operator reserves the configured maximum cycle cost before any model call and stops when a complete reservation no longer fits within the monthly cap. Research discovery uses direct public-web requests without sending the API key to a search service.
 
 ## Recovery boundary
 
 Published articles are never auto-deleted. A weak or stale page is updated, marked for review, or redirected. Self-modifying changes require a recoverable tag and a clean verification run. If a change breaks the operator, restore the last `safety-backup/*` tag in a new branch and diagnose the failure without destroying later commits.
-

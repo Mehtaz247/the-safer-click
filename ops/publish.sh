@@ -20,6 +20,7 @@ if git rev-parse --verify HEAD >/dev/null 2>&1; then
   if git status --short | grep -E '(^.. (engine|ops|prompts|assets)/|^.. (package.json|site.config.json|.github/))' >/dev/null; then
     backup_tag="safety-backup/$(date -u +%Y%m%dT%H%M%SZ)"
     git tag "$backup_tag" HEAD
+    git push origin "$backup_tag"
     echo "Created recoverable pre-modification tag: $backup_tag"
   fi
 fi
@@ -32,4 +33,3 @@ fi
 
 git commit -m "Publish editorial cycle $(date -u +%Y-%m-%d)"
 git push
-
