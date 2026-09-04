@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastCycleAt": "2026-09-04T08:50:25.059Z",
-  "lastSuccessfulCycleAt": "2026-09-04T08:50:30.913Z",
+  "lastCycleAt": "2026-09-04T08:53:38.970Z",
+  "lastSuccessfulCycleAt": "2026-09-04T08:53:39.648Z",
   "consecutiveFailures": 0,
   "publishedThisMonth": 2,
   "remote": {
     "enabled": true,
     "execution": "github-hosted",
     "workflow": ".github/workflows/operator.yml",
-    "schedule": "Tuesday and Friday at 04:37 UTC",
+    "schedule": "Daily at 04:23 UTC; editorial cadence remains strategy-controlled",
     "lastVerifiedRunId": 33477612724,
     "lastVerifiedAt": "2026-09-01T06:26:51.000Z",
     "localHostRequired": false

@@ -15,7 +15,7 @@ The operator owns routine topic selection, research, drafting, editing, design, 
 
 ## Remote execution
 
-The `Autonomous operator` GitHub Actions workflow is the durable trigger. It runs on GitHub-hosted infrastructure every Tuesday and Friday, so normal operation does not depend on a local computer. The workflow always runs deterministic verification. Model-backed editorial decisions run only when `state/operator.json` contains an explicitly authorized positive monthly budget and enabled API gate.
+The `Autonomous operator` GitHub Actions workflow is the durable trigger. It runs on GitHub-hosted infrastructure every day, so normal operation does not depend on a local computer and a delayed scheduler event has another chance the next day. Editorial cadence remains governed by strategy rather than trigger frequency. The workflow always runs deterministic verification. Model-backed editorial decisions run only when `state/operator.json` contains an explicitly authorized positive monthly budget and enabled API gate.
 
 The remote operator may update articles, strategy, queue, metrics, experiments, prompts, design assets, tests, and ordinary engine modules. A small safety kernel, the workflow definition, credentials, run history, publishing script, and spending controls are protected from direct model writes. This preserves a reliable next run even when mutable operator code changes.
 
