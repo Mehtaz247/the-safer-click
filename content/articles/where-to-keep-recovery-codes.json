@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "where-to-keep-recovery-codes",
+  "title": "Where to Keep Backup and Recovery Codes",
+  "dek": "Keep the code reachable when your usual device or account is unavailable—but not exposed beside the password it can bypass.",
+  "description": "A practical storage plan for backup codes and recovery keys, including paper copies, separate locations, digital vaults, and replacement rules.",
+  "pillar": "account-safety",
+  "tags": ["backup codes", "recovery keys", "two-factor authentication", "account recovery"],
+  "published": "2026-09-04",
+  "updated": "2026-09-04",
+  "reviewDue": "2027-01-02",
+  "readingMinutes": 6,
+  "featured": true,
+  "takeaway": [
+    "Keep at least one paper copy in a secure place you can reach without the phone, computer, or account the code protects.",
+    "Do not make the only copy depend on the same device or cloud account you may be locked out of.",
+    "Treat every code like a spare key: do not share it, replace it if exposed, and mark single-use codes after use."
+  ],
+  "sections": [
+    {
+      "heading": "A recovery code is a spare key, not a receipt",
+      "paragraphs": [
+        "Backup codes and recovery keys exist for the moment your normal sign-in method fails. A lost phone, damaged security key, forgotten password, or inaccessible account can make a copy stored in the wrong place useless exactly when you need it.",
+        "The names are not interchangeable. Google provides a set of single-use backup codes for two-step verification. Microsoft provides a recovery code that can help regain account access. Apple offers an optional recovery key that changes how account recovery works. Read the instructions for the specific service before choosing where to keep its code."
+      ]
+    },
+    {
+      "heading": "The simplest dependable default is paper",
+      "paragraphs": [
+        "For most people, a printed or clearly written copy in a secure place with other important documents is a strong default. Google specifically suggests printing backup codes and storing them somewhere safe, such as with a passport or other important documents. Microsoft says to print its recovery code, keep it in a safe place, and not store it on a device used to sign in to the account.",
+        "Choose a location protected from casual access, theft, and ordinary household damage. A locked document box or safe is more appropriate than a note under a keyboard, a card in a wallet, or paper taped to the computer. Do not label the paper with the account password."
+      ]
+    },
+    {
+      "heading": "Keep the recovery path separate from what it recovers",
+      "paragraphs": [
+        "The governing rule is independence: losing access to one device or account should not also remove access to its recovery code. Avoid keeping the only copy in the email inbox, cloud drive, photo library, or notes service belonging to the same account. Apple explicitly warns not to keep an Apple recovery key in Apple Passwords, iCloud Photos, Notes, or iCloud Drive because those services may also be unavailable during account recovery.",
+        "A second secure physical location can protect against fire, flooding, or loss of the first copy. Apple recommends considering more than one place and says a trusted family member can hold a copy. That is a provider-specific suggestion, not a requirement for every account. Give a copy only to someone you deliberately trust with that level of access."
+      ]
+    },
+    {
+      "heading": "If you keep a digital copy, test the dependency",
+      "paragraphs": [
+        "A digital copy can be practical, but it should be encrypted, access-controlled, and available without the account it protects. Before relying on a password manager or encrypted archive, ask a concrete question: could you open it from another device if this phone disappeared and this account were locked?",
+        "Do not use an ordinary screenshot, unencrypted text file, draft email, or shared note as the only copy. The precise storage method matters less than avoiding two failures at once: unauthorized access to the code and loss of the code when the normal sign-in route fails."
+      ],
+      "callout": "Test retrieval without revealing the code: confirm that you know where the copy is and can reach its container from a different device or while signed out. Do not consume a single-use code merely to test storage."
+    },
+    {
+      "heading": "Make a five-minute recovery-code routine",
+      "paragraphs": [
+        "Create or refresh codes only from the service's official security settings. Google says each backup code becomes inactive after use and that generating a new set invalidates the previous set. Microsoft likewise says a newly generated recovery code replaces the previous one. Mark a Google code as used; replace the full set when it is exhausted, missing, or possibly exposed.",
+        "Never give a backup or recovery code to someone who contacts you. Google says it asks for backup codes only during sign-in. If a code appears in a message, photo, shared document, or location you no longer control, use the real service settings to replace it and remove the exposed copy."
+      ],
+      "steps": [
+        "Generate the code from the official account-security page, not a link in a message.",
+        "Print or write one copy and place it with securely stored important documents.",
+        "If loss would be especially damaging, keep a second copy in a separate secure location or with a deliberately trusted person.",
+        "Check that neither copy depends solely on the device or account it is meant to recover.",
+        "Mark single-use codes after use and regenerate codes that are lost, depleted, or exposed."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sign in with backup codes",
+      "publisher": "Google Account Help",
+      "url": "https://support.google.com/accounts/answer/1187538?co=GENIE.Platform%3DDesktop&hl=en",
+      "accessed": "2026-09-04",
+      "primary": true
+    },
+    {
+      "title": "How to get a Microsoft account recovery code",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-US/accounts-billing/manage/how-to-get-a-microsoft-account-recovery-code",
+      "accessed": "2026-09-04",
+      "primary": true
+    },
+    {
+      "title": "Set up a recovery key for your Apple Account",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/en-us/109345",
+      "accessed": "2026-09-04",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 94,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Three first-party platform sources; distinguishes single-use backup codes from long-lived recovery codes and labels provider-specific rules."
+  }
+}

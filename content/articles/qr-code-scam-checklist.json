@@ -10,7 +10,7 @@
   "updated": "2026-09-01",
   "reviewDue": "2026-12-30",
   "readingMinutes": 7,
-  "featured": true,
+  "featured": false,
   "takeaway": [
     "Treat an unexpected QR code like an unexpected link: its appearance does not prove who created it.",
     "Preview the destination before opening it, and look for misspellings, substituted letters, or an unrelated domain.",
@@ -98,4 +98,3 @@
     "notes": "Four current primary sources; separates scanning from later risky actions and labels U.S.-specific reporting routes."
   }
 }
-
