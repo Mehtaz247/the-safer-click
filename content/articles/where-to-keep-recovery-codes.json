@@ -10,7 +10,7 @@
   "updated": "2026-09-04",
   "reviewDue": "2027-01-02",
   "readingMinutes": 6,
-  "featured": true,
+  "featured": false,
   "takeaway": [
     "Keep at least one paper copy in a secure place you can reach without the phone, computer, or account the code protects.",
     "Do not make the only copy depend on the same device or cloud account you may be locked out of.",

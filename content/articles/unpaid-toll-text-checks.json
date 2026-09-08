@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "unpaid-toll-text-checks",
+  "title": "That Unpaid Toll Text: Three Checks Before You Pay",
+  "dek": "Treat the message as an unverified claim. Leave its link behind, open the toll account through a route you trust, and compare the details there.",
+  "description": "A three-check guide to unpaid-toll text messages: spot pressure tactics, verify through an official route, and recover if you already paid or shared information.",
+  "pillar": "scam-defense",
+  "tags": ["unpaid tolls", "text scams", "smishing", "phishing", "impersonation scams"],
+  "published": "2026-09-08",
+  "updated": "2026-09-08",
+  "reviewDue": "2027-01-06",
+  "readingMinutes": 6,
+  "featured": true,
+  "takeaway": [
+    "Do not tap the link, call the number, or reply to an unexpected toll text—even to say STOP.",
+    "Open your toll account from a bookmark, bill, official app, or address you find independently; never use contact details supplied by the message.",
+    "A real-looking agency name, small balance, deadline, or threat of extra fees does not verify the text. Your independently reached account does."
+  ],
+  "sections": [
+    {
+      "heading": "Start by treating the text as a claim",
+      "paragraphs": [
+        "An unexpected message says you owe a modest toll and will face a larger fee or other consequence unless you pay now. That combination is designed to make checking feel slower than complying. The FBI's Internet Crime Complaint Center has documented texts that impersonate state toll services, use similar balances and wording, and send people to look-alike payment sites.",
+        "A message can copy a real toll-program name and still be fraudulent. Caller information, logos, case numbers, links, and urgent language are all parts of the message—not independent proof. Do not tap, reply, or call a number in it. Take a screenshot first if you may need evidence, then verify the supposed debt somewhere else."
+      ],
+      "callout": "This guide's reporting routes are for the United States. The core method works elsewhere: leave the message and contact the relevant road or toll operator through an official channel you found independently."
+    },
+    {
+      "heading": "Check one: did the message create the route?",
+      "paragraphs": [
+        "If the only way to see or pay the balance is a link, phone number, QR code, or reply instruction inside the text, do not use it. A scammer controls that route and can make the next page resemble a genuine payment portal. The FTC's toll-text guidance says not to click or respond to unexpected texts and to contact the state's tolling agency through a phone number or website you already know is real.",
+        "Open the official app you installed earlier, use a saved bookmark, type an address printed on a previous statement, or locate the agency through an official state-government site. Be careful with sponsored search results and spelling variations. The goal is not to decide whether the text looks convincing; it is to reach a system the sender did not choose."
+      ]
+    },
+    {
+      "heading": "Check two: does the official account show the debt?",
+      "paragraphs": [
+        "Once you have independently reached the real toll service, sign in or use its official trip or invoice lookup. Compare the plate, state, date, road, amount, and notice number where those details are available. If there is no matching charge, do not pay the text. If a charge does appear, complete any payment only inside the independently opened official account.",
+        "Not having a toll account does not prove that every bill is false—some roads bill by mail or plate—but it makes independent confirmation more important. Call the customer-service number on the verified agency site if the account view is unclear. Do not switch back to a number or page provided by the message."
+      ]
+    },
+    {
+      "heading": "Check three: is pressure replacing evidence?",
+      "paragraphs": [
+        "A short deadline, a jump from a small balance to a large penalty, or a threat involving registration or enforcement is a reason to slow down. Those details may sound administrative, but they do not identify the sender. The FBI's alert describes the same pattern: a small supposed toll paired with a much larger late fee and a link impersonating a state service.",
+        "There is no reliable visual shortcut that makes a payment link safe. Instead, ask whether the independently reached account confirms the charge and whether its official support channel recognizes the notice. If either answer is missing, keep your payment information out of the message's route."
+      ],
+      "steps": [
+        "Leave the text unopened or return to your home screen without tapping its link.",
+        "Reach the toll operator through a saved account, prior statement, official app, or verified government site.",
+        "Compare the charge details inside that official route.",
+        "Pay only there if the charge is confirmed; otherwise report the text and delete it."
+      ]
+    },
+    {
+      "heading": "If you already tapped, paid, or entered information",
+      "paragraphs": [
+        "Opening a page is different from submitting information. Close it and do not download anything. If you entered a password, change it from the real service and change any other account that reused it. If you provided a card or bank detail or see an unfamiliar charge, contact the financial institution through the number on the card, statement, or official app and ask about securing the account and disputing the charge.",
+        "If you shared identity information, IdentityTheft.gov can create a recovery plan based on what was exposed. In the United States, the FBI asks recipients of toll-smishing texts to submit the originating phone number and linked website to IC3. You can also use your messaging app's junk-reporting control, forward an unwanted text to 7726 (SPAM), or file an unwanted-text complaint with the FCC. Preserve the screenshot until you finish any reports, then delete the message."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Smishing Scam Regarding Debt for Road Toll Services",
+      "publisher": "FBI Internet Crime Complaint Center",
+      "url": "https://www.ic3.gov/PSA/2024/PSA240412/",
+      "accessed": "2026-09-08",
+      "primary": true
+    },
+    {
+      "title": "Got a text about unpaid tolls? It's probably a scam",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+      "accessed": "2026-09-08",
+      "primary": true
+    },
+    {
+      "title": "Unwanted Calls/Texts - Phone",
+      "publisher": "Federal Communications Commission",
+      "url": "https://consumercomplaints.fcc.gov/hc/en-us/articles/115002234203-Unwanted-Calls-Texts-Phone",
+      "accessed": "2026-09-08",
+      "primary": true
+    },
+    {
+      "title": "Report identity theft and get a recovery plan",
+      "publisher": "IdentityTheft.gov",
+      "url": "https://www.identitytheft.gov/",
+      "accessed": "2026-09-08",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 95,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Four current U.S. government sources; separates message clues from independent verification, labels U.S.-specific reporting, and distinguishes clicking from submitting information."
+  }
+}
