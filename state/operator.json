@@ -9,8 +9,8 @@
     "execution": "github-hosted",
     "workflow": ".github/workflows/operator.yml",
     "schedule": "Daily at 04:23 UTC; editorial cadence remains strategy-controlled",
-    "lastVerifiedRunId": 33855716154,
-    "lastVerifiedAt": "2026-09-04T08:55:00.000Z",
+    "lastVerifiedRunId": 34207182889,
+    "lastVerifiedAt": "2026-09-08T08:56:09.000Z",
     "localHostRequired": false
   },
   "api": {
