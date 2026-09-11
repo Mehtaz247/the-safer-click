@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "software-update-delay",
+  "title": "How Long Can You Safely Delay a Software Update?",
+  "dek": "There is no universal safe delay. Install urgent security fixes now, schedule ordinary updates within a few days, and make sure a restart actually finishes the job.",
+  "description": "A practical way to decide when to install a software update, including urgent security fixes, ordinary updates, restarts, backups, and unsupported devices.",
+  "pillar": "safer-defaults",
+  "tags": ["software updates", "security updates", "automatic updates", "device security", "patching"],
+  "published": "2026-09-11",
+  "updated": "2026-09-11",
+  "reviewDue": "2027-01-09",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "For an ordinary operating-system or app update, install it automatically or schedule it within a few days—not at an open-ended 'later.'",
+    "If the vendor says a flaw is actively exploited, an update is urgent, or a security response is available, update now or at the next safe restart.",
+    "Use the device's Settings page, official app store, or vendor support site; do not install an 'update' from a random pop-up or message.",
+    "After updating, check whether a restart is still required and whether the device reports that it is up to date."
+  ],
+  "sections": [
+    {
+      "heading": "The useful default is 'within a few days'",
+      "paragraphs": [
+        "No fixed delay is guaranteed to be safe. An update may close a known security hole, and public release of a fix can help attackers understand what has changed. The UK National Cyber Security Centre recommends installing device and software updates promptly, ideally within a few days, and enabling automatic updates where possible.",
+        "For a personal phone or computer, that makes tonight a better default than next month. Let the device download the update, connect it to power and Wi-Fi if required, and choose an installation or restart time when a short interruption will not cause harm. A delay measured in hours or a few days is a scheduling decision; repeatedly dismissing the notice becomes an untracked security decision."
+      ],
+      "callout": "A few days is a practical default, not a promise that every delay is harmless. A vendor's urgent security notice should override it."
+    },
+    {
+      "heading": "Update now when the warning is genuinely urgent",
+      "paragraphs": [
+        "Move the update to the front of the queue when the device or vendor identifies it as an emergency, a rapid security response, or a fix for a vulnerability being actively exploited. NCSC guidance says normal update timescales are too long during widespread active exploitation and points users to the vendor's product advisory. The update should come from the vendor's own update mechanism or support site.",
+        "Urgent does not mean trusting an alarming browser pop-up, email, or text. Leave that prompt and check for the update inside the operating system, official app store, or software's built-in updater. If the update affects a work-managed, medical, accessibility, safety-critical, or otherwise specialized device, follow the organization's support process because an unplanned interruption can create a separate risk."
+      ],
+      "steps": [
+        "Save open work and confirm you have a current backup of important files.",
+        "Open the device's official update screen or the app's official store listing.",
+        "Read the vendor notice for words such as security, urgent, emergency, actively exploited, or rapid response.",
+        "Install promptly and restart if the device says a restart is required.",
+        "Return to the update screen and confirm that no security update is still waiting."
+      ]
+    },
+    {
+      "heading": "Do not confuse downloading with finishing",
+      "paragraphs": [
+        "Automatic updates reduce the chance that a notification gets forgotten, but they still have conditions. The NCSC notes that installation can stall when a device lacks power, Wi-Fi, storage, or a restart. Google says most Android system and security updates install automatically, while downloaded updates on Pixel devices become active at the next restart. Update timing on other Android devices varies by manufacturer and carrier.",
+        "Apple says an iPhone can install updates overnight when it is charging and connected to Wi-Fi. Windows can schedule a restart outside active hours, and Microsoft notes that some updates need that restart to finish. If you keep seeing the same notice, check storage and power, restart once, and inspect the update status rather than assuming the background process succeeded."
+      ]
+    },
+    {
+      "heading": "A feature upgrade and a security update are not the same decision",
+      "paragraphs": [
+        "Some vendors separate small security or quality updates from larger feature upgrades; others bundle them. Microsoft describes Windows quality updates as frequent releases that mainly contain fixes and security updates, while feature updates add broader functionality and arrive less often. That distinction can justify more preparation for a major upgrade, but it is not permission to stop taking security fixes.",
+        "If the vendor lets your current version continue receiving security updates, you can use that supported window to check compatibility, make a backup, and choose a calm time for a major upgrade. Verify support on the vendor's site instead of relying on the age of the device or version name. Once the current version is no longer supported, waiting no longer preserves a patched status."
+      ]
+    },
+    {
+      "heading": "When an update will not install",
+      "paragraphs": [
+        "Start with the least disruptive fixes: connect to reliable power and internet, free the storage amount the device requests, restart, and try the official updater again. Back up important data before troubleshooting a major operating-system update. Do not download a mystery 'update utility' or turn off security controls because an unsolicited page tells you to.",
+        "If the vendor no longer offers updates for the device or operating-system version, the problem is support, not scheduling. The NCSC recommends replacing unsupported software and devices as soon as you are able. Until then, reduce exposure: avoid sensitive accounts and payments on that device, remove software you no longer need, keep the browser and remaining apps current where possible, and plan a move to a supported device rather than treating the last installed version as permanently safe."
+      ]
+    },
+    {
+      "heading": "A two-minute weekly check",
+      "paragraphs": [
+        "Once a week, open the update screen on the devices you depend on. Confirm that automatic operating-system, security, browser, and app updates are enabled; look for a restart request; and check whether the device says it is current. This catches the quiet failures that happen when storage is full, a laptop is never left charging, or a phone has not restarted.",
+        "The objective is not to chase every version number. It is to keep supported software on a reliable path from vendor release to completed installation. For most people, automatic updates plus a short weekly status check is more dependable than deciding from scratch every time a notification appears."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Keeping devices and software up to date",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/keeping-devices-and-software-up-to-date",
+      "accessed": "2026-09-11",
+      "primary": true
+    },
+    {
+      "title": "Put in place a policy to update by default",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/vulnerability-management/guidance/policy-update-by-default",
+      "accessed": "2026-09-11",
+      "primary": true
+    },
+    {
+      "title": "Update your iPhone or iPad",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/en-la/118575",
+      "accessed": "2026-09-11",
+      "primary": true
+    },
+    {
+      "title": "Windows Update: FAQ",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-US/Windows/Deployment/Updates-Lifecycle/windows-update-faq",
+      "accessed": "2026-09-11",
+      "primary": true
+    },
+    {
+      "title": "Check and update your Android version",
+      "publisher": "Android Help",
+      "url": "https://support.google.com/android/answer/7680439?hl=en-en",
+      "accessed": "2026-09-11",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 96,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Five current government and first-party platform sources; avoids a universal safety guarantee, separates urgent security fixes from feature upgrades, and labels organization-managed and platform-specific limits."
+  }
+}
