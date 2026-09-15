@@ -10,7 +10,7 @@
   "updated": "2026-09-11",
   "reviewDue": "2027-01-09",
   "readingMinutes": 7,
-  "featured": true,
+  "featured": false,
   "takeaway": [
     "For an ordinary operating-system or app update, install it automatically or schedule it within a few days—not at an open-ended 'later.'",
     "If the vendor says a flaw is actively exploited, an update is urgent, or a security response is available, update now or at the next safe restart.",

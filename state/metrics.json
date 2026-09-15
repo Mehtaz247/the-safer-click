@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T09:15:00+05:30",
+  "updatedAt": "2026-09-15T09:15:00+05:30",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 7,
+    "publishedArticles": 8,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -17,6 +17,7 @@
     "The September 4 editorial cycle added the fifth guide, focused on storage and replacement of backup and recovery codes.",
     "The September 8 editorial cycle added the sixth guide, a three-check response to unpaid-toll text scams.",
     "The September 11 editorial cycle added the seventh guide, a decision framework for software-update timing.",
+    "The September 15 editorial cycle added the eighth guide, a product-neutral password-manager selection checklist.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
