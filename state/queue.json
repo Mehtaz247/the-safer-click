@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T09:15:00+05:30",
+  "updatedAt": "2026-09-15T13:45:00+05:30",
   "items": [
     {"id":"qr-code-scam-check","pillar":"scam-defense","workingTitle":"Before You Scan: A QR Code Scam Checklist","readerQuestion":"How can I tell whether a QR code is safe?","priority":90,"status":"published","publishedSlug":"qr-code-scam-checklist","publishedAt":"2026-09-01","reason":"Published from four current U.S. government sources with globally framed prevention and labeled U.S. reporting routes."},
     {"id":"recovery-codes","pillar":"account-safety","workingTitle":"Where to Keep Account Recovery Codes","readerQuestion":"Where should I store backup codes safely?","priority":86,"status":"published","publishedSlug":"where-to-keep-recovery-codes","publishedAt":"2026-09-04","reason":"Published from current Google, Microsoft, and Apple account-recovery guidance with provider-specific differences clearly separated.","sourceSeeds":["https://support.google.com/accounts/answer/1187538?co=GENIE.Platform%3DDesktop&hl=en","https://support.microsoft.com/en-US/accounts-billing/manage/how-to-get-a-microsoft-account-recovery-code","https://support.apple.com/en-us/109345"]},
