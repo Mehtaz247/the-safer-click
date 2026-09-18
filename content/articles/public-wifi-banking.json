@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "public-wifi-banking",
+  "title": "Is Public Wi-Fi Safe Enough for Banking?",
+  "dek": "Modern encryption makes public Wi-Fi less dangerous than its reputation, but banking is high stakes. Use cellular data or a trusted network when you have the choice.",
+  "description": "A practical guide to banking and other sensitive tasks on public Wi-Fi, including HTTPS, hotspot checks, cellular alternatives, VPN limits, and cleanup steps.",
+  "pillar": "safer-defaults",
+  "tags": ["public Wi-Fi", "online banking", "HTTPS", "mobile hotspot", "VPN"],
+  "published": "2026-09-18",
+  "updated": "2026-09-18",
+  "reviewDue": "2027-01-16",
+  "readingMinutes": 6,
+  "featured": true,
+  "takeaway": [
+    "For banking, shopping, or confidential work, prefer cellular data, your own hotspot, or a trusted home or office network.",
+    "If public Wi-Fi is your only practical option, confirm the network name, use the bank's official app or a saved address, and stop at any certificate or browser warning.",
+    "HTTPS encrypts the connection to a website, but a padlock does not prove that the website itself is genuine.",
+    "When finished, sign out, disconnect, and make the device forget the hotspot so it does not silently reconnect later."
+  ],
+  "sections": [
+    {
+      "heading": "Usually encrypted does not mean worth the extra risk",
+      "paragraphs": [
+        "The simple answer is: public Wi-Fi is not automatically unsafe, but it is not the first choice for banking. The U.S. Federal Trade Commission says most websites now encrypt connections, so using public Wi-Fi is usually safe. HTTPS protects data travelling between your device and the site from ordinary network snooping.",
+        "Banking is still a poor place to test the edge of 'usually.' You may join a look-alike hotspot, follow a fake captive-portal prompt, ignore a certificate warning, or land on an encrypted phishing site. Australian and U.S. government guidance recommends switching to cellular data or waiting for a trusted connection for financial transactions. When the safer route costs one tap, use it."
+      ],
+      "callout": "This is a risk-based default, not a claim that every public hotspot can read every banking session. Modern HTTPS protects a great deal; choosing cellular data removes a network you do not control from a high-stakes task."
+    },
+    {
+      "heading": "First check: are you joining the real hotspot?",
+      "paragraphs": [
+        "A network name is not proof of ownership. An attacker can create a similar name and wait for people to connect. Ask venue staff or use posted official instructions to confirm the exact network name and login process. Do not choose a stronger signal merely because its name looks familiar.",
+        "Turn off automatic connection to open networks. If your device asks whether the new network is public or private, choose public so local sharing features stay restricted. Do not install a certificate, browser extension, security tool, or device profile because a captive portal demands it. If the login page behaves strangely, disconnect and use cellular data."
+      ]
+    },
+    {
+      "heading": "Second check: are you reaching the real bank?",
+      "paragraphs": [
+        "Use the bank's official app that was already installed from your device's app store, a bookmark you created earlier, or an address you type yourself. Do not start from a message, pop-up, advertisement, QR code, or link displayed by the hotspot. If the browser shows a certificate or connection warning, stop rather than choosing an option to continue.",
+        "In a browser, confirm the address is the bank's real domain and that the connection uses HTTPS. The FTC warns that scammers also encrypt fake websites. A padlock means the connection to that site is encrypted; it does not certify the identity or honesty of the people operating it."
+      ]
+    },
+    {
+      "heading": "If the transaction cannot wait",
+      "paragraphs": [
+        "Switch to your phone's cellular connection or personal hotspot if service and your data plan allow it. The NSA and CISA both recommend a personal or corporate hotspot over public Wi-Fi for sensitive work. Keep the phone, computer, browser, and banking app updated, and use multifactor authentication on the financial account.",
+        "If public Wi-Fi remains the only workable route, limit the session to the necessary task. Use the verified app or address, avoid downloading files or software, keep local file sharing off, and do not leave the device unattended. A reputable VPN that you already configured can add an encrypted tunnel between the device and the VPN provider, but it does not make a fake bank site genuine. A random free VPN introduces another provider that can handle your traffic, so do not install one in a rush at the hotspot."
+      ],
+      "steps": [
+        "Try cellular data or your own hotspot first.",
+        "Confirm the public network's exact name with the venue if you must use it.",
+        "Open the bank through its installed app, your bookmark, or a typed known address.",
+        "Stop at any certificate, browser, app-install, or device-profile warning.",
+        "Complete only the necessary task, then sign out and disconnect."
+      ]
+    },
+    {
+      "heading": "What a VPN changes—and what it does not",
+      "paragraphs": [
+        "A VPN encrypts traffic between your device and the VPN service, which can reduce what the local hotspot can observe or alter. Government guidance for frequent public-Wi-Fi use commonly recommends a trusted personal or employer-provided VPN. The VPN provider then becomes part of the trust path, so its ownership, privacy practices, update history, and business model matter.",
+        "A VPN does not inspect your judgment. It cannot make a convincing phishing page legitimate, undo information you submit to a scammer, protect an unlocked device from someone nearby, or replace account MFA. Treat it as one network control, not permission to ignore the destination and the device."
+      ]
+    },
+    {
+      "heading": "Leave the network cleanly",
+      "paragraphs": [
+        "After the task, sign out of the financial account, disconnect from the hotspot, and use the device's 'forget this network' control. Australian and NSA guidance recommends removing the hotspot so the device does not reconnect automatically later. Turn Wi-Fi off when you do not need it in a public place.",
+        "Review the completed transaction through the official app or site and keep normal account alerts enabled. If you entered credentials after a certificate warning or on a site you now suspect was fake, leave the network, contact the bank through the number on your card or its official app, change the exposed password from a trusted connection, and follow the bank's instructions for protecting the account."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Are Public Wi-Fi Networks Safe? What You Need To Know",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+      "accessed": "2026-09-18",
+      "primary": true
+    },
+    {
+      "title": "Connecting to public Wi-Fi and hotspots",
+      "publisher": "Australian Cyber Security Centre",
+      "url": "https://www.cyber.gov.au/protect-yourself/staying-secure-online/connecting-to-public-wi-fi",
+      "accessed": "2026-09-18",
+      "primary": true
+    },
+    {
+      "title": "NSA Issues Guidance on Securing Wireless Devices in Public Settings",
+      "publisher": "National Security Agency",
+      "url": "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2711968/nsa-issues-guidance-on-securing-wireless-devices-in-public-settings/",
+      "accessed": "2026-09-18",
+      "primary": true
+    },
+    {
+      "title": "Holiday Traveling with Personal Internet-Enabled Devices",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "url": "https://www.cisa.gov/news-events/news/holiday-traveling-personal-internet-enabled-devices",
+      "accessed": "2026-09-18",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 95,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Four government sources; reconciles modern HTTPS guidance with conservative banking advice, distinguishes encryption from site legitimacy, and limits VPN claims."
+  }
+}
