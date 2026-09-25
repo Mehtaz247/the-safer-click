@@ -10,7 +10,7 @@
   "updated": "2026-09-18",
   "reviewDue": "2027-01-16",
   "readingMinutes": 6,
-  "featured": true,
+  "featured": false,
   "takeaway": [
     "For banking, shopping, or confidential work, prefer cellular data, your own hotspot, or a trusted home or office network.",
     "If public Wi-Fi is your only practical option, confirm the network name, use the bank's official app or a saved address, and stop at any certificate or browser warning.",

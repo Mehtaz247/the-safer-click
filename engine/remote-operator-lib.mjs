@@ -1,5 +1,9 @@
 import path from "node:path";
 
+const modelPricingPerMillionTokens = Object.freeze({
+  "gpt-5.6-terra": Object.freeze({ input: 2, cachedInput: 0.2, output: 12 })
+});
+
 const exactMutableFiles = new Set([
   "AUTONOMY.md",
   "EDITORIAL_POLICY.md",
@@ -63,6 +67,35 @@ export function evaluateBudget(operator, now = new Date()) {
       : !api.enabled || api.monthlyBudgetUsd <= 0
         ? "API operation is disabled until a positive monthly budget is explicitly authorized."
         : `The remaining monthly budget is below the $${reservation.toFixed(2)} cycle reservation.`
+  };
+}
+
+export function summarizeUsage(model, usage = {}) {
+  const pricing = modelPricingPerMillionTokens[model];
+  if (!pricing) throw new Error(`No approved pricing is configured for model: ${model}`);
+  const inputTokens = Math.max(0, Number(usage.input_tokens ?? 0));
+  const outputTokens = Math.max(0, Number(usage.output_tokens ?? 0));
+  const cachedInputTokens = Math.min(inputTokens, Math.max(0, Number(usage.input_tokens_details?.cached_tokens ?? 0)));
+  const uncachedInputTokens = inputTokens - cachedInputTokens;
+  const estimatedCostUsd = (
+    uncachedInputTokens * pricing.input
+    + cachedInputTokens * pricing.cachedInput
+    + outputTokens * pricing.output
+  ) / 1_000_000;
+  return {
+    inputTokens,
+    cachedInputTokens,
+    outputTokens,
+    totalTokens: Math.max(0, Number(usage.total_tokens ?? inputTokens + outputTokens)),
+    estimatedCostUsd: Number(estimatedCostUsd.toFixed(6))
+  };
+}
+
+export function reconcileReservation(api, reservation, estimatedCostUsd) {
+  const spendBeforeReservation = Math.max(0, Number(api.estimatedSpendUsd ?? 0) - Number(reservation));
+  return {
+    ...api,
+    estimatedSpendUsd: Number((spendBeforeReservation + Number(estimatedCostUsd)).toFixed(6))
   };
 }
 

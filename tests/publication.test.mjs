@@ -23,10 +23,11 @@ test("project Pages links retain the configured base path", async () => {
   assert.equal(siteHref(config, "/"), "/the-safer-click/");
 });
 
-test("API spending is off until a budget is explicitly authorized", async () => {
+test("API spending is enabled only for the authorized model and monthly cap", async () => {
   const operator = await readJson("state/operator.json");
-  assert.equal(operator.api.enabled, false);
-  assert.equal(operator.api.monthlyBudgetUsd, 0);
+  assert.equal(operator.api.enabled, true);
+  assert.equal(operator.api.monthlyBudgetUsd, 10);
+  assert.equal(operator.api.model, "gpt-5.6-terra");
+  assert.equal(operator.api.maxReservedCostPerCycleUsd, 0.25);
   assert.equal(operator.safety.allowPaidPromotion, false);
 });
-

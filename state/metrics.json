@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T09:15:00+05:30",
+  "updatedAt": "2026-09-25T09:20:00+05:30",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 9,
+    "publishedArticles": 10,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -19,6 +19,7 @@
     "The September 11 editorial cycle added the seventh guide, a decision framework for software-update timing.",
     "The September 15 editorial cycle added the eighth guide, a product-neutral password-manager selection checklist.",
     "The September 18 editorial cycle added the ninth guide, a risk-based public-Wi-Fi decision guide for banking and other sensitive tasks.",
+    "The September 25 editorial cycle published the tenth guide, about the first hour after a phone is lost, using current Apple and Google lost-device guidance.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]

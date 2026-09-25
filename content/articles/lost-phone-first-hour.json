@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "lost-phone-first-hour",
+  "title": "Your Phone Is Lost: What to Do in the First Hour",
+  "dek": "Start with the built-in locator, mark the phone as lost, and protect the mobile account. Erasing can wait until recovery looks unlikely.",
+  "description": "A calm first-hour plan for a lost or stolen iPhone or Android phone: locate it, lock it, contact the carrier, protect accounts, and decide when to erase.",
+  "pillar": "account-safety",
+  "tags": ["lost phone", "stolen phone", "Find My", "Find Hub", "account recovery"],
+  "published": "2026-09-24",
+  "updated": "2026-09-24",
+  "reviewDue": "2027-01-22",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "Use Apple Find My or Google Find Hub from another device, then mark the missing phone as lost so it is locked.",
+    "If the map shows an unfamiliar location or you suspect theft, do not confront anyone; preserve the location and contact local law enforcement.",
+    "Tell the mobile carrier when the phone is not quickly recovered so it can suspend the line and explain replacement-SIM or eSIM steps.",
+    "Erase only after you have tried realistic recovery steps: remote erasure is permanent and changes what the locator can do."
+  ],
+  "sections": [
+    {
+      "heading": "First decide: misplaced or probably stolen?",
+      "paragraphs": [
+        "If the phone may be nearby, call it from another phone and use the platform's sound feature. Apple Find My can play a sound through the Find My app or iCloud.com/find. Google Find Hub can ring an Android device at full volume for five minutes, even when it is set to silent or vibrate.",
+        "If the map shows a place you do not recognize, the phone disappeared during a theft, or approaching it would put anyone at risk, stop treating this as a retrieval errand. Apple advises contacting local law enforcement rather than trying to recover a stolen device yourself. Location estimates can also be imprecise, so do not use a map pin as proof against a person or exact address."
+      ],
+      "callout": "The locator is a recovery and protection tool, not permission to confront someone. Save useful details for the carrier or local authorities and keep yourself out of the search area if it feels unsafe."
+    },
+    {
+      "heading": "Use the official locator and mark the phone as lost",
+      "paragraphs": [
+        "For an iPhone, use Find My on another trusted Apple device or go directly to iCloud.com/find. Apple says iCloud's Find Devices page does not require the verification code that may otherwise be sent to the missing trusted device. Select the phone and turn on Lost Mode. This locks it with its passcode and suspends Apple Pay cards and passes.",
+        "For Android, use the Find Hub app on another Android device or go directly to android.com/find. Select the missing phone and choose Mark as lost. Google says this locks the phone with its existing PIN, pattern, or password and lets you add a message or contact detail. The device must have been connected to a Google Account with Find Hub enabled; live actions also depend on power and a network connection, although a recent or offline-network location may still appear.",
+        "Use a contact method you can actually answer without the missing phone. If theft is likely, think carefully before putting personal contact details on the lock screen. Apple's stolen-device guidance warns that a thief may use those details for social engineering."
+      ],
+      "steps": [
+        "Open iCloud.com/find or android.com/find by typing the address yourself.",
+        "Select the missing phone and review its current or last known location.",
+        "Play a sound only when a nearby, misplaced phone is plausible.",
+        "Turn on Lost Mode or Mark as lost without waiting for the battery to run down.",
+        "Save the serial number or IMEI shown in the account for carrier or police reports."
+      ]
+    },
+    {
+      "heading": "Call the carrier before the number becomes another problem",
+      "paragraphs": [
+        "If the phone is not quickly back in your hand, contact the mobile carrier through its official website, app, store, or a number from a bill. Ask it to suspend the line and explain the process for moving the number to a replacement SIM or eSIM. Apple explicitly recommends reporting a missing iPhone to the carrier and asking it to disable the account. Google notes that a carrier can use the Android device's IMEI to disable it.",
+        "Carrier procedures, device-blocking databases, proof requirements, and police-report rules vary by country and provider. Ask what suspension will affect before approving it, especially if text messages to that number are a sign-in method. Do not give a caller or texter a one-time code just because they claim to have found the phone or represent Apple, Google, or the carrier."
+      ]
+    },
+    {
+      "heading": "Protect accounts when there are signs of access",
+      "paragraphs": [
+        "A locked phone that is merely misplaced is different from a phone taken while unlocked or by someone who knows the passcode. If the second situation is possible, start with the email and Apple or Google account that control recovery. Review recent security activity, trusted devices, recovery methods, and unfamiliar changes from a different trusted device.",
+        "Change a password when you see suspicious activity, someone knew the old password or device passcode, or the platform tells you the account is compromised. Then review financial and messaging accounts that were accessible on the phone. Avoid changing every password reflexively if the device was locked and there is no evidence of access; first securing the device and carrier line usually buys a calmer, more accurate review.",
+        "Apple says it will never contact you to announce that a lost iPhone was found, and it warns against sharing a device passcode, password, or verification code. Treat any 'we found your phone' message as unverified. Return to Find My, Find Hub, or the carrier through an address you type yourself."
+      ]
+    },
+    {
+      "heading": "Erase later, not as the first tap",
+      "paragraphs": [
+        "Remote erasure is for a phone you are unlikely to recover or whose exposed data creates more risk than losing the local copy. Apple says erasing cannot be undone and recommends trying other recovery steps first. An offline erase begins when the device next connects. On iOS 15 or later, Apple says Find My can still locate an erased device, but you should not remove it from Find My because that removes Activation Lock.",
+        "Google says an Android factory reset permanently deletes device data, may not delete an SD card, and makes the phone unavailable in Find Hub. You will need the Google Account password to use the device again if it returns. That makes the order important: record the location and device identifiers, mark it lost, contact the carrier, and only then choose erase when the recovery window has realistically closed.",
+        "Cloud backups, wallet behavior, offline finding, and post-erase tracking vary by platform, operating-system version, manufacturer, account settings, and region. Read the confirmation screen for the exact phone before approving an irreversible erase."
+      ]
+    },
+    {
+      "heading": "After the first hour",
+      "paragraphs": [
+        "Keep the device attached to Find My or Find Hub while recovery, an insurance claim, or a theft-and-loss claim is active. For Apple devices, removing the phone from Find My also removes Activation Lock and can make resale easier; Apple says not to remove it even after a remote erase. Follow the insurer's instructions before changing account associations.",
+        "Write down what happened: when the phone disappeared, the last reliable location, the carrier case number, the serial number or IMEI, and any suspicious account activity. Continue watching the primary email, financial accounts, and mobile account for changes. When the situation is resolved, prepare the replacement by enabling a strong screen lock, the built-in locator, automatic backups, and recovery methods that do not exist only on that phone."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to find your lost iPhone or iPad",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/en-us/101593",
+      "accessed": "2026-09-24",
+      "primary": true
+    },
+    {
+      "title": "If your iPhone or iPad was stolen",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/en-us/120837",
+      "accessed": "2026-09-24",
+      "primary": true
+    },
+    {
+      "title": "Find, secure, or erase a lost Android device",
+      "publisher": "Google Android Help",
+      "url": "https://support.google.com/android/answer/6160491?hl=en",
+      "accessed": "2026-09-24",
+      "primary": true
+    },
+    {
+      "title": "How To Protect Your Phone From Hackers",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/articles/how-protect-your-phone-hackers",
+      "accessed": "2026-09-24",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 96,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Four first-party or government sources; separates lost from stolen-device response, preserves platform-specific erase tradeoffs, labels carrier and regional variation, and avoids unsafe self-recovery advice."
+  }
+}

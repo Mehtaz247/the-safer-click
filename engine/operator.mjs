@@ -2,6 +2,7 @@ import { appendFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { existsSync } from "node:fs";
 import { readJson, root, writeJson } from "./lib.mjs";
+import { summarizeUsage } from "./remote-operator-lib.mjs";
 
 const command = process.argv[2] ?? "status";
 const operatorPath = "state/operator.json";
@@ -54,7 +55,7 @@ function statusSummary(state) {
 async function draft() {
   await loadLocalEnv();
   const state = normalizeBudget(await readJson(operatorPath));
-  const maxEstimatedDraftCost = 0.05;
+  const maxEstimatedDraftCost = Number(state.api.maxReservedCostPerCycleUsd ?? 0.25);
   const remaining = state.api.monthlyBudgetUsd - state.api.estimatedSpendUsd;
   if (!state.api.enabled || state.api.monthlyBudgetUsd <= 0) throw new Error("API drafting is disabled because no positive monthly spending cap is authorized.");
   if (remaining < maxEstimatedDraftCost) throw new Error(`Budget guard stopped drafting: $${remaining.toFixed(2)} remains, below the $${maxEstimatedDraftCost.toFixed(2)} per-draft reservation.`);
@@ -102,15 +103,15 @@ async function draft() {
   const outputText = result.output?.flatMap((item) => item.content ?? []).find((item) => item.type === "output_text")?.text;
   if (!outputText) throw new Error("OpenAI response contained no structured output text.");
   const candidate = JSON.parse(outputText);
-  const usage = result.usage ?? {};
-  const estimatedCost = ((usage.input_tokens ?? 0) * 0.75 + (usage.output_tokens ?? 0) * 4.5) / 1_000_000;
+  const usage = summarizeUsage(state.api.model, result.usage);
+  const estimatedCost = usage.estimatedCostUsd;
   state.api.estimatedSpendUsd = Number((state.api.estimatedSpendUsd + estimatedCost).toFixed(6));
   await writeJson(operatorPath, state);
   await mkdir(path.join(root, "state/drafts"), { recursive: true });
   const draftName = `${new Date().toISOString().replaceAll(":", "-")}-${packet.queueId ?? "candidate"}.json`;
-  await writeJson(`state/drafts/${draftName}`, { ...candidate, provenance: { responseId: result.id, model: result.model, researchPacket: "state/research-packet.json", estimatedCostUsd: Number(estimatedCost.toFixed(6)), generatedAt: new Date().toISOString() } });
-  await appendFile(path.join(root, "state/runs.jsonl"), `${JSON.stringify({ at: new Date().toISOString(), type: "api-draft", status: candidate.decision, draft: draftName, estimatedCostUsd: Number(estimatedCost.toFixed(6)) })}\n`);
-  console.log(JSON.stringify({ decision: candidate.decision, reason: candidate.reason, draft: `state/drafts/${draftName}`, estimatedCostUsd: Number(estimatedCost.toFixed(6)) }, null, 2));
+  await writeJson(`state/drafts/${draftName}`, { ...candidate, provenance: { responseId: result.id, model: result.model, researchPacket: "state/research-packet.json", usage, generatedAt: new Date().toISOString() } });
+  await appendFile(path.join(root, "state/runs.jsonl"), `${JSON.stringify({ at: new Date().toISOString(), type: "api-draft", status: candidate.decision, draft: draftName, model: result.model, usage })}\n`);
+  console.log(JSON.stringify({ decision: candidate.decision, reason: candidate.reason, draft: `state/drafts/${draftName}`, usage }, null, 2));
 }
 
 const state = normalizeBudget(await readJson(operatorPath));
@@ -124,4 +125,3 @@ if (command === "status") {
 } else {
   throw new Error(`Unknown operator command: ${command}`);
 }
-
