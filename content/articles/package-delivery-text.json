@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "slug": "package-delivery-text-checks",
+  "title": "That Package-Delivery Text: Check the Order Without Its Link",
+  "dek": "A delivery problem may be real. The text still does not get to choose where you verify it.",
+  "description": "Three checks for an unexpected package-delivery text: verify the order independently, use the carrier's official route, and recover safely if you clicked.",
+  "pillar": "scam-defense",
+  "tags": ["package scam", "delivery text", "smishing", "phishing", "USPS"],
+  "published": "2026-09-29",
+  "updated": "2026-09-29",
+  "reviewDue": "2027-01-27",
+  "readingMinutes": 6,
+  "featured": true,
+  "takeaway": [
+    "Do not use the link, phone number, or reply option in an unexpected delivery text.",
+    "Check the order in the retailer account you already use, then open the carrier through its official app or an address you type yourself.",
+    "A real order does not prove the text is real; compare its carrier and tracking details through that independent route.",
+    "If you entered payment or account information, contact the bank or account provider promptly through a trusted channel."
+  ],
+  "sections": [
+    {
+      "heading": "The text is a claim, not a tracking screen",
+      "paragraphs": [
+        "Fake delivery texts often say that a package is waiting, postage is unpaid, an address needs updating, or a delivery attempt failed. The Federal Trade Commission says the link can lead to a look-alike site that asks for personal or financial information. The story feels plausible because many people really are waiting for packages.",
+        "Treat the message as an unverified claim even when it uses a familiar carrier name, knows your name, or arrives on a day you expect a delivery. Sender names and page designs are not enough to establish who sent it. The safe question is not whether the text looks convincing; it is whether the same problem appears through a route you already trust."
+      ],
+      "callout": "Do not pay a small redelivery fee merely to make the warning disappear. Leave the message and verify the order elsewhere."
+    },
+    {
+      "heading": "Check one: return to the order",
+      "paragraphs": [
+        "Open the retailer or marketplace app you normally use, or type its known address into the browser. Find the order in your purchase history and look for its current status and tracking number. The FTC specifically recommends checking the online retail account instead of using information in the text.",
+        "No matching order is a strong reason to stop. A matching order means only that a parcel exists; it does not authenticate the text. Continue to the carrier independently and compare the tracking number, delivery status, and requested action there."
+      ],
+      "steps": [
+        "Close or leave the message without opening its link.",
+        "Open the shopping account through its saved app, bookmark, or an address you type yourself.",
+        "Find the actual order and note the carrier and tracking number.",
+        "If the account shows no problem, report and delete the text."
+      ]
+    },
+    {
+      "heading": "Check two: approach the carrier from outside the message",
+      "paragraphs": [
+        "Open the carrier's official app or type its established website yourself, then enter the tracking number from the retailer account. Do not copy a tracking number from the suspicious text unless you are using it only as an additional comparison. If the carrier shows a genuine problem, handle it inside that official account or contact channel.",
+        "For USPS in the United States, the Postal Inspection Service says customers must first request tracking for a specific package, USPS tracking texts do not contain a link, and the service is free. Those details are useful for USPS claims, not a universal promise about every carrier. Notification formats, fees, and reporting routes vary by company and country."
+      ]
+    },
+    {
+      "heading": "Check three: notice what the message wants",
+      "paragraphs": [
+        "A request to rush, follow a link, re-enter an address, pay a small fee, or provide card or account details is a reason to pause. The FTC says fake delivery pages may collect card numbers, names, addresses, passwords, or other information. The amount requested can be small because the payment form itself is valuable to the scammer.",
+        "Do not reply to test whether the sender is real. Use the phone's report-junk control when available, then block or delete the message after preserving anything you need for a report. In the United States, the FTC and Postal Inspection Service say unwanted scam texts can be forwarded to 7726. U.S.-specific reports can also go to ReportFraud.ftc.gov, and USPS-related smishing can be reported to spam@uspis.gov."
+      ]
+    },
+    {
+      "heading": "If you already clicked or entered information",
+      "paragraphs": [
+        "Opening a page is not the same as submitting information, but stop interacting with it and return to trusted routes. The Postal Inspection Service advises people who interacted with a USPS-themed smishing URL to notify their financial institution. If you entered card details or paid, contact the issuer or bank immediately using the number on the card or its official app and ask about blocking or reversing the transaction.",
+        "If you entered a username and password, the FTC recommends creating a new strong password for that account, changing it anywhere the same password was reused, and turning on two-factor authentication. If you provided sensitive identity information, use IdentityTheft.gov for a recovery plan. These reporting and recovery destinations are U.S.-specific; elsewhere, use the equivalent bank, carrier, cybercrime, and identity-theft services for your country."
+      ],
+      "steps": [
+        "Close the page and do not return through the text.",
+        "Contact the card issuer or bank immediately if payment details or money were involved.",
+        "Change a submitted password through the account's official site, including any reused copies, and enable two-factor authentication.",
+        "Report the message through the phone, carrier, and relevant national fraud service."
+      ]
+    },
+    {
+      "heading": "The reusable rule",
+      "paragraphs": [
+        "Delivery texts are one version of a broader pattern: a message presents an urgent problem and offers its own route to solve it. Separate the claim from the route. A legitimate problem should still be visible when you independently open the retailer, carrier, bank, or platform involved.",
+        "That approach works even when scam wording changes. You do not need to identify every fake domain or inspect a shortened link. You need a trusted route that the message did not supply."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Think that text message is from USPS? It could be a scam",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+      "accessed": "2026-09-29",
+      "primary": true
+    },
+    {
+      "title": "Smishing: Package Tracking Text Scams",
+      "publisher": "United States Postal Inspection Service",
+      "url": "https://www.uspis.gov/news/scam-article/smishing-package-tracking-text-scams",
+      "accessed": "2026-09-29",
+      "primary": true
+    },
+    {
+      "title": "Scammers are delivering phishing messages this holiday season",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2024/12/scammers-are-delivering-phishing-messages-holiday-season",
+      "accessed": "2026-09-29",
+      "primary": true
+    },
+    {
+      "title": "What To Do if You Were Scammed",
+      "publisher": "Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+      "accessed": "2026-09-29",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 95,
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Four current U.S. government sources support the independent-route checks and recovery steps. USPS-specific rules and U.S. reporting destinations are explicitly labeled rather than generalized to every carrier or country."
+  }
+}
