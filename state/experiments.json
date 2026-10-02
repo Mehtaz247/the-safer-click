@@ -9,9 +9,10 @@
       "primaryMetric": "Search clicks per indexed article after 28 days",
       "guardrails": ["source freshness", "corrections", "average article quality score"],
       "decisionDate": "2026-10-12",
-      "status": "active"
+      "status": "active",
+      "lastReviewed": "2026-10-02",
+      "reviewNote": "The 12-article launch library is complete. Traffic remains unmeasured, so the experiment stays active without a result until its decision date and verified measurement evidence."
     }
   ],
   "completed": []
 }
-

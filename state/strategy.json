@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T11:53:28+05:30",
+  "updatedAt": "2026-10-02T09:15:00+05:30",
   "publication": {
     "name": "Known Route",
     "positioning": "Calm, source-first digital safety for people who do not work in cybersecurity.",
@@ -31,7 +31,7 @@
     "secondaryChannels": ["RSS", "earned links from useful checklists", "shareable one-page action plans"],
     "northStar": "Returning readers who reach an actionable guide from search or a direct visit.",
     "guardrails": ["correction rate", "source freshness", "thin-content rate", "reader trust signals"],
-    "nextMilestone": "Publish a coherent 12-article launch library across the three editorial pillars."
+    "nextMilestone": "Evaluate the launch-specificity experiment on 2026-10-12 using only verified evidence, then build the next question cluster without increasing cadence until source freshness and correction guardrails remain healthy."
   },
   "decisionRules": [
     "Prefer evergreen questions with a recurring need over transient news unless delay could harm readers.",

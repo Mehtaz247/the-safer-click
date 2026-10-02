@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "app-permission-review",
+  "title": "Which App Permissions Should You Turn Off?",
+  "dek": "Review access by purpose, reduce it one permission at a time, and test the app before making the next change.",
+  "description": "A calm, reversible app-permission review for iPhone and Android covering location, camera, microphone, contacts, photos, and recent access.",
+  "pillar": "safer-defaults",
+  "tags": ["app permissions", "iPhone privacy", "Android privacy", "location access", "microphone access"],
+  "published": "2026-10-02",
+  "updated": "2026-10-02",
+  "reviewDue": "2027-01-30",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "Keep a permission only when you can connect it to a feature you use.",
+    "Start with location, camera, microphone, contacts, and photos because they expose sensitive context or content.",
+    "Make one reversible change, test the app, and restore only the access a needed feature actually requires."
+  ],
+  "sections": [
+    {
+      "heading": "There is no universal turn-off list",
+      "paragraphs": [
+        "The same permission can be necessary in one app and unnecessary in another. A maps app needs location for directions; a calculator normally does not. A calling app may need the microphone during a call, while a shopping app may need the camera only when you scan a code. The useful question is not whether a permission sounds dangerous. It is whether you understand the feature it enables and still use that feature.",
+        "Removing access can stop a feature from working, but permission changes are normally reversible. That makes a one-at-a-time review safer than switching off every permission at once. If the app later asks again, read the explanation and decide whether the immediate task justifies the access."
+      ]
+    },
+    {
+      "heading": "Start with the permissions that reveal the most",
+      "paragraphs": [
+        "Review location first, especially any app allowed to use it when the app is not open. Then check the camera and microphone, followed by contacts, calendars, photos and videos, health or fitness data, nearby devices, and files. These categories can reveal where you are, what is around you, who you know, or personal content stored on the device.",
+        "Keep access when it supports a feature you deliberately use. Reduce or remove it when the purpose is unclear, the feature is no longer used, or a narrower option is available. For example, a while-using option is usually a more limited starting point than continuous location access, and selected-photo access can be narrower than access to the full library when the phone offers that choice.",
+        "Notifications are different: they do not grant the same kind of access to your surroundings or files, but unwanted notifications can still create noise or expose message previews. Review them separately based on whether the alerts are useful."
+      ],
+      "steps": [
+        "Choose one permission category, starting with location, camera, or microphone.",
+        "For each app, name the feature that needs the permission.",
+        "Choose the narrowest option that still supports that feature.",
+        "Open the app and test the feature before changing another permission."
+      ]
+    },
+    {
+      "heading": "Review permissions on iPhone",
+      "paragraphs": [
+        "On iPhone, open Settings, then Privacy & Security. Apple groups access by category. Information categories include items such as Contacts, Photos, Calendars, Reminders, and Motion & Fitness. Hardware categories include Camera, Microphone, Bluetooth, and Local Network. Open a category to see apps that requested it, then change access for one app at a time.",
+        "Apple says a green indicator appears when an app uses the camera, including when it uses the camera and microphone together. An orange indicator appears when an app uses the microphone without the camera. Control Center can identify an app that recently used either one. Those indicators tell you about use at that moment; they do not replace a full permission review.",
+        "App Privacy Report, under Privacy & Security, can show how apps have used granted permissions and their network activity. Treat activity as a prompt to investigate, not automatic proof of wrongdoing: a feature you used may explain it."
+      ]
+    },
+    {
+      "heading": "Review permissions on Android",
+      "paragraphs": [
+        "On Android, Google documents two useful routes. To review one app, open Settings, Apps, choose the app, then Permissions. To review every app with the same type of access, open Settings, Security & privacy, Privacy, then Permission manager. Names and nesting can differ by Android version and phone maker.",
+        "For location, camera, and microphone, available choices may include Allow only while using the app, Ask every time, or Don't allow; location may also offer All the time. Start with the most limited choice that supports the feature you use. Google also provides an unused-app setting that can pause app activity and remove permissions, though the label and availability can vary.",
+        "On supported Android versions, Privacy dashboard shows which apps accessed a permission and when. Google notes that some dashboard steps require Android 12 or 13 and later, and the history window differs by version. Use that record to find surprising access, then check whether it matches something you did in the app."
+      ]
+    },
+    {
+      "heading": "What to do when a feature stops working",
+      "paragraphs": [
+        "If a feature fails after a change, return to that app's permission screen and restore the narrowest access that makes the feature work. A photo-sharing app might need selected photos but not the entire library; a navigation app may work with location only while it is in use. The exact options depend on the operating-system version and the app.",
+        "Do not use a broad device-wide camera or microphone shutoff as a routine substitute for app-by-app choices. Those controls can be useful for a temporary hard stop, but they can also interrupt calling, scanning, accessibility, or emergency features. If personal safety is the concern and someone may have access to your accounts, location, or device, use the platform's dedicated safety guidance rather than relying on a normal permission cleanup alone."
+      ],
+      "callout": "Menus and permission choices vary by iPhone software version, Android version, device manufacturer, country, and the app itself. If a label is different, search Settings for “permissions” or “privacy” and confirm the app name before changing access."
+    },
+    {
+      "heading": "A five-minute repeatable review",
+      "paragraphs": [
+        "A short review every few months is more useful than a one-time purge. Begin with apps you no longer use and permissions that work in the background. Then check recent camera, microphone, and location activity. Finish by testing the changes you made.",
+        "Record only exceptions you intend to revisit, such as an app that truly needs background location. You do not need a perfect permission setup. The goal is a smaller, understandable set of permissions that still lets the phone do what you expect."
+      ],
+      "steps": [
+        "Remove permissions from apps you no longer use, or uninstall those apps.",
+        "Review background or all-the-time location access.",
+        "Check recent camera and microphone activity where your phone provides it.",
+        "Limit contacts, photos, files, and nearby-device access to apps with a current purpose.",
+        "Test the affected features and note any deliberate exception."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Control access to information in apps on iPhone",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/guide/iphone/control-access-to-information-in-apps-iph251e92810/ios",
+      "accessed": "2026-10-02",
+      "primary": true
+    },
+    {
+      "title": "Control access to hardware features on iPhone",
+      "publisher": "Apple Support",
+      "url": "https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios",
+      "accessed": "2026-10-02",
+      "primary": true
+    },
+    {
+      "title": "Change app permissions on your Android phone",
+      "publisher": "Google Play Help",
+      "url": "https://support.google.com/googleplay/answer/9431959?hl=en",
+      "accessed": "2026-10-02",
+      "primary": true
+    },
+    {
+      "title": "Manage permissions from the privacy dashboard",
+      "publisher": "Android Help",
+      "url": "https://support.google.com/android/answer/13530434?hl=en",
+      "accessed": "2026-10-02",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 93,
+    "reviewedBy": "autonomous editorial review",
+    "notes": "Platform-specific, reversible guidance based on current Apple and Google documentation; version and manufacturer differences are explicit."
+  }
+}

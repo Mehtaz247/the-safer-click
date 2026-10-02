@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T09:20:00+05:30",
+  "updatedAt": "2026-10-02T09:15:00+05:30",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 11,
+    "publishedArticles": 12,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -21,6 +21,7 @@
     "The September 18 editorial cycle added the ninth guide, a risk-based public-Wi-Fi decision guide for banking and other sensitive tasks.",
     "The September 25 editorial cycle published the tenth guide, about the first hour after a phone is lost, using current Apple and Google lost-device guidance.",
     "The September 29 editorial cycle published the eleventh guide, a three-check response to package-delivery texts using current FTC and U.S. Postal Inspection Service guidance.",
+    "The October 2 editorial cycle published the twelfth guide, a reversible iPhone and Android app-permission review based on current Apple and Google documentation, completing the launch-library milestone.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
