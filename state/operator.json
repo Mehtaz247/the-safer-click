@@ -16,7 +16,7 @@
   "api": {
     "model": "gpt-5.6-terra",
     "monthlyBudgetUsd": 10,
-    "estimatedSpendUsd": 0.073446,
+    "estimatedSpendUsd": 0.089934,
     "budgetMonth": "2026-10",
     "maxDraftsPerCycle": 1,
     "maxReservedCostPerCycleUsd": 0.25,
@@ -30,7 +30,7 @@
     "allowCredentialWrites": false,
     "allowPaidPromotion": false
   },
-  "lastRemoteAttemptAt": "2026-10-04T10:39:21.680Z",
-  "lastRemoteDecisionAt": "2026-10-04T10:39:21.680Z",
-  "lastRemoteResponseId": "resp_05e54451a1aac782016ac22cdafc3487d08d1008f486a705b1"
+  "lastRemoteAttemptAt": "2026-10-05T11:38:46.420Z",
+  "lastRemoteDecisionAt": "2026-10-05T11:38:46.420Z",
+  "lastRemoteResponseId": "resp_03a7720e08c56a3e016ac38c48971487d2908f6bbe21f42a40"
 }
