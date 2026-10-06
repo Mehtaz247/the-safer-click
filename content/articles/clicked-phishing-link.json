@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "slug": "clicked-phishing-link",
+  "title": "You Clicked a Phishing Link. What Should You Do Next?",
+  "dek": "Match the response to what happened after the click: a page opened, information was entered, a file ran, or money moved.",
+  "description": "A calm first-response guide for a phishing click, with separate steps for an opened page, exposed password, payment details, downloaded file, or lost money.",
+  "pillar": "scam-defense",
+  "tags": ["phishing", "clicked a link", "malware", "password recovery", "scam recovery"],
+  "published": "2026-10-06",
+  "updated": "2026-10-06",
+  "reviewDue": "2027-02-03",
+  "readingMinutes": 7,
+  "featured": true,
+  "takeaway": [
+    "Close the suspicious page and do not use it again to check whether the message was real.",
+    "A page opening is different from entering a password, downloading a file, installing software, or sending money; respond to what actually happened.",
+    "Use a known app, bookmark, or address you type yourself for every recovery step.",
+    "Contact the bank immediately if card details, banking access, or money were involved."
+  ],
+  "sections": [
+    {
+      "heading": "First, separate the click from what came after it",
+      "paragraphs": [
+        "Close the page and leave the original message alone. Do not sign in again through the same link, call a number on the page, install a suggested security tool, or send the message a reply. If the message named a real service, open that service through its saved app, a bookmark you already trust, or an address you type yourself.",
+        "Now identify the last thing that happened: the page opened and nothing else; you typed a password or verification code; you entered personal or payment information; you downloaded a file or installed software; or you sent money. These outcomes need different responses. Treating every click as a disaster creates panic, while treating every click as harmless can miss an exposed account or infected device."
+      ],
+      "steps": [
+        "Close the suspicious page without interacting further.",
+        "Write down what you entered, downloaded, installed, approved, or paid.",
+        "Move to a trusted device or official app if the device may have downloaded or installed something.",
+        "Follow the matching section below rather than trying every recovery action at once."
+      ]
+    },
+    {
+      "heading": "If the page opened, but you entered nothing",
+      "paragraphs": [
+        "A click alone does not establish that an account or device was compromised. The United Kingdom's National Cyber Security Centre says that if you did not enter personal information, download files, or install software, it is unlikely that you need further action. It still recommends watching account emails and notifications for suspicious activity.",
+        "That boundary matters. Close the page, update the browser and device if an update is pending, and check the claimed problem through the service's official route. Do not return to the link to inspect it. If a file downloaded automatically, an extension was added, a permission prompt was approved, or the device begins redirecting, crashing, or showing unfamiliar programs, use the malware steps instead."
+      ],
+      "callout": "This is a response guide, not a promise that opening an unknown page is risk-free. Escalate when a file, installation, permission, credential, payment, or unusual device behavior is involved."
+    },
+    {
+      "heading": "If you entered a password or verification code",
+      "paragraphs": [
+        "Open the real account outside the message and change the exposed password promptly. If that password was reused, change it on every other account that used it, starting with email, banking, password management, and mobile service. Use a different, unique password for each account.",
+        "Review recent sign-ins, signed-in devices, recovery email addresses, phone numbers, forwarding rules, and connected apps where the service provides those controls. Sign out sessions you do not recognize. Turn on the strongest multifactor option you can reliably recover. A verification code entered into a fake page may have approved a sign-in, so do not assume that changing only the password ends the review.",
+        "If you cannot sign in, use the provider's official account-recovery page. Search results and follow-up messages can contain more impersonation attempts, so start from the provider's known site or support app rather than an advertised recovery service."
+      ],
+      "steps": [
+        "Go to the account through a known route and change the exposed password.",
+        "Replace every reused copy with a different password.",
+        "Review sessions, recovery details, forwarding rules, and connected apps.",
+        "Enable multifactor authentication and store its recovery method safely."
+      ]
+    },
+    {
+      "heading": "If you entered bank, card, or identity information",
+      "paragraphs": [
+        "Contact the bank or card issuer immediately through the number on the card, its official app, or a statement you already trust. Tell it exactly what information was entered and whether a payment, transfer, or card verification occurred. Ask what it recommends for blocking the card, securing online banking, disputing a transaction, and monitoring the account.",
+        "For government identifiers or other identity information, use the official identity-theft service for your country. In the United States, the Federal Trade Commission directs people to IdentityTheft.gov for a recovery plan based on the information exposed. In Australia, the Australian Cyber Security Centre advises contacting financial institutions and any services that could use the revealed information. Reporting routes and available protections differ by country.",
+        "Do not pay a second person who promises to recover lost funds. Contact the bank first. Save the original message, transaction details, and bank case number if the bank or national reporting service asks for evidence."
+      ]
+    },
+    {
+      "heading": "If you downloaded a file or installed software",
+      "paragraphs": [
+        "Stop using the affected device for sensitive sign-ins until you have checked it. The FTC advises updating the device's security software, running a scan, and removing anything the scan identifies. The NCSC similarly advises a full antivirus scan after opening a suspicious link or following instructions to install software.",
+        "Use the security tools built into the device or software from a source you already trust. Do not install a cleanup tool advertised by the suspicious page or a caller. If the scan reports a threat, security controls are disabled, the browser keeps redirecting, or unfamiliar software remains, contact the device manufacturer or a trusted technical-support provider.",
+        "After the device is checked, change passwords for accounts used on it during the suspected infection and enable multifactor authentication. The FTC specifically recommends stopping sensitive logins, scanning, then changing passwords and enabling two-factor authentication when malware may be present."
+      ],
+      "steps": [
+        "Stop banking, shopping, and other sensitive sign-ins on the affected device.",
+        "Update the device and its trusted security software.",
+        "Run a full scan and follow the tool's removal instructions.",
+        "Get trusted technical help if symptoms remain or security tools do not work.",
+        "After cleanup, change exposed passwords and enable multifactor authentication."
+      ]
+    },
+    {
+      "heading": "Report it through the right route",
+      "paragraphs": [
+        "If the link arrived on a work or school device, report it to the organisation's IT or security team promptly, even if nothing obvious happened. Their logs and controls may show activity that the device does not display, and an early report can help protect other people who received the same message.",
+        "For personal messages, use the email, messaging, or social platform's phishing or junk control. National reporting routes are location-specific: the FTC accepts U.S. reports at ReportFraud.ftc.gov, the NCSC lists United Kingdom reporting routes, and the Australian Cyber Security Centre directs Australian incidents to ReportCyber and scams to Scamwatch.",
+        "Finish by checking the real account named in the message and monitoring it for unfamiliar sign-ins, password-reset notices, purchases, or changed recovery details. The goal is not to prove that nothing happened. It is to contain the specific exposure, restore control through trusted routes, and notice any follow-on activity quickly."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How To Recognize and Avoid Phishing Scams",
+      "publisher": "United States Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+      "accessed": "2026-10-06",
+      "primary": true
+    },
+    {
+      "title": "Malware: How To Protect Against, Detect, and Remove It",
+      "publisher": "United States Federal Trade Commission",
+      "url": "https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it",
+      "accessed": "2026-10-06",
+      "primary": true
+    },
+    {
+      "title": "Phishing",
+      "publisher": "United Kingdom National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/section/respond-recover/phishing",
+      "accessed": "2026-10-06",
+      "primary": true
+    },
+    {
+      "title": "Phishing",
+      "publisher": "Australian Cyber Security Centre",
+      "url": "https://www.cyber.gov.au/threats/types-threats/phishing",
+      "accessed": "2026-10-06",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 95,
+    "reviewedBy": "autonomous editorial review",
+    "notes": "Four current government sources support an exposure-based response. U.S., UK, and Australian reporting routes are labeled, and a click without data entry is distinguished from credentials, payments, downloads, and installations."
+  }
+}
