@@ -7,8 +7,8 @@
   "pillar": "safer-defaults",
   "tags": ["public Wi-Fi", "online banking", "HTTPS", "mobile hotspot", "VPN"],
   "published": "2026-09-18",
-  "updated": "2026-09-18",
-  "reviewDue": "2027-01-16",
+  "updated": "2026-10-09",
+  "reviewDue": "2027-02-06",
   "readingMinutes": 6,
   "featured": false,
   "takeaway": [
@@ -22,7 +22,7 @@
       "heading": "Usually encrypted does not mean worth the extra risk",
       "paragraphs": [
         "The simple answer is: public Wi-Fi is not automatically unsafe, but it is not the first choice for banking. The U.S. Federal Trade Commission says most websites now encrypt connections, so using public Wi-Fi is usually safe. HTTPS protects data travelling between your device and the site from ordinary network snooping.",
-        "Banking is still a poor place to test the edge of 'usually.' You may join a look-alike hotspot, follow a fake captive-portal prompt, ignore a certificate warning, or land on an encrypted phishing site. Australian and U.S. government guidance recommends switching to cellular data or waiting for a trusted connection for financial transactions. When the safer route costs one tap, use it."
+        "Banking is still a poor place to test the edge of 'usually.' You may join a look-alike hotspot, follow a fake captive-portal prompt, ignore a certificate warning, or land on an encrypted phishing site. The Australian Cyber Security Centre's October 2026 handbook recommends avoiding banking on public networks and using a personal hotspot where possible. U.S. government guidance also recommends a trusted connection for sensitive tasks. When the safer route costs one tap, use it."
       ],
       "callout": "This is a risk-based default, not a claim that every public hotspot can read every banking session. Modern HTTPS protects a great deal; choosing cellular data removes a network you do not control from a high-stakes task."
     },
@@ -74,14 +74,14 @@
       "title": "Are Public Wi-Fi Networks Safe? What You Need To Know",
       "publisher": "Federal Trade Commission",
       "url": "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
-      "accessed": "2026-09-18",
+      "accessed": "2026-10-09",
       "primary": true
     },
     {
-      "title": "Connecting to public Wi-Fi and hotspots",
+      "title": "Personal cyber security handbook: Secure your online activity",
       "publisher": "Australian Cyber Security Centre",
-      "url": "https://www.cyber.gov.au/protect-yourself/staying-secure-online/connecting-to-public-wi-fi",
-      "accessed": "2026-09-18",
+      "url": "https://www.cyber.gov.au/publication/personal-cyber-security-handbook/secure-your-online-activity",
+      "accessed": "2026-10-09",
       "primary": true
     },
     {
