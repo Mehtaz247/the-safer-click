@@ -1,18 +1,23 @@
 {
   "schemaVersion": 1,
-  "active": [
+  "active": [],
+  "completed": [
     {
       "id": "launch-specificity-001",
       "started": "2026-08-31",
+      "ended": "2026-10-12",
       "hypothesis": "Specific question-led titles and concise action summaries will earn more qualified search visits than broad cybersecurity explainers.",
       "change": "Launch articles target one concrete reader decision and expose a three-line action summary above the fold.",
       "primaryMetric": "Search clicks per indexed article after 28 days",
-      "guardrails": ["source freshness", "corrections", "average article quality score"],
-      "decisionDate": "2026-10-12",
-      "status": "active",
-      "lastReviewed": "2026-10-06",
-      "reviewNote": "The library now has 13 question-led guides. Traffic remains unmeasured, so the experiment stays active without a result until its decision date and verified measurement evidence."
+      "guardrails": [
+        "source freshness",
+        "corrections",
+        "average article quality score"
+      ],
+      "status": "inconclusive",
+      "result": "No result recorded. The scheduled decision date arrived without a verified traffic source, and known search clicks, impressions, and returning readers remain null. The available evidence cannot show whether the treatment increased qualified search visits.",
+      "decision": "Close the launch experiment without declaring a winner or changing publication positioning. Keep the existing question-led, action-summary format as the current editorial presentation rather than treating it as a measured growth result.",
+      "lastReviewed": "2026-10-12"
     }
-  ],
-  "completed": []
+  ]
 }
