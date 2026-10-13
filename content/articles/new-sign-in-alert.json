@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "new-sign-in-alert",
+  "title": "That New Sign-In Alert: Check the Account Without Its Link",
+  "dek": "A security alert deserves attention, not a rushed click. Open the account independently, inspect the activity, and respond to what you find.",
+  "description": "Check an unfamiliar sign-in alert through official Google, Microsoft, or Apple account settings, then secure the account if the activity was not yours.",
+  "pillar": "account-safety",
+  "tags": ["security alerts", "account recovery", "sign-in"],
+  "published": "2026-10-13",
+  "updated": "2026-10-13",
+  "reviewDue": "2027-02-10",
+  "readingMinutes": 4,
+  "featured": false,
+  "takeaway": [
+    "Open the service through your usual app or a known official address, not the alert's link.",
+    "Compare the account, device, time, and activity with what you actually did.",
+    "If the activity was not yours, use the provider's security controls and change the password through the official account."
+  ],
+  "sections": [
+    {
+      "heading": "First, separate the message from the account",
+      "paragraphs": [
+        "Our editorial default is to treat an unexpected security message as a reason to investigate independently. You do not have to establish whether its button is genuine before opening the real service. Use your usual app, saved bookmark, or a known official account address. Do not use a phone number supplied by the message as your support route.",
+        "This guide covers personal Google, Microsoft, and Apple accounts. Work or school accounts can have different controls: contact your organization's IT team through its established channel. Menu names can also change. The linked provider instructions are the source of truth for your account."
+      ]
+    },
+    {
+      "heading": "Check what happened, not just whether it sounds alarming",
+      "paragraphs": [
+        "Confirm which account the alert concerns before changing anything. Review the available details against your recent actions. Google tells users to inspect the device type, time, and location. Microsoft notes that travel or a new app can trigger an alert; an unusual sign-in attempt is not automatically proof that an intruder successfully entered.",
+        "Our practical decision rule: mark activity as yours only when you can connect it to something you did. If you remain uncertain, continue through the provider's security review rather than dismissing the message or following instructions from someone who contacts you."
+      ]
+    },
+    {
+      "heading": "Google: review the alert and use Security Checkup",
+      "paragraphs": [
+        "Google's documented Android notification offers a way to say the activity was not you. Google says that response signs the account out on other devices and adds an identity check for attempts from unfamiliar devices. For an independent route, open myaccount.google.com and use Security Checkup to review activity and settings.",
+        "If the sign-in was not yours, Google also instructs you to change the password as soon as possible. If the notification is gone, its guidance directs you to the Google Account's Security & sign-in area and Password. If you cannot sign in, follow Google's account-recovery route linked in its help page."
+      ]
+    },
+    {
+      "heading": "Microsoft: distinguish an attempt from account access",
+      "paragraphs": [
+        "Open account.microsoft.com independently, go to Security basics, and choose Review activity. Microsoft's instructions distinguish unfamiliar entries in Unusual activity, where you can select This wasn't me, from entries in Recent activity, where you can select Secure your account.",
+        "If you think another person accessed the account, Microsoft instructs you to change the password through Security basics. If you are locked out, follow the password-reset or recovery instructions in its support page. Do not interpret every alert as a completed takeover: the same documentation describes attempts that Microsoft blocks pending verification."
+      ]
+    },
+    {
+      "heading": "Apple: review devices and recovery information",
+      "paragraphs": [
+        "Apple lists unfamiliar sign-in notifications, unrequested two-factor codes, changed account details, and a password that stops working among possible compromise signs. Its recovery guidance starts with changing the password, then reviewing personal and security information at account.apple.com and removing unrecognized devices from Devices.",
+        "Apple also recommends checking that you control associated email addresses and phone numbers, and enabling two-factor authentication if it is not already on. If you cannot reset the password or sign in, Apple directs you to iforgot.apple.com; account recovery may involve a waiting period."
+      ]
+    },
+    {
+      "heading": "Finish with a small, repeatable check",
+      "paragraphs": [
+        "Our recommendation is to record what you found without saving passwords or verification codes in the note. If the activity was yours, you have a useful explanation for the alert. If it was not, finish the provider's security process rather than stopping after a password change. No checklist can guarantee that an account is secure.",
+        "If you already entered credentials into the alert's page, read our separate guide on what to do after clicking a phishing link. That situation needs an exposure-based response, not just a check of recent sign-ins."
+      ],
+      "steps": [
+        "Open the correct account independently.",
+        "Review its available activity and device details.",
+        "Use the provider's not-me or secure-account controls when appropriate.",
+        "Change an exposed or compromised password through official settings.",
+        "Check recovery details and follow official recovery instructions if locked out."
+      ]
+    }
+  ],
+  "sources": [
+    {"title":"Protect your account if there's unfamiliar activity","publisher":"Google Account Help","url":"https://support.google.com/accounts/answer/7305876?hl=en","accessed":"2026-10-13","primary":true},
+    {"title":"What happens if there's an unusual sign-in to your account","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account","accessed":"2026-10-13","primary":true},
+    {"title":"If you think your Apple Account has been compromised","publisher":"Apple Support","url":"https://support.apple.com/en-us/102560","accessed":"2026-10-13","primary":true}
+  ],
+  "quality": {"score":93,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured reader performance. Three current first-party sources; provider-specific steps separated, blocked attempts distinguished from successful access, personal-account scope labeled."}
+}

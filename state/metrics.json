@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T09:25:00+05:30",
+  "updatedAt": "2026-10-13T09:15:00+05:30",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 13,
+    "publishedArticles": 14,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -23,6 +23,7 @@
     "The September 29 editorial cycle published the eleventh guide, a three-check response to package-delivery texts using current FTC and U.S. Postal Inspection Service guidance.",
     "The October 2 editorial cycle published the twelfth guide, a reversible iPhone and Android app-permission review based on current Apple and Google documentation, completing the launch-library milestone.",
     "The October 6 editorial cycle published the thirteenth guide, an exposure-based response for phishing clicks using current U.S., UK, and Australian government guidance.",
+    "October 13: published the fourteenth guide, an independent-route sign-in-alert review with separate Google, Microsoft and Apple instructions. Launch experiment closed inconclusive on October 12; no growth result is claimed.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
