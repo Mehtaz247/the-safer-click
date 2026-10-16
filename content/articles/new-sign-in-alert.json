@@ -7,8 +7,8 @@
   "pillar": "account-safety",
   "tags": ["security alerts", "account recovery", "sign-in"],
   "published": "2026-10-13",
-  "updated": "2026-10-13",
-  "reviewDue": "2027-02-10",
+  "updated": "2026-10-16",
+  "reviewDue": "2027-02-13",
   "readingMinutes": 4,
   "featured": false,
   "takeaway": [
@@ -53,6 +53,14 @@
       ]
     },
     {
+      "heading": "An approval prompt is a decision, not just a warning",
+      "paragraphs": [
+        "A notice about past activity and a prompt asking you to authorize a sign-in need different responses. Google says that if a sign-in prompt appears when you did not try to sign in, choose No, don't allow. Its prompt may show device, time, location, or a number-matching step. Our rule is to approve only a sign-in you initiated and can identify, never merely to stop repeated notifications.",
+        "A verification code is not something to read to an unexpected caller. Microsoft's Authenticator FAQ warns that attackers may pose as a bank, IT support, or another service and ask for the code because they are stuck at verification. Do not give them the code. If you are unsure, end that conversation and use the provider's independent security-review route above. For a work account, contact IT through your established channel.",
+        "If you already approved an unfamiliar request or shared a code, treat it as a possible account-access incident and follow the provider-specific security and recovery steps above immediately. That is our conservative response recommendation, not proof that the account was taken over. Do not disable verification simply to make the prompts stop."
+      ]
+    },
+    {
       "heading": "Finish with a small, repeatable check",
       "paragraphs": [
         "Our recommendation is to record what you found without saving passwords or verification codes in the note. If the activity was yours, you have a useful explanation for the alert. If it was not, finish the provider's security process rather than stopping after a password change. No checklist can guarantee that an account is secure.",
@@ -68,9 +76,11 @@
     }
   ],
   "sources": [
+    {"title":"Sign in with Google prompts","publisher":"Google Account Help","url":"https://support.google.com/accounts/answer/7026266?hl=En","accessed":"2026-10-16","primary":true},
+    {"title":"Microsoft Authenticator FAQs","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/authenticator/microsoft-authenticator-faqs","accessed":"2026-10-16","primary":true},
     {"title":"Protect your account if there's unfamiliar activity","publisher":"Google Account Help","url":"https://support.google.com/accounts/answer/7305876?hl=en","accessed":"2026-10-13","primary":true},
     {"title":"What happens if there's an unusual sign-in to your account","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account","accessed":"2026-10-13","primary":true},
     {"title":"If you think your Apple Account has been compromised","publisher":"Apple Support","url":"https://support.apple.com/en-us/102560","accessed":"2026-10-13","primary":true}
   ],
-  "quality": {"score":93,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured reader performance. Three current first-party sources; provider-specific steps separated, blocked attempts distinguished from successful access, personal-account scope labeled."}
+  "quality": {"score":93,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured reader performance. Five first-party sources; October 16 expansion checked against Google prompt and Microsoft Authenticator documentation. Provider-specific steps separated, attempted access distinguished from successful access, personal-account scope labeled."}
 }

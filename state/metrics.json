@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T09:15:00+05:30",
+  "updatedAt": "2026-10-16T04:12:21Z",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
@@ -24,6 +24,7 @@
     "The October 2 editorial cycle published the twelfth guide, a reversible iPhone and Android app-permission review based on current Apple and Google documentation, completing the launch-library milestone.",
     "The October 6 editorial cycle published the thirteenth guide, an exposure-based response for phishing clicks using current U.S., UK, and Australian government guidance.",
     "October 13: published the fourteenth guide, an independent-route sign-in-alert review with separate Google, Microsoft and Apple instructions. Launch experiment closed inconclusive on October 12; no growth result is claimed.",
+    "October 16: materially expanded the account-alert guide with prompt approval and code-sharing decisions; article count remains 14 because the overlapping queue item was merged, not published separately.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
