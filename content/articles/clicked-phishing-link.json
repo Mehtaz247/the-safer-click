@@ -7,8 +7,8 @@
   "pillar": "scam-defense",
   "tags": ["phishing", "clicked a link", "malware", "password recovery", "scam recovery"],
   "published": "2026-10-06",
-  "updated": "2026-10-06",
-  "reviewDue": "2027-02-03",
+  "updated": "2026-10-20",
+  "reviewDue": "2027-02-17",
   "readingMinutes": 7,
   "featured": true,
   "takeaway": [
@@ -77,6 +77,13 @@
       ]
     },
     {
+      "heading": "Choose help without following a second trap",
+      "paragraphs": [
+        "A frightening warning on the affected page is not a trustworthy support channel. The FTC warns that fake security pop-ups can lead to callers who request remote access and charge for a problem that does not exist. It advises never calling the number in a pop-up. Do not use a software advertisement as your download route either; open the vendor's known website independently.",
+        "If you cannot remove suspected malware, the FTC suggests contacting the device manufacturer, a technical-support company you know and trust, or a knowledgeable friend or family member. Our recommendation is to choose that helper through an existing relationship or independently verified route, not through the warning that frightened you. Describe what you clicked, downloaded, installed, or entered without sending passwords or verification codes."
+      ]
+    },
+    {
       "heading": "Report it through the right route",
       "paragraphs": [
         "If the link arrived on a work or school device, report it to the organisation's IT or security team promptly, even if nothing obvious happened. Their logs and controls may show activity that the device does not display, and an early report can help protect other people who received the same message.",
@@ -90,14 +97,14 @@
       "title": "How To Recognize and Avoid Phishing Scams",
       "publisher": "United States Federal Trade Commission",
       "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
-      "accessed": "2026-10-06",
+      "accessed": "2026-10-20",
       "primary": true
     },
     {
       "title": "Malware: How To Protect Against, Detect, and Remove It",
       "publisher": "United States Federal Trade Commission",
       "url": "https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it",
-      "accessed": "2026-10-06",
+      "accessed": "2026-10-20",
       "primary": true
     },
     {
