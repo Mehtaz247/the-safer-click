@@ -1,0 +1,42 @@
+{
+  "schemaVersion":1,
+  "slug":"fake-tech-support-warning",
+  "title":"A Browser Warning Says to Call Support. Do Not Call Its Number.",
+  "dek":"A frightening page can imitate a system alert. Keep the warning from choosing your helper, your software, or your next payment.",
+  "description":"What to do when a browser pop-up claims your computer is infected: avoid its phone number, choose help independently, and respond to any access already given.",
+  "pillar":"scam-defense",
+  "tags":["tech support scams","browser warnings","remote access"],
+  "published":"2026-10-23",
+  "updated":"2026-10-23",
+  "reviewDue":"2027-02-20",
+  "readingMinutes":3,
+  "featured":false,
+  "takeaway":[
+    "Do not call the number, install its suggested tool, or give the page's helper remote access.",
+    "Use independently chosen support if you suspect a real device problem.",
+    "If you already shared credentials, paid, or allowed remote access, respond to that exposure rather than just dismissing the warning."
+  ],
+  "sections":[
+    {"heading":"A loud warning is not proof of a diagnosis","paragraphs":[
+      "Microsoft documents scam pages that imitate system errors, switch to full-screen display, repeat pop-ups, or play audio to make a browser appear locked. It says Microsoft error and warning messages do not contain support phone numbers. That is a Microsoft-specific statement, not a test for every possible device alert.",
+      "The FTC warns that fake support messages can impersonate familiar companies and steer people to a phone number. A logo, urgent countdown, or convincing voice is not a reason to let an unexpected warning choose whom you trust. Our default is to stop following the page's instructions."
+    ]},
+    {"heading":"Do not turn the page into a phone conversation","paragraphs":[
+      "Do not call its number or accept a proposed remote-support session. The FTC describes callers who pretend to scan a computer, invent a problem, and charge to fix it. It also warns that support scams can appear in search results and advertisements. A new search is not, by itself, independent verification.",
+      "Our practical rule: leave the suspicious page and open a support route you already know, such as the manufacturer's official app or saved support site. Do not click a claimed cleanup button to prove the warning wrong. If you cannot leave normally, seek trusted help with closing the browser; do not accept the page's demand for payment as an exit method."
+    ],"steps":["Stop following the warning's instructions.","Record whether you called, installed anything, shared information, or paid.","Choose any needed helper independently and explain that exposure."]},
+    {"heading":"Separate a warning from access you actually gave","paragraphs":[
+      "Write down whether you only saw the page, called someone, installed software, shared a password, or paid. That short record is more useful to a genuine helper than guessing what the warning means. Our recommendation is to disclose what happened clearly, without sending passwords or verification codes.",
+      "For Windows users who gave a scammer access, Microsoft recommends removing applications the scammer requested, running a full Windows Security scan, applying security updates, and changing passwords. It says a reset may be worth considering in some situations. A reset is not our automatic first step: use the official recovery instructions and understand the effect on your files and applications before proceeding."
+    ]},
+    {"heading":"If information or money was involved","paragraphs":[
+      "The FTC advises changing a password given to a support scammer, including on other accounts where it was reused. Contact the payment provider through a known route if you paid; Microsoft specifically advises cardholders to contest scam charges with their card provider. Recovery is not guaranteed.",
+      "For U.S. readers, report the scam at ReportFraud.ftc.gov. Elsewhere, use your national reporting service. On a work or school device, our recommendation is to contact your organization's established IT channel promptly rather than attempting major recovery changes yourself."
+    ]}
+  ],
+  "sources":[
+    {"title":"Protect yourself from tech support scams","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/office/protect-yourself-from-tech-support-scams","accessed":"2026-10-23","primary":true},
+    {"title":"How To Spot, Avoid, and Report Tech Support Scams","publisher":"U.S. Federal Trade Commission","url":"https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams","accessed":"2026-10-23","primary":true}
+  ],
+  "quality":{"score":92,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured reader outcome. Two official sources, Microsoft/Windows scope and U.S. reporting labeled; no diagnosis or recovery guarantee; destructive recovery not treated as routine."}
+}
