@@ -1,0 +1,38 @@
+{
+  "schemaVersion":1,
+  "slug":"browser-notification-spam",
+  "title":"A Website Keeps Sending Alerts: Review Browser Notifications",
+  "dek":"Stop unwanted website alerts in browser settings, without following the alert's own instructions or switching off every useful notification.",
+  "description":"Review and block unwanted website notifications in desktop Chrome or Microsoft Edge, with reversible settings and a clear distinction from pop-up windows.",
+  "pillar":"safer-defaults",
+  "tags":["browser notifications","site permissions","Chrome","Edge"],
+  "published":"2026-10-27",
+  "updated":"2026-10-27",
+  "reviewDue":"2027-02-24",
+  "readingMinutes":3,
+  "featured":false,
+  "takeaway":["Open browser settings independently rather than clicking the unwanted alert.","Block notifications for the specific website you no longer want to hear from.","A notification permission and a pop-up window are different; use the matching control."],
+  "sections":[
+    {"heading":"First, identify the kind of interruption","paragraphs":[
+      "Microsoft distinguishes website notifications from pop-ups that open inside a browser window, another window, or a tab. It also says Edge website notifications can appear even when Edge is closed. An alert outside the page therefore does not, by itself, establish that malware is installed.",
+      "Our recommendation is to note the website or browser named on the alert, then open the browser's own settings. Do not use a warning's cleanup button or support number to investigate it. This guide covers desktop Chrome and Edge; mobile browsers, operating-system alerts, extensions, and managed work devices may use different controls."
+    ]},
+    {"heading":"Chrome on a computer: block the specific site","paragraphs":[
+      "Google's documented route is More, Settings, Privacy and security, Site Settings, then Notifications. Under Not allowed to send notifications, choose Add, enter the site's web address, and add it to the blocked list. Check the address carefully so that you block the intended site, not a similarly named service.",
+      "Chrome also offers quieter permission prompts. Google explains that these replace an interrupting permission pop-up with a bell by the address bar; they are not the same decision as blocking a particular site's notifications. Our default is to block the unwanted source first, then decide separately whether future permission requests should be quieter."
+    ]},
+    {"heading":"Edge on a computer: review site permissions","paragraphs":[
+      "Microsoft's current route is Settings and more, Settings, Privacy, search, and services, Site permissions, then All sites. Select the website, find Notifications, and choose Block. This settings route avoids visiting the unwanted site just to change its permission.",
+      "Microsoft also documents a site-information menu beside the address bar: Permissions for this site, Notifications, then Block. That route is useful on a site you deliberately trust and already have open. The setting is reversible: Microsoft says choosing Allow in that menu resubscribes you. Do not re-enable an unwanted sender merely because its next message asks you to."
+    ]},
+    {"heading":"Check the result before making broader changes","paragraphs":[
+      "Our suggested test is small: confirm that the intended address is blocked, then observe whether that sender's alerts stop. If interruptions continue, check whether they name another site, another browser, or an installed app. Do not treat a different source as proof that your first settings change failed.",
+      "If the interruption is a new tab or window instead, use the browser's separate pop-up controls. If you installed software, gave remote access, entered credentials, or paid because of a warning, blocking notifications is not a complete response. Use the exposure-based recovery guidance in our phishing-click and tech-support-warning guides, or contact your established IT team for a work device."
+    ],"steps":["Identify the named sender without following its instructions.","Block that site's notification permission in the correct browser.","Observe the result and investigate any remaining interruption by its actual source."]}
+  ],
+  "sources":[
+    {"title":"Use notifications to get alerts — Computer","publisher":"Google Chrome Help","url":"https://support.google.com/chrome/answer/3220216?hl=en","accessed":"2026-10-27","primary":true},
+    {"title":"Manage website notifications in Microsoft Edge","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/edge/manage-website-notifications-in-microsoft-edge","accessed":"2026-10-27","primary":true}
+  ],
+  "quality":{"score":92,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured performance. Desktop-only provider instructions, reversible controls, distinction between notifications and pop-ups, and escalation limits explicit. Two current official sources."}
+}
