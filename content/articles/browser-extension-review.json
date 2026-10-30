@@ -1,0 +1,38 @@
+{
+  "schemaVersion":1,
+  "slug":"browser-extension-review",
+  "title":"Which Browser Extensions Should You Remove?",
+  "dek":"Review what each extension does, narrow access where possible, and test one change at a time before discarding a tool you rely on.",
+  "description":"A practical desktop Chrome and Edge extension review: identify useful tools, inspect permissions, turn off uncertain extras, and distinguish disabling from removal.",
+  "pillar":"safer-defaults",
+  "tags":["extensions","browser permissions","Chrome","Edge"],
+  "published":"2026-10-30",
+  "updated":"2026-10-30",
+  "reviewDue":"2027-02-27",
+  "readingMinutes":3,
+  "featured":false,
+  "takeaway":["Keep extensions only when you can explain the job they do and why you trust them.","Try turning off an uncertain, nonessential extension before removing it.","Review site access as well as whether an extension is enabled."],
+  "sections":[
+    {"heading":"Start with purpose, not the number installed","paragraphs":[
+      "Our review rule is simple: name the task each extension performs and decide whether you still need it. Do not remove a password manager, accessibility tool, or required work extension merely to reach an arbitrary count. This is a small maintenance exercise, not a claim that fewer extensions guarantees security.",
+      "This guide covers desktop Chrome and Microsoft Edge. On a work or school browser, ask your established IT team about required or managed tools before making changes. Menu labels and available permissions can vary; the linked provider instructions are the reference for your version."
+    ]},
+    {"heading":"Chrome: inspect the list and site access","paragraphs":[
+      "Google's route is More, Extensions, Manage extensions. The controls let you turn an extension on or off. Under Details, Chrome also provides site-access choices for extensions that read and change website data: on selection, on specific sites, or on all sites.",
+      "Choose access that fits the actual job, rather than granting all-site access by habit. Google cautions that these site-permission changes apply only to matching host permissions; extensions affecting lower-level network access through VPN or proxy settings are not affected. Narrowing this setting is therefore not a universal permission reset."
+    ]},
+    {"heading":"Edge: distinguish turning off from removing","paragraphs":[
+      "Microsoft directs users to Extensions beside the address bar, then Manage extensions, where a toggle turns an extension off. If Extensions is not visible, use Settings and more, then Extensions. For removal, right-click the extension's icon and choose Remove from Microsoft Edge, then Remove.",
+      "Our default for an unfamiliar but nonessential tool is to turn it off first and test the task you normally perform. If a needed feature stops working, you have a specific change to reconsider. If you deliberately remove a tool, note its name first; do not install a similarly named replacement without checking its identity and permissions."
+    ]},
+    {"heading":"Make a short, reversible review","paragraphs":[
+      "For each tool, record its name, purpose, and the action you chose. Change one thing at a time. This is our practical workflow recommendation, not evidence that we tested your particular extensions. A successful browser session afterward shows that your chosen task still works, not that every installed component is trustworthy.",
+      "Google says to approve only extensions you trust; Microsoft likewise instructs users to review requested permissions before adding one. If an extension reappears, is marked corrupted, or settings cannot be changed, stop treating this as ordinary tidying and consult the provider's troubleshooting guidance or trusted IT support. Do not disable organizational controls to force a removal."
+    ],"steps":["List the extensions and identify the job each performs.","Inspect available permissions and narrow unnecessary site access where appropriate.","Turn off one uncertain, nonessential tool and test your normal task.","Keep, restore, or deliberately remove it based on what you learned."]}
+  ],
+  "sources":[
+    {"title":"Install and manage extensions","publisher":"Google Chrome Web Store Help","url":"https://support.google.com/chrome_webstore/answer/2664769?hl=en","accessed":"2026-10-30","primary":true},
+    {"title":"Add, turn off, or remove extensions in Microsoft Edge","publisher":"Microsoft Support","url":"https://support.microsoft.com/en-us/edge/add-turn-off-or-remove-extensions-in-microsoft-edge","accessed":"2026-10-30","primary":true}
+  ],
+  "quality":{"score":92,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured performance. Two official sources, desktop scope, site-access limitation and managed-browser boundary explicit; disabling distinguished from removal; no product rankings or invented testing."}
+}

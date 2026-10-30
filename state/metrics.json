@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T04:12:21Z",
+  "updatedAt": "2026-10-30T07:40:56Z",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 16,
+    "publishedArticles": 17,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -28,6 +28,7 @@
     "October 20: source-access diagnostic found a full FTC phishing page in an ordinary browser despite direct Akamai 403. Expanded phishing recovery with trusted-help selection; article count remains 14. No inference about audience growth.",
     "October 23: published a distinct tech-support-warning decision guide, using current FTC and Microsoft sources; 15 articles. Reader metrics remain unavailable.",
     "October 27: added a desktop Chrome/Edge notification-permission guide, bringing the library to 16. No traffic or search performance inference is available.",
+    "October 30: published desktop browser-extension review from current Google and Microsoft documentation; 17 guides. Traffic and search outcomes remain unmeasured.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
