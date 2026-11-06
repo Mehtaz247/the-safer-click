@@ -4,7 +4,7 @@
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 17,
+    "publishedArticles": 18,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -29,6 +29,7 @@
     "October 23: published a distinct tech-support-warning decision guide, using current FTC and Microsoft sources; 15 articles. Reader metrics remain unavailable.",
     "October 27: added a desktop Chrome/Edge notification-permission guide, bringing the library to 16. No traffic or search performance inference is available.",
     "October 30: published desktop browser-extension review from current Google and Microsoft documentation; 17 guides. Traffic and search outcomes remain unmeasured.",
+    "November 6: added a Google/Apple connected-app review guide, bringing the library to 18. No measured audience-growth claim.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]

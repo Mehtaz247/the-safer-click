@@ -1,0 +1,40 @@
+{
+  "schemaVersion":1,
+  "slug":"connected-app-access",
+  "title":"Review Apps Connected to Your Google or Apple Account",
+  "dek":"A sign-in shortcut, permission to read account data, and an account at another service are different things. Review the connection before removing it.",
+  "description":"Review Google linked apps and Sign in with Apple without confusing access revocation, sign-in changes, and deletion of an account or previously shared data.",
+  "pillar":"account-safety",
+  "tags":["connected apps","account permissions","Google","Apple"],
+  "published":"2026-11-06",
+  "updated":"2026-11-06",
+  "reviewDue":"2027-03-06",
+  "readingMinutes":3,
+  "featured":false,
+  "takeaway":["Open your account's connection settings independently and inspect what each app can do.","Distinguish sign-in links from access to account data before revoking either.","Removing a connection is not a request to erase everything already held by the other service."],
+  "sections":[
+    {"heading":"Start with the connection's job","paragraphs":[
+      "Our review rule is to ask three questions: do you still use this app, what does this connection enable, and how will you sign in or work without it? A connection you recognize can still be unnecessary; an unfamiliar label deserves investigation rather than an automatic click.",
+      "This guide covers personal Google Account links and Sign in with Apple, not every permission on your phone. Work and school systems may be managed by an administrator. Use your established IT channel for those accounts. These are provider-documentation-based instructions, not a claim that we tested your accounts or integrations."
+    ]},
+    {"heading":"Google: inspect the link type first","paragraphs":[
+      "From your Google Account, open the linked apps page referenced in Google's help article. Google separates Sign in with Google, linked accounts where Google has access to another service, and apps with access to your Google Account. One app can have more than one link type.",
+      "For an app's access to Google data, select Access to your Google Account, choose the app, and open See details. Review the access before choosing Remove access and confirming. Google warns that removing access may make some app features unavailable.",
+      "For Sign in with Google, select that link type, the app, then See details and Stop using Sign in with Google. Google says this stops automatic sign-in but does not delete your data at the app. Removing a link in the opposite direction, where Google accesses another service, also removes features that need that link."
+    ]},
+    {"heading":"Apple: check the developer as well as the app","paragraphs":[
+      "On an iPhone or iPad, open Settings, your name, then Sign in with Apple. On the web, sign in at account.apple.com, open Sign-In & Security, then Sign in with Apple. Select an app to inspect the information originally shared.",
+      "Apple's iPhone instructions let you select the app or developer, choose Delete, and confirm that you want to stop using Sign in with Apple. Apple says this signs you out on the device; using Sign in with Apple again returns you to the same account. Some apps offer another password-based sign-in method.",
+      "Check the scope before confirming. Apple notes that some developers use one account across multiple apps: stopping Sign in with Apple for one can apply across that developer's apps. Managed Apple Account users should contact their administrator."
+    ]},
+    {"heading":"Plan the result before confirming","paragraphs":[
+      "Our recommendation is to save needed work and establish another supported sign-in route before removing a connection you still depend on. If your goal is deleting the third-party account or its stored information, use that service's own account and privacy controls rather than assuming the connection switch does it.",
+      "Record the app, connection type, and action taken, without saving passwords or tokens. If you suspect unauthorized access, treat this review as one part of account recovery, not proof that everything is secure. Use the provider's official security controls and your known support route."
+    ],"steps":["Identify the app and connection type.","Read the displayed access and consequences.","Prepare any sign-in or workflow you still need.","Remove only the connection you intend, then check the result."]}
+  ],
+  "sources":[
+    {"title":"Manage links between your Google Account & apps from other developers","publisher":"Google Account Help","url":"https://support.google.com/accounts/answer/13533235?hl=en","accessed":"2026-11-06","primary":true},
+    {"title":"Manage your apps with Sign in with Apple","publisher":"Apple Support","url":"https://support.apple.com/en-us/102571","accessed":"2026-11-06","primary":true}
+  ],
+  "quality":{"score":93,"reviewedBy":"autonomous editorial cycle","notes":"Editorial assessment, not measured reader outcome. Two current provider sources; access direction, sign-in consequences, multi-app developer scope and deletion limits separated. Personal-account scope explicit."}
+}
