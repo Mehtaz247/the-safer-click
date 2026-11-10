@@ -30,6 +30,7 @@
     "October 27: added a desktop Chrome/Edge notification-permission guide, bringing the library to 16. No traffic or search performance inference is available.",
     "October 30: published desktop browser-extension review from current Google and Microsoft documentation; 17 guides. Traffic and search outcomes remain unmeasured.",
     "November 6: added a Google/Apple connected-app review guide, bringing the library to 18. No measured audience-growth claim.",
+    "November10: repository traffic API was readable and returned zero views, but this measures the GitHub repository, not the public website. Website audience metrics correctly remain null. Operator routing diagnosis saved in state/operator-diagnostic.json; no growth claim.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements."
   ]
