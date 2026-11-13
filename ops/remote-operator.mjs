@@ -10,6 +10,8 @@ import {
   extractOutputText,
   isAllowedMutationPath,
   isPrimarySourceUrl,
+  selectQueueItem,
+  researchReadiness,
   reconcileReservation,
   summarizeUsage,
   validateDecision
@@ -204,6 +206,15 @@ async function main() {
     console.log(`Remote operator ready but gated: ${budget.reason}`);
     return;
   }
+  const queue = await readJson("state/queue.json");
+  const viable = selectQueueItem(queue.items);
+  const research = viable?.kind === "operational" ? [] : await discoverResearch(viable);
+  const readiness = researchReadiness(viable, research);
+  if (!readiness.allowed) {
+    await record({at:isoNow, type:"remote-operator", status:"held-before-api", queueItem:viable?.id ?? null, reason:readiness.reason, researchSources:research.map((source) => source.url), reservedCostUsd:0});
+    console.log(`Remote operator held before API: ${readiness.reason}`);
+    return;
+  }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is unavailable to the remote operator.");
 
   operator.api = budget.api;
@@ -211,14 +222,10 @@ async function main() {
   operator.lastRemoteAttemptAt = isoNow;
   await writeJson("state/operator.json", operator);
   await record({ at: isoNow, type: "remote-operator", status: "reserved", reservedCostUsd: budget.reservation });
-  const queue = await readJson("state/queue.json");
-  const viable = queue.items
-    .filter((item) => !["published", "retired", "blocked"].includes(item.status))
-    .sort((a, b) => b.priority - a.priority)[0];
   const context = {
     operator,
     files: await collectFiles(),
-    research: await discoverResearch(viable)
+    research
   };
   const { output, result } = await requestDecision(context);
   const usage = summarizeUsage(operator.api.model, result.usage);

@@ -135,8 +135,10 @@ export function containsPossibleSecret(value) {
 
 export function isPrimarySourceUrl(candidate) {
   try {
-    const hostname = new URL(candidate).hostname.toLowerCase();
-    return hostname.endsWith(".gov") || hostname.endsWith(".gov.uk") || hostname.endsWith(".europa.eu") || hostname.endsWith(".int") || [
+    const url = new URL(candidate);
+    if (url.protocol !== "https:" || url.username || url.password) return false;
+    const hostname = url.hostname.toLowerCase();
+    return hostname.endsWith(".gov") || hostname.endsWith(".gov.uk") || hostname.endsWith(".gov.au") || hostname.endsWith(".europa.eu") || hostname.endsWith(".int") || [
       "support.apple.com",
       "support.google.com",
       "support.microsoft.com",
@@ -145,4 +147,16 @@ export function isPrimarySourceUrl(candidate) {
   } catch {
     return false;
   }
+}
+
+export function selectQueueItem(items) {
+  return items.filter((item) => !["published", "retired", "blocked", "reviewed", "completed"].includes(item.status))
+    .sort((a, b) => b.priority - a.priority)[0] ?? null;
+}
+
+export function researchReadiness(item, sources) {
+  if (!item) return {allowed:false, reason:"no-queue-item"};
+  if (item.kind === "operational") return {allowed:false, reason:"operational-task"};
+  const urls = new Set(sources.filter((source) => isPrimarySourceUrl(source.url)).map((source) => source.url));
+  return urls.size >= 2 ? {allowed:true, reason:"research-ready"} : {allowed:false, reason:"insufficient-primary-sources"};
 }

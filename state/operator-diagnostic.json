@@ -1,6 +1,7 @@
 {
   "checkedAt":"2026-11-10T12:52:42Z",
-  "status":"diagnosed-not-repaired",
+  "status":"partially-repaired",
+  "repairEvidence":{"at":"2026-11-13T09:49:36Z","backupTag":"safety-backup/20261113T083041Z","changes":["Reviewed/completed queue items excluded","Explicit operational tasks held before research/API reservation","Fewer than two distinct approved sources held before API reservation","HTTPS Australian .gov.au sources accepted without suffix impersonation"],"verification":"13 tests passed; local remote:operate returned operational-task with reservedCostUsd0 and no API key required. Context packing, source diagnostics and website measurement still outstanding."},
   "findings":[
     {"cause":"Operational task is routed through article research","evidence":"Current queue selection in ops/remote-operator.mjs selects measurement-and-operator-review (priority99) with zero sourceSeeds; discoverResearch therefore searches for official government guidance to an internal operational question. Recent remote runs report empty research."},
     {"cause":"Completed review is still eligible","evidence":"The selector excludes only published, retired and blocked. source-access-recheck with status reviewed remains eligible and outranks all prior article topics (priority95)."},

@@ -5,6 +5,9 @@ import {
   evaluateBudget,
   extractOutputText,
   isAllowedMutationPath,
+  isPrimarySourceUrl,
+  selectQueueItem,
+  researchReadiness,
   reconcileReservation,
   summarizeUsage,
   validateDecision
@@ -13,6 +16,28 @@ import { applyDecision } from "../ops/remote-operator.mjs";
 import { access, rm } from "node:fs/promises";
 import path from "node:path";
 import { root } from "../engine/lib.mjs";
+
+test("queue routing excludes completed reviews and identifies operational work", () => {
+  const items = [{id:"done",status:"reviewed",priority:100}, {id:"ops",status:"idea",kind:"operational",priority:99}, {id:"guide",status:"idea",priority:80}];
+  assert.equal(selectQueueItem(items).id, "ops");
+  assert.deepEqual(researchReadiness(selectQueueItem(items), []), {allowed:false, reason:"operational-task"});
+  assert.equal(selectQueueItem([{status:"published"}, {status:"retired"}, {status:"blocked"}, {status:"completed"}]), null);
+});
+
+test("research gate prevents API work without two distinct approved sources", () => {
+  const item = {kind:"editorial"};
+  const url = "https://support.google.com/accounts/answer/13533235";
+  assert.equal(researchReadiness(null, []).allowed, false);
+  assert.equal(researchReadiness(item, [{url}]).allowed, false);
+  assert.equal(researchReadiness(item, [{url}, {url}]).allowed, false);
+  assert.equal(researchReadiness(item, [{url}, {url:"https://support.apple.com/en-us/102571"}]).allowed, true);
+});
+
+test("Australian government sources are recognized without accepting suffix impersonation", () => {
+  assert.equal(isPrimarySourceUrl("https://www.cyber.gov.au/threats/types-threats/phishing"), true);
+  assert.equal(isPrimarySourceUrl("https://cyber.gov.au.attacker.example/"), false);
+  assert.equal(isPrimarySourceUrl("http://www.cyber.gov.au/"), false);
+});
 
 test("remote operator protects its scheduler, kernel, credentials, and spending controls", () => {
   for (const target of [
