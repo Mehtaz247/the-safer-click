@@ -1,21 +1,73 @@
 {
-  "checkedAt":"2026-11-10T12:52:42Z",
-  "status":"partially-repaired",
-  "repairEvidence":{"at":"2026-11-13T09:49:36Z","backupTag":"safety-backup/20261113T083041Z","changes":["Reviewed/completed queue items excluded","Explicit operational tasks held before research/API reservation","Fewer than two distinct approved sources held before API reservation","HTTPS Australian .gov.au sources accepted without suffix impersonation"],"verification":"13 tests passed; local remote:operate returned operational-task with reservedCostUsd0 and no API key required. Context packing, source diagnostics and website measurement still outstanding."},
-  "findings":[
-    {"cause":"Operational task is routed through article research","evidence":"Current queue selection in ops/remote-operator.mjs selects measurement-and-operator-review (priority99) with zero sourceSeeds; discoverResearch therefore searches for official government guidance to an internal operational question. Recent remote runs report empty research."},
-    {"cause":"Completed review is still eligible","evidence":"The selector excludes only published, retired and blocked. source-access-recheck with status reviewed remains eligible and outranks all prior article topics (priority95)."},
-    {"cause":"Some official domains are rejected","evidence":"isPrimarySourceUrl('https://www.cyber.gov.au/threats/types-threats/phishing') returned false; current allowlist recognizes .gov and .gov.uk but not Australian .gov.au."},
-    {"cause":"Relevant implementation is hidden from remote model writes","evidence":"ops/remote-operator.mjs and engine/remote-operator-lib.mjs are protected mutation targets. This is an intentional safety boundary; remote model cannot repair its own selector directly."},
-    {"cause":"Context may omit article schema and examples","evidence":"collectFiles stops at first file exceeding cumulative32000 characters. State and engine files precede articles; prior remote run explicitly reported missing schema. This is a separate candidate cause, not yet tested with a measured packet."}
+  "checkedAt": "2026-11-10T12:52:42Z",
+  "status": "partially-repaired",
+  "repairEvidence": {
+    "at": "2026-11-13T09:49:36Z",
+    "backupTag": "safety-backup/20261113T083041Z",
+    "changes": [
+      "Reviewed/completed queue items excluded",
+      "Explicit operational tasks held before research/API reservation",
+      "Fewer than two distinct approved sources held before API reservation",
+      "HTTPS Australian .gov.au sources accepted without suffix impersonation"
+    ],
+    "verification": "13 tests passed; local remote:operate returned operational-task with reservedCostUsd0 and no API key required. Context packing, source diagnostics and website measurement still outstanding."
+  },
+  "findings": [
+    {
+      "cause": "Operational task is routed through article research",
+      "evidence": "Current queue selection in ops/remote-operator.mjs selects measurement-and-operator-review (priority99) with zero sourceSeeds; discoverResearch therefore searches for official government guidance to an internal operational question. Recent remote runs report empty research."
+    },
+    {
+      "cause": "Completed review is still eligible",
+      "evidence": "The selector excludes only published, retired and blocked. source-access-recheck with status reviewed remains eligible and outranks all prior article topics (priority95)."
+    },
+    {
+      "cause": "Some official domains are rejected",
+      "evidence": "isPrimarySourceUrl('https://www.cyber.gov.au/threats/types-threats/phishing') returned false; current allowlist recognizes .gov and .gov.uk but not Australian .gov.au."
+    },
+    {
+      "cause": "Relevant implementation is hidden from remote model writes",
+      "evidence": "ops/remote-operator.mjs and engine/remote-operator-lib.mjs are protected mutation targets. This is an intentional safety boundary; remote model cannot repair its own selector directly."
+    },
+    {
+      "cause": "Context may omit article schema and examples",
+      "evidence": "collectFiles stops at first file exceeding cumulative32000 characters. State and engine files precede articles; prior remote run explicitly reported missing schema. This is a separate candidate cause, not yet tested with a measured packet."
+    }
   ],
-  "liveChecks":{"homeHttp":200,"googleSeedHttp":200,"overdueArticles":0,"recentActions":"last three completed success"},
-  "measurement":{"websiteTraffic":"unavailable","repositoryTrafficApi":{"count":0,"uniques":0,"note":"Repository traffic only; not website visitors and not used as audience performance."}},
-  "nextImplementation":[
+  "liveChecks": {
+    "homeHttp": 200,
+    "googleSeedHttp": 200,
+    "overdueArticles": 0,
+    "recentActions": "last three completed success"
+  },
+  "measurement": {
+    "websiteTraffic": "unavailable",
+    "repositoryTrafficApi": {
+      "count": 0,
+      "uniques": 0,
+      "note": "Repository traffic only; not website visitors and not used as audience performance."
+    }
+  },
+  "nextImplementation": [
     "Preserve deployed HEAD with safety-backup tag before touching protected orchestration.",
     "Add deterministic regression tests for reviewed-task exclusion and operational-task routing; avoid paid API calls when no actionable evidence exists.",
     "Expose bounded retrieval diagnostics (status, content type, filtered domain) without credentials or full sensitive logs.",
     "Measure collected context and guarantee a compact article schema/example before increasing the context budget.",
     "Verify a seeded research-only path without API spending, then complete normal tests and release checks."
-  ]
+  ],
+  "contextRepair": {
+    "at": "2026-11-17T10:01:54.493Z",
+    "measuredChars": 31103,
+    "limitChars": 32000,
+    "included": [
+      "EDITORIAL_POLICY.md",
+      "engine/validate.mjs",
+      "content/articles/app-permission-review.json"
+    ],
+    "test": "14 tests passed; regression failed on missing validator before repair",
+    "remaining": [
+      "Retrieval diagnostics",
+      "Website audience measurement"
+    ]
+  }
 }

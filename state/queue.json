@@ -1,24 +1,284 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T07:40:56Z",
+  "updatedAt": "2026-11-17T10:01:54.493Z",
   "items": [
-    {"id":"qr-code-scam-check","pillar":"scam-defense","workingTitle":"Before You Scan: A QR Code Scam Checklist","readerQuestion":"How can I tell whether a QR code is safe?","priority":90,"status":"published","publishedSlug":"qr-code-scam-checklist","publishedAt":"2026-09-01","reason":"Published from four current U.S. government sources with globally framed prevention and labeled U.S. reporting routes."},
-    {"id":"recovery-codes","pillar":"account-safety","workingTitle":"Where to Keep Account Recovery Codes","readerQuestion":"Where should I store backup codes safely?","priority":86,"status":"published","publishedSlug":"where-to-keep-recovery-codes","publishedAt":"2026-09-04","reason":"Published from current Google, Microsoft, and Apple account-recovery guidance with provider-specific differences clearly separated.","sourceSeeds":["https://support.google.com/accounts/answer/1187538?co=GENIE.Platform%3DDesktop&hl=en","https://support.microsoft.com/en-US/accounts-billing/manage/how-to-get-a-microsoft-account-recovery-code","https://support.apple.com/en-us/109345"]},
-    {"id":"toll-text-scam","pillar":"scam-defense","workingTitle":"That Unpaid Toll Text: Three Checks Before You Pay","readerQuestion":"Is this unpaid toll text legitimate?","priority":84,"status":"published","publishedSlug":"unpaid-toll-text-checks","publishedAt":"2026-09-08","reason":"Published from current FBI, FTC, FCC, and IdentityTheft.gov guidance with U.S.-specific reporting routes clearly labeled.","sourceSeeds":["https://www.ic3.gov/PSA/2024/PSA240412/","https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam","https://consumercomplaints.fcc.gov/hc/en-us/articles/115002234203-Unwanted-Calls-Texts-Phone","https://www.identitytheft.gov/"]},
-    {"id":"software-update-window","pillar":"safer-defaults","workingTitle":"How Long Can You Safely Delay a Software Update?","readerQuestion":"Do I need to install this update now?","priority":78,"status":"published","publishedSlug":"software-update-delay","publishedAt":"2026-09-11","reason":"Published from current NCSC, Apple, Microsoft, and Android guidance with urgent, ordinary, feature-upgrade, restart, and unsupported-device decisions separated.","sourceSeeds":["https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/keeping-devices-and-software-up-to-date","https://www.ncsc.gov.uk/collection/vulnerability-management/guidance/policy-update-by-default","https://support.apple.com/en-la/118575","https://support.microsoft.com/en-US/Windows/Deployment/Updates-Lifecycle/windows-update-faq","https://support.google.com/android/answer/7680439?hl=en-en"]},
-    {"id":"password-manager-choice","pillar":"account-safety","workingTitle":"Choosing a Password Manager Without a 40-Feature Spreadsheet","readerQuestion":"What actually matters in a password manager?","priority":74,"status":"published","publishedSlug":"choosing-a-password-manager","publishedAt":"2026-09-15","reason":"Published from current NCSC, NIST, and CISA guidance with product-neutral filters for device fit, generation, autofill, MFA, recovery, vendor response, and export.","sourceSeeds":["https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers","https://www.ncsc.gov.uk/collection/passwords/password-manager-buyers-guide","https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password","https://www.cisa.gov/resources-tools/training/cyb3rsmrt-use-password-manager-create-and-remember-strong-passwords"]},
-    {"id":"public-wifi-safety","pillar":"safer-defaults","workingTitle":"Is Public Wi-Fi Safe Enough for Banking?","readerQuestion":"What can I safely do on public Wi-Fi?","priority":72,"status":"published","publishedSlug":"public-wifi-banking","publishedAt":"2026-09-18","reason":"Published from current FTC, Australian Cyber Security Centre, NSA, and CISA guidance, explicitly reconciling widespread HTTPS with a conservative cellular-first default for banking.","sourceSeeds":["https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know","https://www.cyber.gov.au/protect-yourself/staying-secure-online/connecting-to-public-wi-fi","https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2711968/nsa-issues-guidance-on-securing-wireless-devices-in-public-settings/","https://www.cisa.gov/news-events/news/holiday-traveling-personal-internet-enabled-devices"]},
-    {"id":"lost-phone-first-hour","pillar":"account-safety","workingTitle":"Your Phone Is Lost: What to Do in the First Hour","readerQuestion":"What should I do immediately after losing my phone?","priority":70,"status":"published","publishedSlug":"lost-phone-first-hour","publishedAt":"2026-09-25","reason":"Published from current Apple and Google lost-device guidance. The guide prioritizes using the official finding service to locate and secure the phone, preserving activation or device protection, and treating remote erasure as a later, irreversible step.","sourceSeeds":["https://support.apple.com/en-us/101593","https://support.apple.com/en-us/120837","https://support.google.com/android/answer/6160491?hl=en","https://consumer.ftc.gov/articles/how-protect-your-phone-hackers"]},
-    {"id":"package-delivery-text","pillar":"scam-defense","workingTitle":"That Package-Delivery Text: Check the Order Without Its Link","readerQuestion":"Is this delivery problem text legitimate?","priority":68,"status":"published","publishedSlug":"package-delivery-text-checks","publishedAt":"2026-09-29","reason":"Published from current FTC and U.S. Postal Inspection Service guidance. The guide separates general independent-route checks from USPS-specific message rules and labels U.S.-specific reporting and recovery destinations.","sourceSeeds":["https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam","https://www.uspis.gov/news/scam-article/smishing-package-tracking-text-scams","https://consumer.ftc.gov/consumer-alerts/2024/12/scammers-are-delivering-phishing-messages-holiday-season","https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"]},
-    {"id":"app-permission-review","pillar":"safer-defaults","workingTitle":"Which App Permissions Should You Turn Off?","readerQuestion":"How do I review app permissions without breaking everything?","priority":66,"status":"published","publishedSlug":"app-permission-review","publishedAt":"2026-10-02","reason":"Published from current Apple and Google platform documentation. The guide uses a purpose-based, one-change-at-a-time review, separates iPhone and Android instructions, and labels version and manufacturer differences.","sourceSeeds":["https://support.apple.com/guide/iphone/control-access-to-information-in-apps-iph251e92810/ios","https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios","https://support.google.com/googleplay/answer/9431959?hl=en","https://support.google.com/android/answer/13530434?hl=en"]},
-    {"id":"clicked-phishing-link","pillar":"scam-defense","workingTitle":"You Clicked a Phishing Link. What Should You Do Next?","readerQuestion":"What should I do after clicking a phishing link?","priority":76,"status":"published","publishedSlug":"clicked-phishing-link","publishedAt":"2026-10-06","reason":"Published from current U.S., UK, and Australian government guidance. The guide separates a page-only click from exposed credentials, financial or identity data, downloaded files, installed software, and lost money.","sourceSeeds":["https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams","https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it","https://www.ncsc.gov.uk/section/respond-recover/phishing","https://www.cyber.gov.au/threats/types-threats/phishing"]},
-    {"id":"new-sign-in-alert","pillar":"account-safety","workingTitle":"That New Sign-In Alert: Check the Account Without Its Link","readerQuestion":"Is this security alert real, and was the sign-in mine?","priority":74,"status":"published","publishedSlug":"new-sign-in-alert","publishedAt":"2026-10-13","reason":"Published using current Google, Microsoft and Apple guidance with separate personal-account controls and attempted-versus-successful sign-in distinction.","sourceSeeds":["https://support.google.com/accounts/answer/7305876?hl=en","https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account","https://support.apple.com/en-us/102560"]},
-    {"id":"unexpected-mfa-prompt","pillar":"account-safety","workingTitle":"An Unexpected Sign-In Approval Prompt: What to Do","readerQuestion":"Should I approve a sign-in prompt I did not request?","priority":75,"status":"published","publishedSlug":"new-sign-in-alert","publishedAt":"2026-10-16","reason":"Merged into the existing account-alert guide to avoid a thin overlapping page. Added a substantive prompt-versus-alert decision section, unsolicited-code warning and already-approved response.","sourceSeeds":["https://support.google.com/accounts/answer/7026266?hl=En","https://support.microsoft.com/en-us/authenticator/microsoft-authenticator-faqs"]},
-    {"id":"source-access-recheck","pillar":"scam-defense","workingTitle":"Recheck FTC source accessibility","readerQuestion":"Are cited sources still accessible to readers?","priority":95,"status":"reviewed","reason":"October 20: direct HEAD returned Akamai 403 while the ordinary browser displayed the full phishing article at the same URL. Web retrieval also returned phishing and malware texts; the legacy malware link redirected to the current cited URL. Retrieval-method dependence demonstrated for these two pages, not proof that every FTC citation works. Retained canonical URLs and expanded phishing recovery with trusted-help selection.","sourceSeeds":["https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams","https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it"]},
-    {"id":"fake-tech-support-warning","pillar":"scam-defense","workingTitle":"A Browser Warning Says to Call Support. Do Not Call Its Number.","readerQuestion":"What should I do when a pop-up says my device is infected?","priority":80,"status":"published","publishedSlug":"fake-tech-support-warning","publishedAt":"2026-10-23","reason":"Published using current Microsoft and FTC scam guidance, separating warning-only exposure from remote access, credentials and payment. No unverified device-specific forced-exit steps.","sourceSeeds":["https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams","https://support.microsoft.com/en-us/office/protect-yourself-from-tech-support-scams"]},
-    {"id":"browser-notification-spam","pillar":"safer-defaults","workingTitle":"A Website Keeps Sending Alerts: Review Browser Notifications","readerQuestion":"How do I stop unwanted website notifications?","priority":77,"status":"published","publishedSlug":"browser-notification-spam","publishedAt":"2026-10-27","reason":"Published current desktop Chrome/Edge settings routes, reversible blocking, distinction from pop-ups, and recovery escalation limits.","sourceSeeds":["https://support.google.com/chrome/answer/3220216?hl=en","https://support.microsoft.com/en-us/edge/manage-website-notifications-in-microsoft-edge"]},
-    {"id":"browser-extension-review","pillar":"safer-defaults","workingTitle":"Which Browser Extensions Should You Remove?","readerQuestion":"How can I review extensions without breaking my browser workflow?","priority":76,"status":"published","publishedSlug":"browser-extension-review","publishedAt":"2026-10-30","reason":"Published desktop Chrome/Edge review with reversible disable-first workflow, scope limits and Google site-access exception.","sourceSeeds":["https://support.google.com/chrome_webstore/answer/2664769?hl=en","https://support.microsoft.com/en-us/edge/add-turn-off-or-remove-extensions-in-microsoft-edge"]},
-    {"id":"connected-app-access","pillar":"account-safety","workingTitle":"Review Apps Connected to Your Account","readerQuestion":"Which third-party account connections should I remove?","priority":79,"status":"published","publishedSlug":"connected-app-access","publishedAt":"2026-11-06","reason":"Published using current Google/Apple guidance. Separates sign-in, access direction, third-party data deletion and developer-wide Apple consequences.","sourceSeeds":["https://support.google.com/accounts/answer/13533235?hl=en","https://support.apple.com/en-us/102571"]},
-    {"id":"measurement-and-operator-review","kind":"operational","pillar":"safer-defaults","workingTitle":"Review measurement and repeated empty research packets","readerQuestion":"Can the operator observe outcomes and retrieve evidence reliably?","priority":99,"status":"idea","reason":"November13: deterministic pre-API routing gate and reviewed-task exclusion implemented with regression tests; .gov.au accepted with HTTPS guard. Retrieval instrumentation, context packing and website measurement remain outstanding. Operational kind prevents paid article commissioning for this internal task."}
+    {
+      "id": "qr-code-scam-check",
+      "pillar": "scam-defense",
+      "workingTitle": "Before You Scan: A QR Code Scam Checklist",
+      "readerQuestion": "How can I tell whether a QR code is safe?",
+      "priority": 90,
+      "status": "published",
+      "publishedSlug": "qr-code-scam-checklist",
+      "publishedAt": "2026-09-01",
+      "reason": "Published from four current U.S. government sources with globally framed prevention and labeled U.S. reporting routes."
+    },
+    {
+      "id": "recovery-codes",
+      "pillar": "account-safety",
+      "workingTitle": "Where to Keep Account Recovery Codes",
+      "readerQuestion": "Where should I store backup codes safely?",
+      "priority": 86,
+      "status": "published",
+      "publishedSlug": "where-to-keep-recovery-codes",
+      "publishedAt": "2026-09-04",
+      "reason": "Published from current Google, Microsoft, and Apple account-recovery guidance with provider-specific differences clearly separated.",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/1187538?co=GENIE.Platform%3DDesktop&hl=en",
+        "https://support.microsoft.com/en-US/accounts-billing/manage/how-to-get-a-microsoft-account-recovery-code",
+        "https://support.apple.com/en-us/109345"
+      ]
+    },
+    {
+      "id": "toll-text-scam",
+      "pillar": "scam-defense",
+      "workingTitle": "That Unpaid Toll Text: Three Checks Before You Pay",
+      "readerQuestion": "Is this unpaid toll text legitimate?",
+      "priority": 84,
+      "status": "published",
+      "publishedSlug": "unpaid-toll-text-checks",
+      "publishedAt": "2026-09-08",
+      "reason": "Published from current FBI, FTC, FCC, and IdentityTheft.gov guidance with U.S.-specific reporting routes clearly labeled.",
+      "sourceSeeds": [
+        "https://www.ic3.gov/PSA/2024/PSA240412/",
+        "https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+        "https://consumercomplaints.fcc.gov/hc/en-us/articles/115002234203-Unwanted-Calls-Texts-Phone",
+        "https://www.identitytheft.gov/"
+      ]
+    },
+    {
+      "id": "software-update-window",
+      "pillar": "safer-defaults",
+      "workingTitle": "How Long Can You Safely Delay a Software Update?",
+      "readerQuestion": "Do I need to install this update now?",
+      "priority": 78,
+      "status": "published",
+      "publishedSlug": "software-update-delay",
+      "publishedAt": "2026-09-11",
+      "reason": "Published from current NCSC, Apple, Microsoft, and Android guidance with urgent, ordinary, feature-upgrade, restart, and unsupported-device decisions separated.",
+      "sourceSeeds": [
+        "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/keeping-devices-and-software-up-to-date",
+        "https://www.ncsc.gov.uk/collection/vulnerability-management/guidance/policy-update-by-default",
+        "https://support.apple.com/en-la/118575",
+        "https://support.microsoft.com/en-US/Windows/Deployment/Updates-Lifecycle/windows-update-faq",
+        "https://support.google.com/android/answer/7680439?hl=en-en"
+      ]
+    },
+    {
+      "id": "password-manager-choice",
+      "pillar": "account-safety",
+      "workingTitle": "Choosing a Password Manager Without a 40-Feature Spreadsheet",
+      "readerQuestion": "What actually matters in a password manager?",
+      "priority": 74,
+      "status": "published",
+      "publishedSlug": "choosing-a-password-manager",
+      "publishedAt": "2026-09-15",
+      "reason": "Published from current NCSC, NIST, and CISA guidance with product-neutral filters for device fit, generation, autofill, MFA, recovery, vendor response, and export.",
+      "sourceSeeds": [
+        "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers",
+        "https://www.ncsc.gov.uk/collection/passwords/password-manager-buyers-guide",
+        "https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password",
+        "https://www.cisa.gov/resources-tools/training/cyb3rsmrt-use-password-manager-create-and-remember-strong-passwords"
+      ]
+    },
+    {
+      "id": "public-wifi-safety",
+      "pillar": "safer-defaults",
+      "workingTitle": "Is Public Wi-Fi Safe Enough for Banking?",
+      "readerQuestion": "What can I safely do on public Wi-Fi?",
+      "priority": 72,
+      "status": "published",
+      "publishedSlug": "public-wifi-banking",
+      "publishedAt": "2026-09-18",
+      "reason": "Published from current FTC, Australian Cyber Security Centre, NSA, and CISA guidance, explicitly reconciling widespread HTTPS with a conservative cellular-first default for banking.",
+      "sourceSeeds": [
+        "https://consumer.ftc.gov/articles/are-public-wi-fi-networks-safe-what-you-need-know",
+        "https://www.cyber.gov.au/protect-yourself/staying-secure-online/connecting-to-public-wi-fi",
+        "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2711968/nsa-issues-guidance-on-securing-wireless-devices-in-public-settings/",
+        "https://www.cisa.gov/news-events/news/holiday-traveling-personal-internet-enabled-devices"
+      ]
+    },
+    {
+      "id": "lost-phone-first-hour",
+      "pillar": "account-safety",
+      "workingTitle": "Your Phone Is Lost: What to Do in the First Hour",
+      "readerQuestion": "What should I do immediately after losing my phone?",
+      "priority": 70,
+      "status": "published",
+      "publishedSlug": "lost-phone-first-hour",
+      "publishedAt": "2026-09-25",
+      "reason": "Published from current Apple and Google lost-device guidance. The guide prioritizes using the official finding service to locate and secure the phone, preserving activation or device protection, and treating remote erasure as a later, irreversible step.",
+      "sourceSeeds": [
+        "https://support.apple.com/en-us/101593",
+        "https://support.apple.com/en-us/120837",
+        "https://support.google.com/android/answer/6160491?hl=en",
+        "https://consumer.ftc.gov/articles/how-protect-your-phone-hackers"
+      ]
+    },
+    {
+      "id": "package-delivery-text",
+      "pillar": "scam-defense",
+      "workingTitle": "That Package-Delivery Text: Check the Order Without Its Link",
+      "readerQuestion": "Is this delivery problem text legitimate?",
+      "priority": 68,
+      "status": "published",
+      "publishedSlug": "package-delivery-text-checks",
+      "publishedAt": "2026-09-29",
+      "reason": "Published from current FTC and U.S. Postal Inspection Service guidance. The guide separates general independent-route checks from USPS-specific message rules and labels U.S.-specific reporting and recovery destinations.",
+      "sourceSeeds": [
+        "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+        "https://www.uspis.gov/news/scam-article/smishing-package-tracking-text-scams",
+        "https://consumer.ftc.gov/consumer-alerts/2024/12/scammers-are-delivering-phishing-messages-holiday-season",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ]
+    },
+    {
+      "id": "app-permission-review",
+      "pillar": "safer-defaults",
+      "workingTitle": "Which App Permissions Should You Turn Off?",
+      "readerQuestion": "How do I review app permissions without breaking everything?",
+      "priority": 66,
+      "status": "published",
+      "publishedSlug": "app-permission-review",
+      "publishedAt": "2026-10-02",
+      "reason": "Published from current Apple and Google platform documentation. The guide uses a purpose-based, one-change-at-a-time review, separates iPhone and Android instructions, and labels version and manufacturer differences.",
+      "sourceSeeds": [
+        "https://support.apple.com/guide/iphone/control-access-to-information-in-apps-iph251e92810/ios",
+        "https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios",
+        "https://support.google.com/googleplay/answer/9431959?hl=en",
+        "https://support.google.com/android/answer/13530434?hl=en"
+      ]
+    },
+    {
+      "id": "clicked-phishing-link",
+      "pillar": "scam-defense",
+      "workingTitle": "You Clicked a Phishing Link. What Should You Do Next?",
+      "readerQuestion": "What should I do after clicking a phishing link?",
+      "priority": 76,
+      "status": "published",
+      "publishedSlug": "clicked-phishing-link",
+      "publishedAt": "2026-10-06",
+      "reason": "Published from current U.S., UK, and Australian government guidance. The guide separates a page-only click from exposed credentials, financial or identity data, downloaded files, installed software, and lost money.",
+      "sourceSeeds": [
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it",
+        "https://www.ncsc.gov.uk/section/respond-recover/phishing",
+        "https://www.cyber.gov.au/threats/types-threats/phishing"
+      ]
+    },
+    {
+      "id": "new-sign-in-alert",
+      "pillar": "account-safety",
+      "workingTitle": "That New Sign-In Alert: Check the Account Without Its Link",
+      "readerQuestion": "Is this security alert real, and was the sign-in mine?",
+      "priority": 74,
+      "status": "published",
+      "publishedSlug": "new-sign-in-alert",
+      "publishedAt": "2026-10-13",
+      "reason": "Published using current Google, Microsoft and Apple guidance with separate personal-account controls and attempted-versus-successful sign-in distinction.",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/7305876?hl=en",
+        "https://support.microsoft.com/en-us/accounts-billing/security/what-happens-if-there-s-an-unusual-sign-in-to-your-account",
+        "https://support.apple.com/en-us/102560"
+      ]
+    },
+    {
+      "id": "unexpected-mfa-prompt",
+      "pillar": "account-safety",
+      "workingTitle": "An Unexpected Sign-In Approval Prompt: What to Do",
+      "readerQuestion": "Should I approve a sign-in prompt I did not request?",
+      "priority": 75,
+      "status": "published",
+      "publishedSlug": "new-sign-in-alert",
+      "publishedAt": "2026-10-16",
+      "reason": "Merged into the existing account-alert guide to avoid a thin overlapping page. Added a substantive prompt-versus-alert decision section, unsolicited-code warning and already-approved response.",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/7026266?hl=En",
+        "https://support.microsoft.com/en-us/authenticator/microsoft-authenticator-faqs"
+      ]
+    },
+    {
+      "id": "source-access-recheck",
+      "pillar": "scam-defense",
+      "workingTitle": "Recheck FTC source accessibility",
+      "readerQuestion": "Are cited sources still accessible to readers?",
+      "priority": 95,
+      "status": "reviewed",
+      "reason": "October 20: direct HEAD returned Akamai 403 while the ordinary browser displayed the full phishing article at the same URL. Web retrieval also returned phishing and malware texts; the legacy malware link redirected to the current cited URL. Retrieval-method dependence demonstrated for these two pages, not proof that every FTC citation works. Retained canonical URLs and expanded phishing recovery with trusted-help selection.",
+      "sourceSeeds": [
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/malware-how-protect-against-detect-and-remove-it"
+      ]
+    },
+    {
+      "id": "fake-tech-support-warning",
+      "pillar": "scam-defense",
+      "workingTitle": "A Browser Warning Says to Call Support. Do Not Call Its Number.",
+      "readerQuestion": "What should I do when a pop-up says my device is infected?",
+      "priority": 80,
+      "status": "published",
+      "publishedSlug": "fake-tech-support-warning",
+      "publishedAt": "2026-10-23",
+      "reason": "Published using current Microsoft and FTC scam guidance, separating warning-only exposure from remote access, credentials and payment. No unverified device-specific forced-exit steps.",
+      "sourceSeeds": [
+        "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams",
+        "https://support.microsoft.com/en-us/office/protect-yourself-from-tech-support-scams"
+      ]
+    },
+    {
+      "id": "browser-notification-spam",
+      "pillar": "safer-defaults",
+      "workingTitle": "A Website Keeps Sending Alerts: Review Browser Notifications",
+      "readerQuestion": "How do I stop unwanted website notifications?",
+      "priority": 77,
+      "status": "published",
+      "publishedSlug": "browser-notification-spam",
+      "publishedAt": "2026-10-27",
+      "reason": "Published current desktop Chrome/Edge settings routes, reversible blocking, distinction from pop-ups, and recovery escalation limits.",
+      "sourceSeeds": [
+        "https://support.google.com/chrome/answer/3220216?hl=en",
+        "https://support.microsoft.com/en-us/edge/manage-website-notifications-in-microsoft-edge"
+      ]
+    },
+    {
+      "id": "browser-extension-review",
+      "pillar": "safer-defaults",
+      "workingTitle": "Which Browser Extensions Should You Remove?",
+      "readerQuestion": "How can I review extensions without breaking my browser workflow?",
+      "priority": 76,
+      "status": "published",
+      "publishedSlug": "browser-extension-review",
+      "publishedAt": "2026-10-30",
+      "reason": "Published desktop Chrome/Edge review with reversible disable-first workflow, scope limits and Google site-access exception.",
+      "sourceSeeds": [
+        "https://support.google.com/chrome_webstore/answer/2664769?hl=en",
+        "https://support.microsoft.com/en-us/edge/add-turn-off-or-remove-extensions-in-microsoft-edge"
+      ]
+    },
+    {
+      "id": "connected-app-access",
+      "pillar": "account-safety",
+      "workingTitle": "Review Apps Connected to Your Account",
+      "readerQuestion": "Which third-party account connections should I remove?",
+      "priority": 79,
+      "status": "published",
+      "publishedSlug": "connected-app-access",
+      "publishedAt": "2026-11-06",
+      "reason": "Published using current Google/Apple guidance. Separates sign-in, access direction, third-party data deletion and developer-wide Apple consequences.",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/13533235?hl=en",
+        "https://support.apple.com/en-us/102571"
+      ]
+    },
+    {
+      "id": "measurement-and-operator-review",
+      "kind": "operational",
+      "pillar": "safer-defaults",
+      "workingTitle": "Review measurement and repeated empty research packets",
+      "readerQuestion": "Can the operator observe outcomes and retrieve evidence reliably?",
+      "priority": 99,
+      "status": "idea",
+      "reason": "November17: context regression reproduced: validator and all articles absent. Packing now prioritizes policy, validator and complete example; skips oversized optional files instead of stopping. Selected queue item sent independently. Retrieval diagnostics and website measurement remain open."
+    }
   ]
 }

@@ -17,6 +17,18 @@ import { access, rm } from "node:fs/promises";
 import path from "node:path";
 import { root } from "../engine/lib.mjs";
 
+test("bounded operator context includes validation and a complete article example", async () => {
+  const operator = await import("../ops/remote-operator.mjs");
+  assert.equal(typeof operator.collectFiles, "function");
+  const files = await operator.collectFiles();
+  assert.ok(files["EDITORIAL_POLICY.md"]);
+  assert.ok(files["engine/validate.mjs"]);
+  const examples = Object.keys(files).filter((name) => name.startsWith("content/articles/"));
+  assert.ok(examples.length >= 1, "article examples must survive context pressure");
+  assert.ok(JSON.parse(files[examples[0]]).slug);
+  assert.ok(Object.values(files).reduce((size, content) => size + content.length, 0) <= 32_000);
+});
+
 test("queue routing excludes completed reviews and identifies operational work", () => {
   const items = [{id:"done",status:"reviewed",priority:100}, {id:"ops",status:"idea",kind:"operational",priority:99}, {id:"guide",status:"idea",priority:80}];
   assert.equal(selectQueueItem(items).id, "ops");
