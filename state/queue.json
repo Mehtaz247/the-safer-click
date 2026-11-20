@@ -304,6 +304,19 @@
         "https://support.microsoft.com/en-gb/accounts-billing/manage/security-info-scheduled-for-removal"
       ],
       "reason": "Published personal Google/Microsoft recovery planning guide; distinct waiting periods, managed-account and region limits."
+    },
+    {
+      "id": "google-recovery-contact-or-backup-code",
+      "pillar": "account-safety",
+      "workingTitle": "Google Recovery Contacts and Backup Codes Do Different Jobs",
+      "readerQuestion": "Which recovery options should I prepare before I lose access?",
+      "priority": 75,
+      "status": "idea",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/183723?hl=en",
+        "https://support.google.com/accounts/answer/1187538?hl=en"
+      ],
+      "reason": "Research next: compare current Google personal-account recovery-contact and backup-code purposes, availability and preparation steps. Merge into existing recovery-code guide if a separate page would overlap. Require fresh retrieval and traceable evidence; no claim of guaranteed recovery."
     }
   ]
 }
