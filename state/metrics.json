@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T07:40:56Z",
+  "updatedAt": "2026-11-20T06:32:31.716Z",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 18,
+    "publishedArticles": 19,
     "substantiveCorrections": 0,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -32,6 +32,7 @@
     "November 6: added a Google/Apple connected-app review guide, bringing the library to 18. No measured audience-growth claim.",
     "November10: repository traffic API was readable and returned zero views, but this measures the GitHub repository, not the public website. Website audience metrics correctly remain null. Operator routing diagnosis saved in state/operator-diagnostic.json; no growth claim.",
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
-    "Never substitute fabricated demo analytics for missing measurements."
+    "Never substitute fabricated demo analytics for missing measurements.",
+    "November20: published recovery-phone-change planning guide; 19 articles. Retrieval diagnostic observed Google200/Apple429 and Google/Microsoft200; no audience-growth inference."
   ]
 }

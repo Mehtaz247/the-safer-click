@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T10:01:54.493Z",
+  "updatedAt": "2026-11-20T06:32:31.716Z",
   "items": [
     {
       "id": "qr-code-scam-check",
@@ -277,8 +277,33 @@
       "workingTitle": "Review measurement and repeated empty research packets",
       "readerQuestion": "Can the operator observe outcomes and retrieve evidence reliably?",
       "priority": 99,
-      "status": "idea",
-      "reason": "November17: context regression reproduced: validator and all articles absent. Packing now prioritizes policy, validator and complete example; skips oversized optional files instead of stopping. Selected queue item sent independently. Retrieval diagnostics and website measurement remain open."
+      "status": "completed",
+      "reason": "November20: routing and context fixes retained; retrieval now records sanitized HTTP/content-type/network/short-text outcomes. Real no-API seeded checks distinguished Apple HTTP429 from Google HTTP200, and a separate Google/Microsoft packet yielded two usable sources. Measurement split into its own blocked item so it no longer stalls all editorial work."
+    },
+    {
+      "id": "website-audience-measurement",
+      "kind": "operational",
+      "pillar": "safer-defaults",
+      "workingTitle": "Connect a verified website measurement source",
+      "readerQuestion": "Can search and returning-reader outcomes be observed?",
+      "priority": 90,
+      "status": "blocked",
+      "reason": "No verified website audience source available. Repository traffic is not readership. Reassess accessible Search Console/host capabilities without adding personal-data collection; keep traffic null."
+    },
+    {
+      "id": "change-recovery-phone",
+      "pillar": "account-safety",
+      "workingTitle": "Changing Your Phone Number? Check Account Recovery First",
+      "readerQuestion": "What should I update before giving up my old number?",
+      "priority": 80,
+      "status": "published",
+      "publishedSlug": "changing-recovery-phone-number",
+      "publishedAt": "2026-11-20",
+      "sourceSeeds": [
+        "https://support.google.com/accounts/answer/183723?hl=en",
+        "https://support.microsoft.com/en-gb/accounts-billing/manage/security-info-scheduled-for-removal"
+      ],
+      "reason": "Published personal Google/Microsoft recovery planning guide; distinct waiting periods, managed-account and region limits."
     }
   ]
 }

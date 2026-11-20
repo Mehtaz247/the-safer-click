@@ -54,38 +54,49 @@ function htmlToText(html) {
     .trim();
 }
 
-async function fetchText(url, maxChars = 14_000) {
-  const raw = await fetchRaw(url);
+async function fetchText(url, diagnostics, maxChars = 14_000) {
+  const raw = await fetchRaw(url, {diagnostics});
   return raw ? htmlToText(raw).slice(0, maxChars) : null;
 }
 
-async function fetchRaw(url) {
+export async function fetchRaw(url, {diagnostics = [], fetchImpl = fetch} = {}) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15_000);
+  const parsed = new URL(url);
+  const entry = {url: `${parsed.origin}${parsed.pathname}`, status:null, contentType:null, reason:"network-error"};
   try {
-    const response = await fetch(url, {
+    const response = await fetchImpl(url, {
       redirect: "follow",
       signal: controller.signal,
       headers: { "User-Agent": "KnownRouteResearchBot/1.0 (+https://mehtaz247.github.io/the-safer-click/)" }
     });
-    if (!response.ok) return null;
+    entry.status = response.status;
+    if (!response.ok) { entry.reason = "http-error"; return null; }
     const type = response.headers.get("content-type") ?? "";
-    if (!type.includes("text/html") && !type.includes("text/plain") && !type.includes("application/xhtml")) return null;
-    return await response.text();
+    entry.contentType = type.split(";")[0].slice(0, 80);
+    if (!type.includes("text/html") && !type.includes("text/plain") && !type.includes("application/xhtml")) {
+      entry.reason = "unsupported-content-type"; return null;
+    }
+    const raw = await response.text();
+    entry.reason = "retrieved";
+    entry.rawChars = raw.length;
+    return raw;
   } catch {
+    entry.reason = controller.signal.aborted ? "timeout" : "network-error";
     return null;
   } finally {
     clearTimeout(timeout);
+    diagnostics.push(entry);
   }
 }
 
-async function discoverResearch(queueItem) {
+export async function discoverResearch(queueItem, diagnostics = []) {
   if (!queueItem) return [];
   const candidates = (queueItem.sourceSeeds ?? []).filter(isPrimarySourceUrl);
   if (candidates.length < 2) {
     const query = `${queueItem.readerQuestion} official guidance government`;
     const searchUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
-    const html = await fetchRaw(searchUrl);
+    const html = await fetchRaw(searchUrl, {diagnostics});
     for (const match of html?.matchAll(/uddg=([^&\s]+)/g) ?? []) {
       let url;
       try { url = decodeURIComponent(match[1]); } catch { continue; }
@@ -96,7 +107,11 @@ async function discoverResearch(queueItem) {
   }
   const sources = [];
   for (const url of candidates) {
-    const text = await fetchText(url);
+    const text = await fetchText(url, diagnostics);
+    const entry = diagnostics.at(-1);
+    entry.textChars = text?.length ?? 0;
+    entry.usable = Boolean(text && text.length >= 500);
+    if (text && text.length < 500) entry.reason = "text-too-short";
     if (text && text.length >= 500) sources.push({ url, accessed: today, text });
   }
   return sources;
@@ -214,7 +229,9 @@ async function main() {
   }
   const queue = await readJson("state/queue.json");
   const viable = selectQueueItem(queue.items);
-  const research = viable?.kind === "operational" ? [] : await discoverResearch(viable);
+  const researchDiagnostics = [];
+  const research = viable?.kind === "operational" ? [] : await discoverResearch(viable, researchDiagnostics);
+  if (researchDiagnostics.length) await record({at:isoNow, type:"research-diagnostic", queueItem:viable?.id, attempts:researchDiagnostics, usableSources:research.length});
   const readiness = researchReadiness(viable, research);
   if (!readiness.allowed) {
     await record({at:isoNow, type:"remote-operator", status:"held-before-api", queueItem:viable?.id ?? null, reason:readiness.reason, researchSources:research.map((source) => source.url), reservedCostUsd:0});

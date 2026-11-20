@@ -17,6 +17,27 @@ import { access, rm } from "node:fs/promises";
 import path from "node:path";
 import { root } from "../engine/lib.mjs";
 
+test("research retrieval distinguishes HTTP rejection, content type, and network failure without logging bodies", async () => {
+  const { fetchRaw } = await import("../ops/remote-operator.mjs");
+  assert.equal(typeof fetchRaw, "function");
+  for (const [response, reason] of [
+    [new Response("private failure body", {status:403}), "http-error"],
+    [new Response("binary", {headers:{"content-type":"application/pdf"}}), "unsupported-content-type"],
+    [new Response("<p>Official guidance</p>", {headers:{"content-type":"text/html"}}), "retrieved"]
+  ]) {
+    const diagnostics = [];
+    const raw = await fetchRaw("https://support.apple.com/test?secret=omit", {diagnostics, fetchImpl:async () => response});
+    assert.equal(diagnostics[0].reason, reason);
+    assert.equal(diagnostics[0].url, "https://support.apple.com/test");
+    assert.ok(!JSON.stringify(diagnostics).includes("private failure body"));
+    assert.equal(raw !== null, reason === "retrieved");
+  }
+  const diagnostics = [];
+  assert.equal(await fetchRaw("https://support.apple.com/test", {diagnostics, fetchImpl:async () => {throw new Error("sensitive network details");}}), null);
+  assert.equal(diagnostics[0].reason, "network-error");
+  assert.ok(!JSON.stringify(diagnostics).includes("sensitive"));
+});
+
 test("bounded operator context includes validation and a complete article example", async () => {
   const operator = await import("../ops/remote-operator.mjs");
   assert.equal(typeof operator.collectFiles, "function");

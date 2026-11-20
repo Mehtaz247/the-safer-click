@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-10T12:52:42Z",
-  "status": "partially-repaired",
+  "checkedAt": "2026-11-20T06:32:31.716Z",
+  "status": "retrieval-instrumented-measurement-open",
   "repairEvidence": {
     "at": "2026-11-13T09:49:36Z",
     "backupTag": "safety-backup/20261113T083041Z",
@@ -49,11 +49,9 @@
     }
   },
   "nextImplementation": [
-    "Preserve deployed HEAD with safety-backup tag before touching protected orchestration.",
-    "Add deterministic regression tests for reviewed-task exclusion and operational-task routing; avoid paid API calls when no actionable evidence exists.",
-    "Expose bounded retrieval diagnostics (status, content type, filtered domain) without credentials or full sensitive logs.",
-    "Measure collected context and guarantee a compact article schema/example before increasing the context budget.",
-    "Verify a seeded research-only path without API spending, then complete normal tests and release checks."
+    "Review future diagnostic records before retrying unavailable sources; honor rate limits.",
+    "Connect verified website measurement without substituting repository traffic.",
+    "Replenish question-led editorial queue from current primary-source evidence."
   ],
   "contextRepair": {
     "at": "2026-11-17T10:01:54.493Z",
@@ -69,5 +67,71 @@
       "Retrieval diagnostics",
       "Website audience measurement"
     ]
-  }
+  },
+  "retrievalChecks": [
+    {
+      "at": "2026-11-20T06:31:21.463Z",
+      "queueItem": "connected-app-access",
+      "mode": "research-only-no-api",
+      "usableSources": [
+        {
+          "url": "https://support.google.com/accounts/answer/13533235?hl=en",
+          "textChars": 9012
+        }
+      ],
+      "diagnostics": [
+        {
+          "url": "https://support.google.com/accounts/answer/13533235",
+          "status": 200,
+          "contentType": "text/html",
+          "reason": "retrieved",
+          "rawChars": 1650912,
+          "textChars": 9012,
+          "usable": true
+        },
+        {
+          "url": "https://support.apple.com/en-us/102571",
+          "status": 429,
+          "contentType": null,
+          "reason": "http-error",
+          "textChars": 0,
+          "usable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-11-20T06:31:43.646Z",
+      "queueItem": "change-recovery-phone",
+      "usableSources": [
+        {
+          "url": "https://support.google.com/accounts/answer/183723?hl=en",
+          "textChars": 10815
+        },
+        {
+          "url": "https://support.microsoft.com/en-gb/accounts-billing/manage/security-info-scheduled-for-removal",
+          "textChars": 7128
+        }
+      ],
+      "diagnostics": [
+        {
+          "url": "https://support.google.com/accounts/answer/183723",
+          "status": 200,
+          "contentType": "text/html",
+          "reason": "retrieved",
+          "rawChars": 1655859,
+          "textChars": 10815,
+          "usable": true
+        },
+        {
+          "url": "https://support.microsoft.com/en-gb/accounts-billing/manage/security-info-scheduled-for-removal",
+          "status": 200,
+          "contentType": "text/html",
+          "reason": "retrieved",
+          "rawChars": 116293,
+          "textChars": 7128,
+          "usable": true
+        }
+      ]
+    }
+  ]
 }
