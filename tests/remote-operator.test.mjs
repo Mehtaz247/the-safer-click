@@ -29,6 +29,11 @@ test("editorial completion closes the selected queue item and reconciles article
   const metrics = JSON.parse(result.files.find(f=>f.path==="state/metrics.json").content);
   assert.equal(metrics.cumulative.publishedArticles,2);
   assert.equal(metrics.cumulative.knownSearchClicks,null);
+  const withNextTopic = {...decision, files:[...decision.files,{path:"state/queue.json",action:"write",content:JSON.stringify({items:[{id:"queued",status:"idea"},{id:"next",status:"idea"}]})}]};
+  const completed = finalizeEditorialDecision(withNextTopic,{id:"queued"},{items:[{id:"queued"}]},{cumulative:{}},[],"2026-11-24");
+  const nextQueue = JSON.parse(completed.files.find(f=>f.path==="state/queue.json").content);
+  assert.equal(nextQueue.items.find(entry=>entry.id==="next")?.status,"idea");
+  assert.equal(nextQueue.items.find(entry=>entry.id==="queued").status,"published");
   assert.throws(()=>finalizeEditorialDecision(decision,{id:"queued"},{items:[{id:"queued"}]},{cumulative:{}},[{slug:"another-slug",title:article.title}],"2026-11-24"),/duplicate/i);
 });
 

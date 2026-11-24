@@ -170,7 +170,8 @@ export function finalizeEditorialDecision(decision, item, queue, metrics, articl
   if (articles.some(existing => existing.slug !== article.slug && !existing.redirectTo && titleKey(existing.title) === titleKey(article.title))) {
     throw new Error("Duplicate article title: update the existing guide instead.");
   }
-  const nextQueue = structuredClone(queue);
+  const proposedQueue = decision.files.find(file => file.path === "state/queue.json");
+  const nextQueue = proposedQueue ? JSON.parse(proposedQueue.content) : structuredClone(queue);
   const queued = nextQueue.items.find(entry => entry.id === item.id);
   if (!queued) throw new Error("Selected queue item disappeared.");
   Object.assign(queued, {status:"published", publishedSlug:article.slug, completedAt:today});
