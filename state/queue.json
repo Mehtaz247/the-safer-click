@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T04:09:44.407Z",
+  "updatedAt": "2026-11-24",
   "items": [
     {
       "id": "qr-code-scam-check",
@@ -326,12 +326,14 @@
       "workingTitle": "Is Your Gmail Forwarding Mail Somewhere Unexpected?",
       "readerQuestion": "How can I check unwanted Gmail forwarding without losing useful mail?",
       "priority": 74,
-      "status": "idea",
+      "status": "published",
       "sourceSeeds": [
         "https://support.google.com/mail/answer/10957?hl=en",
         "https://support.google.com/mail/answer/7015314?hl=en"
       ],
-      "reason": "Next research: distinguish account-wide forwarding from filters, review independent settings routes and provider response to unknown destinations. Personal desktop Gmail scope; fresh primary-source retrieval required. Inventory checked: no forwarding-specific guide yet."
+      "reason": "Next research: distinguish account-wide forwarding from filters, review independent settings routes and provider response to unknown destinations. Personal desktop Gmail scope; fresh primary-source retrieval required. Inventory checked: no forwarding-specific guide yet.",
+      "publishedSlug": "gmail-forwarding-review",
+      "completedAt": "2026-11-24"
     }
   ]
 }

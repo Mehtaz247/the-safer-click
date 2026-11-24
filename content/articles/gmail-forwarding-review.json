@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "slug": "gmail-forwarding-review",
+  "title": "Is Your Gmail Forwarding Mail Somewhere Unexpected?",
+  "dek": "Check account-wide forwarding and filters separately, keep the forwarding you recognize, and act promptly on an unfamiliar destination.",
+  "description": "A desktop Gmail checklist for reviewing automatic forwarding and forwarding filters without interrupting useful mail delivery.",
+  "pillar": "account-safety",
+  "tags": ["Gmail", "email forwarding", "Gmail filters", "account security", "missing email"],
+  "published": "2026-11-24",
+  "updated": "2026-11-24",
+  "reviewDue": "2027-03-24",
+  "readingMinutes": 5,
+  "featured": false,
+  "takeaway": [
+    "Review account-wide forwarding and filters separately: either can send mail elsewhere.",
+    "Keep a forwarding destination only when you recognize it and still want it to receive your mail.",
+    "If Gmail shows an unfamiliar forwarding address, change your password immediately and disable the forwarding."
+  ],
+  "sections": [
+    {
+      "heading": "Start with a simple decision",
+      "paragraphs": [
+        "If every new message needs to reach another inbox you control, account-wide forwarding may be useful. If only particular messages need to go elsewhere, Gmail uses filters for that. The practical task is to identify each route, decide whether you recognize its destination, and leave useful mail flow in place only when it still has a purpose.",
+        "Do this review in Gmail on a computer. Google documents the relevant settings there, and the labels can appear as either “Forwarding and POP/IMAP” or “Forwarding.”"
+      ]
+    },
+    {
+      "heading": "Check account-wide forwarding first",
+      "paragraphs": [
+        "In Gmail, select Settings, then See all settings. Open the Forwarding and POP/IMAP tab, or the Forwarding tab. In the Forwarding section, look for an active instruction to forward a copy of incoming mail and note the destination address.",
+        "Automatic forwarding applies to all new messages except spam. Gmail lets you choose what happens to Gmail’s copy, including keeping it in the inbox or archiving it. If the destination is yours and you still need it, check that choice before changing anything so useful mail remains available where you expect it.",
+        "A forwarding address is verified during setup: Gmail sends a verification link to the destination address. That setup step does not make an old destination permanently appropriate. Review it whenever mail seems to be arriving somewhere unexpected."
+      ],
+      "steps": [
+        "Open Settings and choose See all settings.",
+        "Open Forwarding and POP/IMAP, or Forwarding.",
+        "Read the destination address and the treatment selected for Gmail’s copy.",
+        "Keep the setting only if you recognize the address and still want all new mail sent there."
+      ]
+    },
+    {
+      "heading": "Review forwarding filters separately",
+      "paragraphs": [
+        "Turning off account-wide forwarding does not by itself answer whether a filter forwards some messages. Google says that forwarding for messages matching specific criteria is set up with a filter. A filter can therefore explain why only certain mail reaches another address.",
+        "From Settings and See all settings, open Filters and Blocked Addresses. Review the listed filters, paying particular attention to actions that say “Forward it.” Read the matching criteria as well as the action: a familiar destination may be intentional for a narrow kind of mail but no longer needed.",
+        "If you recognize a filter and want to keep it, leave it in place. If you want to stop only that forwarding behavior, edit or delete that filter. Google notes that Gmail displays a temporary forwarding notice after a forwarding filter is created; the notice goes away when the filter no longer forwards messages."
+      ],
+      "steps": [
+        "Open Settings, See all settings, then Filters and Blocked Addresses.",
+        "Look for filters whose action is “Forward it.”",
+        "Confirm both the destination and the messages the filter matches.",
+        "Edit or delete only a filter you no longer want."
+      ]
+    },
+    {
+      "heading": "If the destination is unfamiliar",
+      "paragraphs": [
+        "Treat an unfamiliar forwarding address as an account-access concern, not just a mail-organization problem. Google’s forwarding guidance says that if you see a forwarding notice you did not set up, change your password immediately and turn off forwarding in Gmail settings. Google’s missing-mail guidance likewise says that an unfamiliar forwarding address can mean someone has unauthorized access to the account.",
+        "First, change the password for the Gmail account. Then return to the Forwarding section and select Disable forwarding, saving the change. Next, review Filters and Blocked Addresses for forwarding filters and remove or edit any you do not recognize. These actions address the routes described in Gmail’s settings; they do not establish why the setting changed.",
+        "If mail is missing as well, search across Gmail before assuming it was forwarded. Google recommends searching in Mail & Spam & Trash, then reviewing filters that delete messages or skip the inbox. A forwarding setting, a filter, spam, trash, storage limits, and another synced mail client can each affect what you see."
+      ],
+      "callout": "Do not disable a forwarding route merely because it exists. If it sends mail to an address you control for a current purpose, record that purpose and check the handling of Gmail’s copy before you make a change."
+    },
+    {
+      "heading": "A short review you can repeat",
+      "paragraphs": [
+        "Use the same order each time: account-wide forwarding, forwarding filters, then any missing-mail symptoms. This keeps two separate Gmail features from being mistaken for one another and limits changes to the setting you actually mean to change.",
+        "After making a change, send or wait for an ordinary non-sensitive message and check the inbox behavior you intended to keep. If you use another email program to read Gmail, Google also recommends checking whether that program archives or deletes messages. Keep the review focused on settings you can identify rather than trying to diagnose every possible cause at once."
+      ],
+      "steps": [
+        "Check the active account-wide forwarding destination and Gmail-copy choice.",
+        "Check Filters and Blocked Addresses for “Forward it” actions.",
+        "Change your password and disable forwarding immediately if a destination is unfamiliar.",
+        "For missing messages, search Mail & Spam & Trash and review filters that delete or skip the inbox.",
+        "Confirm useful mail still arrives where you expect after a setting change."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Automatically forward Gmail messages to another account",
+      "publisher": "Gmail Help",
+      "url": "https://support.google.com/mail/answer/10957?hl=en",
+      "accessed": "2026-11-24",
+      "primary": true
+    },
+    {
+      "title": "Gmail messages are missing - Computer",
+      "publisher": "Gmail Help",
+      "url": "https://support.google.com/mail/answer/7015314?hl=en",
+      "accessed": "2026-11-24",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 91,
+    "reviewedBy": "autonomous editorial review",
+    "notes": "Desktop Gmail guidance is limited to settings and response steps documented in two current Google Help sources. Account-wide forwarding and filters are explicitly distinguished."
+  }
+}

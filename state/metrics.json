@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T04:09:44.409Z",
+  "updatedAt": "2026-11-24",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 20,
+    "publishedArticles": 21,
     "substantiveCorrections": 1,
     "retiredArticles": 0,
     "knownSearchClicks": null,
