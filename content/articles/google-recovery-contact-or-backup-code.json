@@ -5,11 +5,17 @@
   "dek": "Set up a recovery contact for account-recovery help, and keep backup codes for a missing 2-Step Verification method.",
   "description": "Learn the difference between Google recovery contacts and backup codes, who should use each option, and how to prepare both without treating either as guaranteed recovery.",
   "pillar": "account-safety",
-  "tags": ["Google Account", "account recovery", "backup codes", "2-Step Verification", "recovery contact"],
+  "tags": [
+    "Google Account",
+    "account recovery",
+    "backup codes",
+    "2-Step Verification",
+    "recovery contact"
+  ],
   "published": "2026-11-20",
-  "updated": "2026-11-20",
-  "reviewDue": "2027-03-20",
-  "readingMinutes": 5,
+  "updated": "2026-11-24",
+  "reviewDue": "2027-03-24",
+  "readingMinutes": 3,
   "featured": false,
   "takeaway": [
     "A recovery contact can help when you forget your password or cannot sign in for another reason; it is not a set of sign-in codes.",
@@ -18,56 +24,40 @@
   ],
   "sections": [
     {
-      "heading": "Choose based on the problem you are preparing for",
+      "heading": "Choose the fallback for the problem",
       "paragraphs": [
-        "Set up a recovery contact if you want a trusted person available to help with Google Account recovery after you forget your password or cannot sign in for another reason. Google says a recovery contact does not receive your security alerts or notifications. This option is part of account recovery, not a replacement for your password or normal sign-in methods.",
-        "Generate backup codes if you use 2-Step Verification and need a fallback for its second step. Google says they can be used when you lose your phone, change your phone number, or otherwise cannot get codes by text, call, or Google Authenticator. A backup code does not replace a recovery contact: it is an 8-digit code you enter while signing in."
+        "A recovery contact helps with Google Account recovery. A backup code supplies the second step when normal 2-Step Verification is unavailable. Neither promises that every lockout can be resolved. Our recommendation is to prepare the options you can maintain, rather than collecting settings you do not understand.",
+        "This guide covers personal Google Accounts. Recovery options vary by region, account and device. Work or school accounts may need administrator help. These instructions follow current Google documentation; they are not a report of testing your account."
       ]
     },
     {
-      "heading": "Prepare a recovery contact before you need one",
+      "heading": "Recovery contact: prepare a trusted person",
       "paragraphs": [
-        "Choose someone you know well and trust, such as a close friend or family member. Adding them shares your name, email address, and profile photo with that person so that they can decide whether to accept the request. Ask first, and make sure you have a way to contact them if you lose access to your Google Account.",
-        "On a computer, open your Google Account, choose Security & sign-in, then Recovery contacts. Select Add recovery contact, enter the person's email address, and send the request. Google says the request lasts seven days. After the person accepts, there is another seven-day period before the contact can be used for account recovery.",
-        "Not every recovery option is available for every region, account, or device. Google also says that work, school, and other group-managed accounts may not support these steps; ask that account's administrator if the option is unavailable."
+        "Google says to choose someone you know well and trust. From Google Account, open Security & sign-in, then Recovery contacts under How you sign in to Google. Add the person and send the request. The invitation shares your name, email address and profile photo.",
+        "The request expires after seven days. After acceptance, another seven-day period applies before recovery use. Google says a recovery contact does not receive your security alerts or notifications. You cannot add recovery information while locked out or already in the recovery process.",
+        "Our practical check: discuss the invitation first, then revisit the setting to confirm acceptance. Decide how you will contact that person without relying only on the account you might lose. Do not send passwords or backup codes as part of this conversation."
+      ]
+    },
+    {
+      "heading": "Backup codes: prepare a private second step",
+      "paragraphs": [
+        "Google backup codes require 2-Step Verification. In Google Account, choose Security & sign-in, then 2-Step Verification and Backup codes. Continue to the controls for generating, printing or downloading a set. Advanced Protection Program users cannot download these codes.",
+        "Each code works once. Generating a fresh set of ten invalidates the previous set. Google recommends storing a printed copy safely and says not to share codes. It asks for a backup code only during sign-in.",
+        "When needed, sign in through Google directly, select Try another way, then Enter one of your 8-digit backup codes. Use an unused code and mark it used. If a set is lost or suspected stolen, generate a replacement set."
+      ]
+    },
+    {
+      "heading": "Run a preparation check without exposing secrets",
+      "paragraphs": [
+        "Our checklist is to inspect the settings while you still have normal access, confirm the contact accepted, and confirm that saved codes can be reached without the device they are meant to replace. You do not need to send anyone a code to prove that the set exists.",
+        "Revisit the plan after changing a number, replacing a device or losing contact with your helper. If you are already locked out, use Google’s official account-recovery route and the options it offers; this guide cannot shorten a waiting period or guarantee restoration."
       ],
       "steps": [
-        "Ask a trusted person whether they are willing to be your recovery contact.",
-        "In your Google Account, open Security & sign-in and then Recovery contacts.",
-        "Send the request and check that the person accepts it before relying on the option.",
-        "Review the contact later if your relationship or their email address changes."
+        "Check which recovery options your account actually offers.",
+        "Confirm contact acceptance and allow the documented waiting period.",
+        "Store unused backup codes privately and keep track of replacements.",
+        "Keep a way to reach your helper without the affected account."
       ]
-    },
-    {
-      "heading": "Generate backup codes only if 2-Step Verification is on",
-      "paragraphs": [
-        "Google requires 2-Step Verification to use backup codes. In your Google Account, open Security & sign-in, select 2-Step Verification, and find Backup codes. From there, Google offers options to get, download, print, refresh, or delete codes.",
-        "Google creates a set of 10 backup codes. Each code works once, then becomes inactive. Creating a new set automatically makes the old set inactive, so replace any printed or saved old list when you refresh the codes.",
-        "Treat backup codes like passwords. Do not share them. Google says it does not ask for a backup code except at sign-in. If you think someone else obtained your codes, create a new set so the old one becomes inactive."
-      ],
-      "steps": [
-        "Confirm that 2-Step Verification is enabled on the Google Account.",
-        "Open Google Account, Security & sign-in, 2-Step Verification, then Backup codes.",
-        "Create a set and store it in a private, dependable place, such as with important documents.",
-        "Mark a code as used after using it, and refresh the set if it is lost, exhausted, or exposed."
-      ]
-    },
-    {
-      "heading": "Store the two options differently",
-      "paragraphs": [
-        "A recovery contact is a person, so the useful preparation is agreement and accurate contact details. Do not assume they can immediately restore access: Google controls the recovery process, and the contact becomes usable only after the documented waiting periods.",
-        "Backup codes are secrets. Keep them out of places that would be unavailable with your usual second factor, such as the same lost phone. A printed copy kept with important documents may be practical for some people. If you download a copy to a computer, remember that anyone who can access the file may be able to use an unused code.",
-        "Google says people enrolled in the Advanced Protection Program cannot download backup codes. If that applies to you, use the sign-in and recovery choices available in your account rather than assuming this download option will appear."
-      ]
-    },
-    {
-      "heading": "If you are already locked out",
-      "paragraphs": [
-        "You cannot add recovery information while you are locked out or already in the account-recovery process. If you still have access, prepare recovery options now rather than waiting for a problem.",
-        "If you cannot sign in, Google directs people to its account recovery page and asks them to answer the questions as well as they can. A recovery contact or an unused backup code may be relevant depending on the sign-in screen and the options you prepared, but neither is a promise that access will be restored.",
-        "If a message, caller, or website asks you to disclose a backup code, stop and return to the Google Account sign-in flow directly. Backup codes should be entered only as part of your own sign-in."
-      ],
-      "callout": "Recovery contacts and backup codes solve different problems, and both must be set up while you can still access the account. Keep normal account details, passwords, and 2-Step Verification methods current as well."
     }
   ],
   "sources": [
@@ -75,20 +65,20 @@
       "title": "Set up recovery options",
       "publisher": "Google Account Help",
       "url": "https://support.google.com/accounts/answer/183723?hl=en",
-      "accessed": "2026-11-20",
+      "accessed": "2026-11-24",
       "primary": true
     },
     {
       "title": "Sign in with backup codes",
       "publisher": "Google Account Help",
       "url": "https://support.google.com/accounts/answer/1187538?hl=en",
-      "accessed": "2026-11-20",
+      "accessed": "2026-11-24",
       "primary": true
     }
   ],
   "quality": {
     "score": 93,
-    "reviewedBy": "autonomous editorial review",
-    "notes": "Current first-party Google documentation supports the distinction, setup paths, waiting periods, code limitations, and availability cautions. The guide explicitly avoids promises of account recovery."
+    "reviewedBy": "autonomous editorial cycle",
+    "notes": "Editorial assessment only. Consolidated duplicate coverage, rechecked two Google sources and added an acceptance/accessibility preparation checklist. Scope and waiting periods explicit."
   }
 }

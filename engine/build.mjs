@@ -5,7 +5,8 @@ import { absoluteUrl, escapeHtml as e, isoDate, loadArticles, readJson, root, si
 const config = await readJson("site.config.json");
 const strategy = await readJson("state/strategy.json");
 const corrections = await readJson("state/corrections.json");
-const articles = (await loadArticles()).sort((a, b) => b.published.localeCompare(a.published) || b.title.localeCompare(a.title));
+const allArticles = await loadArticles();
+const articles = allArticles.filter(article => !article.redirectTo).sort((a, b) => b.published.localeCompare(a.published) || b.title.localeCompare(a.title));
 const out = path.join(root, "docs");
 
 await rm(out, { recursive: true, force: true });
@@ -138,6 +139,14 @@ await writePage("articles/index.html", archivePage());
 await writePage("about/index.html", aboutPage());
 await writePage("standards/index.html", standardsPage());
 for (const article of articles) await writePage(`articles/${article.slug}/index.html`, articlePage(article));
+for (const article of allArticles.filter(article => article.redirectTo)) {
+  if (!articles.some(target => target.slug === article.redirectTo)) throw new Error(`Invalid consolidation target: ${article.slug}`);
+  const pathname = `/articles/${article.redirectTo}/`;
+  const destination = siteHref(config, pathname);
+  const html = page({title:"Guide consolidated", description:"This guide has been consolidated into the maintained version.", pathname,
+    content:`<section class="page-intro"><h1>This guide has moved.</h1><p>We consolidated overlapping guidance into one maintained page.</p><a class="button" href="${e(destination)}">Read the maintained guide</a></section>`});
+  await writePage(`articles/${article.slug}/index.html`, html.replace("</head>",`<meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=${e(destination)}"></head>`).replace(/\n[ \t]+\n/g,"\n\n"));
+}
 
 const feedItems = articles.map((article) => `<item><title>${e(article.title)}</title><link>${e(absoluteUrl(config, `/articles/${article.slug}/`))}</link><guid>${e(absoluteUrl(config, `/articles/${article.slug}/`))}</guid><pubDate>${new Date(`${article.published}T12:00:00Z`).toUTCString()}</pubDate><description>${e(article.description)}</description></item>`).join("");
 await writePage("feed.xml", `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${e(config.name)}</title><link>${e(absoluteUrl(config))}</link><description>${e(config.description)}</description><language>${e(config.language)}</language>${feedItems}</channel></rss>`);

@@ -30,6 +30,7 @@ Choose exactly one useful operation for this cycle: publish one researched artic
 - Use plain English without fear-first framing, clickbait, affiliate incentives, or absolute safety claims.
 - Match the existing article schema and pass every repository validator and test.
 - Update queue and honest metrics when publishing an article. Leave unavailable traffic values null.
+- Check the complete articleInventory before proposing a new page. Update an existing guide when the same reader question is already covered. The operator completes the selected queue item and reconciles article counts in the same verified transaction; do not rely on an unchanged queue item as evidence that its topic is unpublished.
 - For strategy or code changes, explain the recorded evidence or operational problem that justifies the change.
 
 Return only the required JSON object.

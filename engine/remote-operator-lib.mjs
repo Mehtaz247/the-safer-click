@@ -160,3 +160,28 @@ export function researchReadiness(item, sources) {
   const urls = new Set(sources.filter((source) => isPrimarySourceUrl(source.url)).map((source) => source.url));
   return urls.size >= 2 ? {allowed:true, reason:"research-ready"} : {allowed:false, reason:"insufficient-primary-sources"};
 }
+
+export function finalizeEditorialDecision(decision, item, queue, metrics, articles, today) {
+  if (!["publish_article", "update_article"].includes(decision.operation)) return decision;
+  const writes = decision.files.filter(file => file.path.startsWith("content/articles/") && file.path.endsWith(".json"));
+  if (writes.length !== 1) throw new Error("An editorial cycle must change exactly one article.");
+  const article = JSON.parse(writes[0].content);
+  const titleKey = title => title.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+  if (articles.some(existing => existing.slug !== article.slug && !existing.redirectTo && titleKey(existing.title) === titleKey(article.title))) {
+    throw new Error("Duplicate article title: update the existing guide instead.");
+  }
+  const nextQueue = structuredClone(queue);
+  const queued = nextQueue.items.find(entry => entry.id === item.id);
+  if (!queued) throw new Error("Selected queue item disappeared.");
+  Object.assign(queued, {status:"published", publishedSlug:article.slug, completedAt:today});
+  nextQueue.updatedAt = today;
+  const nextMetrics = structuredClone(metrics);
+  const projected = [...articles.filter(existing => existing.slug !== article.slug), article];
+  nextMetrics.updatedAt = today;
+  nextMetrics.cumulative.publishedArticles = projected.filter(existing => !existing.redirectTo).length;
+  const files = decision.files.filter(file => !["state/queue.json", "state/metrics.json"].includes(file.path));
+  for (const [path, value] of [["state/queue.json", nextQueue], ["state/metrics.json", nextMetrics]]) {
+    files.push({path, action:"write", content:JSON.stringify(value,null,2)+"\n"});
+  }
+  return validateDecision({...decision, files});
+}

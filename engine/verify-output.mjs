@@ -51,7 +51,11 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(path.join(root, "docs/sitemap.xml"), "utf8");
-for (const article of articles) if (!sitemap.includes(`/articles/${article.slug}/`)) failures.push(`sitemap missing ${article.slug}`);
+for (const article of articles) {
+  if (article.redirectTo) {
+    if (sitemap.includes(`/articles/${article.slug}/`)) failures.push(`sitemap contains consolidated alias ${article.slug}`);
+  } else if (!sitemap.includes(`/articles/${article.slug}/`)) failures.push(`sitemap missing ${article.slug}`);
+}
 
 if (failures.length) {
   for (const failure of failures) console.error(`FAIL ${failure}`);

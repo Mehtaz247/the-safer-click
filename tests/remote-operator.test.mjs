@@ -17,6 +17,21 @@ import { access, rm } from "node:fs/promises";
 import path from "node:path";
 import { root } from "../engine/lib.mjs";
 
+test("editorial completion closes the selected queue item and reconciles article counts atomically", async () => {
+  const { finalizeEditorialDecision } = await import("../engine/remote-operator-lib.mjs");
+  assert.equal(typeof finalizeEditorialDecision, "function");
+  const article = {slug:"new-guide",title:"A distinct reader question"};
+  const decision = {operation:"publish_article", files:[{path:"content/articles/new-guide.json",action:"write",content:JSON.stringify(article)}]};
+  const result = finalizeEditorialDecision(decision, {id:"queued"}, {items:[{id:"queued",status:"idea"}]}, {cumulative:{publishedArticles:1,knownSearchClicks:null}}, [{slug:"old-guide",title:"Existing question"}], "2026-11-24");
+  const queue = JSON.parse(result.files.find(f=>f.path==="state/queue.json").content);
+  assert.equal(queue.items[0].status,"published");
+  assert.equal(queue.items[0].publishedSlug,"new-guide");
+  const metrics = JSON.parse(result.files.find(f=>f.path==="state/metrics.json").content);
+  assert.equal(metrics.cumulative.publishedArticles,2);
+  assert.equal(metrics.cumulative.knownSearchClicks,null);
+  assert.throws(()=>finalizeEditorialDecision(decision,{id:"queued"},{items:[{id:"queued"}]},{cumulative:{}},[{slug:"another-slug",title:article.title}],"2026-11-24"),/duplicate/i);
+});
+
 test("research retrieval distinguishes HTTP rejection, content type, and network failure without logging bodies", async () => {
   const { fetchRaw } = await import("../ops/remote-operator.mjs");
   assert.equal(typeof fetchRaw, "function");

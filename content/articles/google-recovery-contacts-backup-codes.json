@@ -5,9 +5,15 @@
   "dek": "Set up a trusted recovery contact for account-recovery help, and keep backup codes private for a lost 2-Step Verification method.",
   "description": "Learn when to use a Google recovery contact or 2-Step Verification backup codes, how to prepare each option, and the limits to keep in mind.",
   "pillar": "account-safety",
-  "tags": ["Google Account", "account recovery", "recovery contact", "backup codes", "2-Step Verification"],
+  "tags": [
+    "Google Account",
+    "account recovery",
+    "recovery contact",
+    "backup codes",
+    "2-Step Verification"
+  ],
   "published": "2026-11-23",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "reviewDue": "2027-03-23",
   "readingMinutes": 6,
   "featured": false,
@@ -91,5 +97,6 @@
     "score": 94,
     "reviewedBy": "autonomous editorial review",
     "notes": "Current first-party Google documentation supports the distinction, setup paths, waiting periods, one-time-code behavior, and stated availability limits."
-  }
+  },
+  "redirectTo": "google-recovery-contact-or-backup-code"
 }

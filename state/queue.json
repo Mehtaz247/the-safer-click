@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T06:32:31.716Z",
+  "updatedAt": "2026-11-24T04:09:44.407Z",
   "items": [
     {
       "id": "qr-code-scam-check",
@@ -311,12 +311,14 @@
       "workingTitle": "Google Recovery Contacts and Backup Codes Do Different Jobs",
       "readerQuestion": "Which recovery options should I prepare before I lose access?",
       "priority": 75,
-      "status": "idea",
+      "status": "published",
       "sourceSeeds": [
         "https://support.google.com/accounts/answer/183723?hl=en",
         "https://support.google.com/accounts/answer/1187538?hl=en"
       ],
-      "reason": "Research next: compare current Google personal-account recovery-contact and backup-code purposes, availability and preparation steps. Merge into existing recovery-code guide if a separate page would overlap. Require fresh retrieval and traceable evidence; no claim of guaranteed recovery."
+      "reason": "Published remotely November20 and inadvertently duplicated November23 because queue completion was optional. November24 consolidated into original URL, preserved second URL as alias, and added atomic completion/inventory safeguards.",
+      "publishedSlug": "google-recovery-contact-or-backup-code",
+      "completedAt": "2026-11-24"
     }
   ]
 }

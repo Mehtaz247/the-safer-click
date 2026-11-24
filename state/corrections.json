@@ -1,5 +1,10 @@
 {
   "schemaVersion": 1,
-  "corrections": []
+  "corrections": [
+    {
+      "slug": "google-recovery-contact-or-backup-code",
+      "date": "2026-11-24",
+      "summary": "Consolidated an overlapping automated publication into this maintained guide and refreshed preparation checks. The other published URL now redirects here; no unsupported audience-growth claim."
+    }
+  ]
 }
-
