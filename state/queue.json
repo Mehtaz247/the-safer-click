@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-27T15:57:48.476Z",
   "items": [
     {
       "id": "qr-code-scam-check",
@@ -334,6 +334,30 @@
       "reason": "Next research: distinguish account-wide forwarding from filters, review independent settings routes and provider response to unknown destinations. Personal desktop Gmail scope; fresh primary-source retrieval required. Inventory checked: no forwarding-specific guide yet.",
       "publishedSlug": "gmail-forwarding-review",
       "completedAt": "2026-11-24"
+    },
+    {
+      "id": "calendar-spam-review",
+      "pillar": "scam-defense",
+      "workingTitle": "An Unwanted Event Appeared in Your Calendar. What Now?",
+      "readerQuestion": "How do I remove suspicious calendar entries?",
+      "priority": 80,
+      "status": "published",
+      "publishedSlug": "calendar-spam-review",
+      "publishedAt": "2026-11-27",
+      "reason": "Published current desktop Google and iOS26+ guide from three provider documents, separating report/delete, future invitation defaults and calendar subscriptions."
+    },
+    {
+      "id": "shared-calendar-privacy",
+      "pillar": "safer-defaults",
+      "workingTitle": "Who Can See Your Google Calendar Invitations?",
+      "readerQuestion": "What calendar details can other people see?",
+      "priority": 73,
+      "status": "idea",
+      "sourceSeeds": [
+        "https://support.google.com/calendar/answer/37082?hl=en",
+        "https://support.google.com/calendar/answer/13159188?hl=en"
+      ],
+      "reason": "Research privacy of existing calendar sharing and pending invitations. Distinct from spam removal; merge if a new page would overlap. Verify each permission tier and personal/managed-account limits with fresh primary sources."
     }
   ]
 }

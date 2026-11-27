@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
   pages: write
   id-token: write
 
@@ -61,6 +62,11 @@ jobs:
         if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
         with:
           path: docs
+      - name: Wait for current-run Pages artifact
+        if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node ops/wait-pages-artifact.mjs
       - name: Deploy to GitHub Pages
         if: steps.commit.outcome == 'success' && steps.changes.outputs.changed == 'true'
         id: deployment

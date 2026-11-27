@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-27T15:57:48.476Z",
   "measurementStatus": "live-no-traffic-source-connected",
   "periods": [],
   "cumulative": {
-    "publishedArticles": 21,
+    "publishedArticles": 22,
     "substantiveCorrections": 1,
     "retiredArticles": 0,
     "knownSearchClicks": null,
@@ -34,6 +34,7 @@
     "Traffic fields remain null until a verified, privacy-respecting measurement source is connected.",
     "Never substitute fabricated demo analytics for missing measurements.",
     "November20: published recovery-phone-change planning guide; 19 articles. Retrieval diagnostic observed Google200/Apple429 and Google/Microsoft200; no audience-growth inference.",
-    "November24: reconciled remote publications: 20 distinct maintained guides and one preserved consolidation URL. Prior metric19 missed remote additions; duplicate guide excluded. Audience metrics remain null."
+    "November24: reconciled remote publications: 20 distinct maintained guides and one preserved consolidation URL. Prior metric19 missed remote additions; duplicate guide excluded. Audience metrics remain null.",
+    "November27: added a Google Calendar/iPhone unwanted-event guide;22 maintained guides plus1 consolidation alias. Confirmed hosted Gmail guide closed its queue item atomically. Website audience fields remain null."
   ]
 }
