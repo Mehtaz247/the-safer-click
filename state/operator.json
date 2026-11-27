@@ -3,7 +3,7 @@
   "lastCycleAt": "2026-11-27T15:57:48.689Z",
   "lastSuccessfulCycleAt": "2026-11-27T15:57:49.569Z",
   "consecutiveFailures": 0,
-  "publishedThisMonth": 3,
+  "publishedThisMonth": 5,
   "remote": {
     "enabled": true,
     "execution": "github-hosted",
