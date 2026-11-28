@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "shared-calendar-privacy",
+  "title": "Who Can See Your Google Calendar Invitations?",
+  "dek": "Check calendar sharing first, then limit whether people with event access can see invitations you have not accepted.",
+  "description": "A plain-English guide to Google Calendar sharing levels, public and work-calendar visibility, and pending invitations that collaborators may be able to see.",
+  "pillar": "safer-defaults",
+  "tags": ["Google Calendar", "calendar privacy", "calendar sharing", "invitations", "privacy settings"],
+  "published": "2026-11-28",
+  "updated": "2026-11-28",
+  "reviewDue": "2027-03-28",
+  "readingMinutes": 5,
+  "featured": false,
+  "takeaway": [
+    "Open each calendar's sharing settings to see who has access and what level they have.",
+    "People with access to event details can see more than your availability, including event names, times, places, and descriptions.",
+    "If you use invitation filtering, turn off the setting that lets people with event-viewing or editing access see all invitations, including ones not yet visible on your calendar."
+  ],
+  "sections": [
+    {
+      "heading": "Start with the calendar, not a single invitation",
+      "paragraphs": [
+        "If you are deciding what another person can see, first identify which calendar holds the event. Google Calendar sharing is set per calendar. On a computer, open Google Calendar, find the calendar under My calendars, then open More and Settings and sharing. Review both Access permissions for events and Shared with.",
+        "A person who receives access to a calendar gets an email and must use its link to find the shared calendar. You can stop sharing with a specific person or group later by removing them from Shared with. Turning off public or organization-wide sharing stops those broader sharing settings for that calendar.",
+        "This guide concerns access you grant through Calendar sharing. It does not establish what a meeting organizer, other guests, or an employer can see in every kind of event. Check the event and account context separately before adding sensitive details."
+      ],
+      "steps": [
+        "Choose a calendar under My calendars.",
+        "Open Settings and sharing for that calendar.",
+        "Review Access permissions for events and Shared with.",
+        "Remove sharing you no longer intend, or select a narrower permission level."
+      ]
+    },
+    {
+      "heading": "What each sharing level can reveal",
+      "paragraphs": [
+        "Google documents several sharing levels. See only free/busy hides event and task names and details, so the other person can learn only when you are busy. See event details allows them to find event names, times, places, and descriptions.",
+        "The remaining levels also allow changes. Make changes lets someone edit non-private events. Private events are shown as a busy block without details when they are marked Busy; a private event marked Free does not appear on the calendar. Make changes and see event details lets someone edit events and find who else the calendar is shared with. Make changes and manage sharing gives full control of events or tasks with start and end times and allows the person to share the calendar with others.",
+        "Choose the least access that fits the reason for sharing. If someone only needs to schedule around your time, free/busy is the narrower option. If you no longer have a clear reason for a person or group to have access, remove that share rather than relying on them to ignore details already available to them."
+      ],
+      "callout": "A private event is not the same as hidden availability. Google says that a private event marked Busy appears as a busy block to someone with Make changes permission, while one marked Free does not appear on the calendar."
+    },
+    {
+      "heading": "Check pending invitations separately",
+      "paragraphs": [
+        "Invitation settings affect what is added to your calendar and what may be visible through a shared calendar. In Calendar settings on a computer, Event settings includes Add invitations to my calendar. You can choose to add invitations from everyone, only when the sender is known, or only when you respond to the invitation email. Google says these choices apply to new invitations.",
+        "When you choose Only if the sender is known or When I respond to the invitation in email, Google provides a separate visibility control. It can allow people who have permission to view or edit your events to see all invitations, including invitations from unknown senders or invitations you have not responded to that are not yet visible on your calendar. Turn off Let others see all invitations if they have permission to view or edit my events if you do not want that broader invitation visibility.",
+        "People who have only permission to find your availability cannot get event details, according to Google. The separate pending-invitation setting is most important when your calendar is shared at a level that permits event viewing or editing."
+      ],
+      "steps": [
+        "Open Settings, then Event settings, in Google Calendar on a computer.",
+        "Review Add invitations to my calendar for new invitations.",
+        "If you use Only if the sender is known or When I respond to the invitation in email, find the pending-invitation visibility setting.",
+        "Turn off Let others see all invitations if they have permission to view or edit my events unless someone genuinely needs to manage incoming invitations for you."
+      ]
+    },
+    {
+      "heading": "Public, work, and school calendars need an extra check",
+      "paragraphs": [
+        "Making a calendar public has a broader effect than sharing it with named people. Google says a public calendar can be found on the internet or in search results, used with other apps, and subscribed to in Google Calendar. Before using public sharing, choose the access level deliberately and consider whether event names, locations, or descriptions belong there.",
+        "For a work or school account, an administrator can control whether sharing options are available. Google also says an administrator can have special permissions to find your calendar and all event details even when you have not shared the calendar. If you make a calendar available to your organization, people in that organization can find and subscribe to it; people outside the organization cannot find it that way, though someone invited to a meeting outside the organization can still find information about that meeting.",
+        "If an option is missing or behaves differently on a managed account, ask the organization's administrator what calendar-sharing rules apply. Do not assume a personal-account setting describes the visibility rules for work or school accounts."
+      ]
+    },
+    {
+      "heading": "A quick privacy review to repeat",
+      "paragraphs": [
+        "Review calendar sharing after a role change, a household change, or when you stop coordinating with a person or group. A short review is also useful before putting travel, health, address, or work details in event descriptions. The point is not to make every calendar private; it is to make each audience and permission level intentional.",
+        "If unwanted invitations are the main problem, Google also offers sender controls and invitation-addition settings. Those controls can reduce what gets added to your calendar, but they do not replace reviewing people and groups that already have access to your calendar."
+      ],
+      "steps": [
+        "Review every calendar you own, including secondary calendars.",
+        "Remove old people and groups from Shared with.",
+        "Use free/busy when availability is enough.",
+        "Review pending-invitation visibility when anyone can view or edit event details.",
+        "Check public and organization-wide sharing before adding sensitive event information."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Share your calendar",
+      "publisher": "Google Calendar Help",
+      "url": "https://support.google.com/calendar/answer/37082?hl=en",
+      "accessed": "2026-11-28",
+      "primary": true
+    },
+    {
+      "title": "Manage invitations in Calendar",
+      "publisher": "Google Calendar Help",
+      "url": "https://support.google.com/calendar/answer/13159188?hl=en",
+      "accessed": "2026-11-28",
+      "primary": true
+    }
+  ],
+  "quality": {
+    "score": 92,
+    "reviewedBy": "autonomous editorial review",
+    "notes": "Permission and invitation-visibility claims are limited to current Google Calendar Help documentation. Managed work and school account limits are explicitly distinguished from personal-account settings."
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T15:57:48.476Z",
+  "updatedAt": "2026-11-28",
   "items": [
     {
       "id": "qr-code-scam-check",
@@ -352,12 +352,14 @@
       "workingTitle": "Who Can See Your Google Calendar Invitations?",
       "readerQuestion": "What calendar details can other people see?",
       "priority": 73,
-      "status": "idea",
+      "status": "published",
       "sourceSeeds": [
         "https://support.google.com/calendar/answer/37082?hl=en",
         "https://support.google.com/calendar/answer/13159188?hl=en"
       ],
-      "reason": "Research privacy of existing calendar sharing and pending invitations. Distinct from spam removal; merge if a new page would overlap. Verify each permission tier and personal/managed-account limits with fresh primary sources."
+      "reason": "Research privacy of existing calendar sharing and pending invitations. Distinct from spam removal; merge if a new page would overlap. Verify each permission tier and personal/managed-account limits with fresh primary sources.",
+      "publishedSlug": "shared-calendar-privacy",
+      "completedAt": "2026-11-28"
     }
   ]
 }
